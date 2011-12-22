@@ -26,7 +26,7 @@ ART.InspectorView = SC.PalettePane.extend({
 
           viewSelection:SC.SegmentedView.design({
             classNames: 'banks'.w(),
-            layout: { top: 0, centerX: 0, right: 0, width: 100 },
+            layout: { top: 0, left: 30, right: 30, bottom: 0 },
             items:[
               {title:"Parts", value:"parts", action: "Parts", target: "ART.inspectorViewController" },
               {title:"Views", value:"views", action: "Views", target: "ART.inspectorViewController" }
