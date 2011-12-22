@@ -12,16 +12,16 @@
 */
 ART.inspectorViewController = SC.Object.create(
 /** @scope ART.inspectorViewController.prototype */ {
-	nowShowing: 'ART.leftone.leftView',
+	nowShowing: 'ART.PartsView.partsPane',
 		
 		Parts: function() {
 		  console.log("parts");
-	    this.set('nowShowing', 'ART.leftone.leftView');    
+	    this.set('nowShowing', 'ART.PartsView.partsPane');    
 	  },
 	  
 	  Views: function() {
 	    console.log("views");
-	    this.set('nowShowing', 'ART.rightone.rightView');    
+	    this.set('nowShowing', 'ART.ViewsView.viewsPane');    
     }
     
 });

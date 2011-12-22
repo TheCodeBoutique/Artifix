@@ -4,9 +4,9 @@
 // "The Code Boutique, beautiful code wrapped in a beautiful design."
 // ==========================================================================
 
-ART.rightone = SC.Page.create({
+ART.ViewsView = SC.Page.create({
 	// Start of the aboutView.  ChildView: miniLogo image, and the main_page rect. //
-	rightView: SC.View.design({
+	viewsPane: SC.View.design({
 	  layout: { left: 0, right: 0, top: 0, bottom: 0 },
 		backgroundColor: "lightpink"
 	})	
