@@ -20,3 +20,7 @@
   box-shadow: inset 0px 0px 2px 0px #888;
   border: 1px silver solid !important;
 }
+
+.grid_base{
+  background-image: sc_static('images/grid.png');
+}

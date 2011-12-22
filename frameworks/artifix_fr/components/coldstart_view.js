@@ -42,16 +42,16 @@ ART.ColdStartView = SC.View.extend(
       classNames: 'gray_button_med'.w(),
       layout: { bottom: 5, left: 15, height: 26, width: 135},
       title: 'Open Existing App',
-      // action: 'myMethod',
-      // target: 'MyApp.Controller'
+      action: 'myMethod',
+      target: 'MyApp.Controller'
     }),
     
      chooseButton: SC.ButtonView.design({
         classNames: 'blue_button_sml'.w(),
         layout: { bottom: 5, right: 20, height: 26, width: 82},
         title: 'Choose',
-        // action: 'myMethod',
-        // target: 'MyApp.Controller'
+        action: 'goToMobileDevState',
+        target: 'Artifix.statechart'
       }),
   
 });
