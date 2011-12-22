@@ -1,0 +1,23 @@
+.banks.sc-segmented-view .sc-segment-view.sc-first-segment {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: yellow;
+}
+
+.banks.sc-segmented-view .sc-segment-view.sc-first-segment .active,
+.banks.sc-segmented-view .sc-segment-view.sc-first-segment .sel {
+  background: blue;
+}
+
+
+.banks.sc-segmented-view .sc-segment-view.sc-last-segment {
+  padding-right: 10px;
+  border: none;
+  background: lightgreen;
+}
+
+
+.banks.sc-segmented-view .sc-segment-view.sc-last-segment .active,
+.banks.sc-segmented-view .sc-segment-view.sc-last-segment .sel {
+  background: lightblue; 
+}

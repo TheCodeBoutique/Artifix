@@ -12,7 +12,7 @@ Artifix.mobilePage = SC.Page.design({
   // load.
   mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
-    childViews: ["topBar", "mobileBluePrint"],
+    childViews: ["topBar", "mobileBluePrint", "tmpButtonLrg", "tmpButtonSml"],
     
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
@@ -57,6 +57,20 @@ Artifix.mobilePage = SC.Page.design({
         target: 'MyApp.Controller'
       }),
       
+    }),
+    
+    tmpButtonLrg: ART.ButtonView.design({
+      layout: { centerX: 0, centerY: 0, height: 150, width: 600},
+      title: 'Button',
+      // action: 'myMethod',
+      // target: 'MyApp.Controller'
+    }),
+    
+    tmpButtonSml: ART.ButtonView.design({
+      layout: { top: 100, left: 30, height: 25, width: 100},
+      title: 'Button',
+      // action: 'myMethod',
+      // target: 'MyApp.Controller'
     }),
     
     mobileBluePrint: SC.ImageView.design({
