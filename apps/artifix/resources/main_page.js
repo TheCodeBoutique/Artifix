@@ -28,7 +28,6 @@ Artifix.mainPage = SC.Page.design({
     
     coldStartView: ART.ColdStartView.design({
        layout: { centerX: 0, top: 70, height: 436, width: 730 },
-       backgroundColor: "lightblue"
     }),
     
   })
