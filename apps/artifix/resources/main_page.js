@@ -4,7 +4,7 @@
 // ==========================================================================
 /*globals Artifix */
 
-// This page describes the main user interface for your application.  
+// This page describes the main user interface for your application.
 Artifix.mainPage = SC.Page.design({
 
   // The main pane is made visible on screen as soon as your app is loaded.
