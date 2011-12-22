@@ -12,7 +12,8 @@
 // @extends SC.View
 
 
-ART.InspectorView = SC.View.extend(
+ART.InspectorView = SC.PalettePane.extend(
   /** @scope ART.InspectorView.prototype */{
     classNames: 'silver_background'.w(),
+
 });

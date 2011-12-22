@@ -29,8 +29,16 @@ Artifix.mobilePage = SC.Page.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
         title: 'Inspector',
-        action: 'myMethod',
-        target: 'MyApp.Controller'
+        action:function(){
+          var pane = ART.InspectorView.create({
+            layout:{centerX:0,centerY:0,height:405,width:285}
+          })
+          pane.append();
+
+        }
+//        action: 'myMethod',
+//        target: 'MyApp.Controller'
+        //tmp remove once controllers are in
       }),
       
       tmpUIInspectorButton: SC.ButtonView.design({
