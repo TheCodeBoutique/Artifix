@@ -13,28 +13,41 @@
 
 
 ART.InspectorView = SC.PalettePane.extend(
-    /** @scope ART.InspectorView.prototype */{
-      classNames: 'silver_background'.w(),
+  /** @scope ART.InspectorView.prototype */{
+  classNames: 'silver_background'.w(),
+      
+  contentView: SC.View.extend({
+    childViews: ["top", "middle"],
+    
+    top: SC.ToolbarView.design({
+      classNames: 'top_bar'.w(),
+      layout: { top: 0, left: 0, right: 0, height: 25 },
+      childViews: ["left", "right"],
+      
+      left: SC.ButtonView.design({
+        classNames: 'blue_button_sml'.w(),
+        layout: { centerY: 0, left: 20, height: 26, width: 82},
+        title: 'Parts',
+        action: 'Parts',
+        target: 'ART.inspectorViewController'
+      }),
+      
+      right: SC.ButtonView.design({
+        classNames: 'blue_button_sml'.w(),
+        layout: { centerY: 0, right: 20, height: 26, width: 82},
+        title: 'Views',
+        action: 'Views',
+        target: 'ART.inspectorViewController'
+      }),
+      
+    }),
+    
+    middle: SC.ContainerView.design({
+			nowShowingBinding: 'ART.inspectorViewController.nowShowing',
+			layout: { left: 0, top: 36, bottom: 0, right: 0 }
+		}),
+     
+  })  
+     
 
-      contentView: SC.View.extend({   //main Parent adjust the height according to the childs
-        childViews:['partsSelection'], //add the gui parts
-       /*
-        * I started the segmented button view for you we are observing the value so that if the value changes we can call an action
-        * we are going to use this to swap out the views we need to setup container view for swapping
-        */
-        partsSelection:SC.SegmentedView.extend({
-          layout:{top:10,left:0,right:0,height:23},
-          items:[
-            {title:"Artifix.Parts".loc(), value:"parts"},
-            {title:"Artifix.Views".loc(), value:"views"}
-          ],
-          itemTitleKey:"title",
-          itemValueKey:"value",
-          itemWidthKey:"116px",
-          value:"parts",
-          didValueChange:function() {
-            console.log("You selected =  %@".fmt(this.get('value')));
-          }.observes('value')
-        })
-      })
-    });
+});
