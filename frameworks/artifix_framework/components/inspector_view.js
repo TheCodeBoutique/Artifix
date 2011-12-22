@@ -27,19 +27,13 @@ ART.InspectorView = SC.PalettePane.extend({
           viewSelection:SC.SegmentedView.design({
             layout: { top: 0, left: 0, right: 0, bottom: 0 },
             items:[
-              {title:"Parts", value:"parts"},
-              {title:"Views", value:"views"}
+              {title:"Parts", value:"parts", action: "Parts", target: "ART.inspectorViewController" },
+              {title:"Views", value:"views", action: "Views", target: "ART.inspectorViewController" }
             ],
             itemTitleKey:"title",
             itemValueKey:"value",
-            value:"parts",
-            didValueChange:function() {
-              if (this.get('value') === "parts") {
-                ART.inspectorViewController.set('nowShowing', 'ART.leftone.leftView');
-              } else {
-                ART.inspectorViewController.set('nowShowing', 'ART.rightone.rightView');
-              }
-            }.observes('value')
+            itemActionKey:"action",
+            itemTargetKey:"target",
           })
         }),
 
