@@ -12,7 +12,7 @@ Artifix.mobilePage = SC.Page.design({
   // load.
   mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
-    childViews: ["topBar", "mobileBluePrint", "tmpButtonLrg", "tmpButtonSml"],
+    childViews: ["topBar", "mobileBluePrint"],
     
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
@@ -29,16 +29,15 @@ Artifix.mobilePage = SC.Page.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
         title: 'Inspector',
-        action:function(){
-          var pane = ART.InspectorView.create({
-            layout:{centerX:0,centerY:0,height:405,width:285}
-          })
-          pane.append();
-
-        }
-//        action: 'myMethod',
-//        target: 'MyApp.Controller'
-        //tmp remove once controllers are in
+        action: 'troggleUIInspector',
+        target: 'Artifix.statechart'
+        // action:function(){
+        //   var pane = ART.InspectorView.create({
+        //     layout:{centerX:0,centerY:0,height:405,width:285}
+        //   })
+        //   pane.append();
+        // 
+        // }
       }),
       
       tmpUIInspectorButton: SC.ButtonView.design({
@@ -57,20 +56,6 @@ Artifix.mobilePage = SC.Page.design({
         target: 'MyApp.Controller'
       }),
       
-    }),
-    
-    tmpButtonLrg: ART.ButtonView.design({
-      layout: { centerX: 0, centerY: 0, height: 150, width: 600},
-      title: 'Button',
-      // action: 'myMethod',
-      // target: 'MyApp.Controller'
-    }),
-    
-    tmpButtonSml: ART.ButtonView.design({
-      layout: { top: 100, left: 30, height: 25, width: 100},
-      title: 'Button',
-      // action: 'myMethod',
-      // target: 'MyApp.Controller'
     }),
     
     mobileBluePrint: SC.ImageView.design({

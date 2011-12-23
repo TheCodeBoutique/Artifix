@@ -4,9 +4,23 @@ Artifix.MobileDevState = SC.State.extend({
     Artifix.getPath('mobilePage.mainPane').append();
   },
   
-  // goToMobileDevState: function() {
-  //   this.gotoState('MobileDevState');
-  // };
+  troggleUIInspector: function(view) {
+    var toggle = Artifix.mobileUIController.get('isViewsButtonON');
+    var pane = ART.InspectorView.create({
+      layout:{centerX:0,centerY:0,height:405,width:285}
+    })
+    
+    if (toggle === YES) {
+      console.log('yes');
+      pane.append();
+      Artifix.mobileUIController.set('isViewsButtonON', NO);
+    } else {
+      console.log('no');
+      pane.remove();
+      Artifix.mobileUIController.set('isViewsButtonON', YES);
+    }
+     
+  },
 
   exitState: function() {
     Artifix.getPath('mobilePage.mainPane').remove();
@@ -14,3 +28,10 @@ Artifix.MobileDevState = SC.State.extend({
 
 });
 
+
+
+// action:function(){
+//   var pane = ART.InspectorView.create({
+//     layout:{centerX:0,centerY:0,height:405,width:285}
+//   })
+//   pane.append();
