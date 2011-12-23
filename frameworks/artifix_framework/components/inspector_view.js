@@ -14,46 +14,60 @@
 
 ART.InspectorView = SC.PalettePane.extend({
 
-      classNames: 'silver_background'.w(),
+  classNames: 'silver_background'.w(),
 
-      contentView: SC.View.extend({
-        childViews: ["top", "middle"],
+  contentView: SC.View.extend({
+    childViews: ["top","viewSelection", "middle"],
 
-        top:SC.ToolbarView.design({
-          classNames: 'top_bar'.w(),
-          childViews: ["viewSelection" ,'closeButton'],
-          layout: { top: 0, left: 0, right: 0, height: 25 },
+    top:SC.ToolbarView.design({
+      classNames: 'top_bar'.w(),
+      childViews: ['closeButton' ,'title' ,'minButton'],
+      layout: { top: 0, left: 0, right: 0, height: 18 },
 
-          closeButton:SC.ButtonView.design({
-            classNames:['gray_button_med'],
-            layout:{top:0,left:0,height:20,width:20},
-            /****this is setup if you want it to go into a state for what we are doing I dont think its nessecarry****/
-//            action:function(){
-//              ART.statechart.sendEvent('somMethod',this.getPath('parentView.parentView.parentView'))
-//            },
-            action:function(){
-              this.getPath('parentView.parentView.parentView').remove();
-            },
-            title:'C'
-          }),
+      title:SC.LabelView.design({
+        classNames:['pane-bar-title'],
+        layout: { left:83, height: 14, top:0, width: 90 },
+        needsEllipsis:YES,
+        escapeHTML: NO,
+        isTextSelectable: YES,
+        value:"User Interface".loc()
+      }),
 
-          viewSelection:SC.SegmentedView.design({
-            classNames: 'banks'.w(),
-            layout: { top: 0, left: 30, right: 30, bottom: 0 },
-            items:[
-              {title:"Parts", value:"parts", action: "Parts", target: "ART.inspectorViewController" },
-              {title:"Views", value:"views", action: "Views", target: "ART.inspectorViewController" }
-            ],
-            itemTitleKey:"title",
-            itemValueKey:"value",
-            itemActionKey:"action",
-            itemTargetKey:"target"
-          })
-        }),
+      closeButton:SC.View.design({
+        classNames:['pane-close-button'],
+        layout:{top:3,left:4,height:10,width:10},
+        mouseDown:function(evt) {
+          this.getPath('parentView.parentView.parentView').remove();
+          return YES;
+        }
+      }),
 
-        middle: SC.ContainerView.design({
-          nowShowingBinding: 'ART.inspectorViewController.nowShowing',
-          layout: { left: 0, top: 36, bottom: 0, right: 0 }
-        })
+      minButton:SC.View.design({
+        classNames:['pane-min-button'],
+        layout:{top:4,right:4,height:8,width:21},
+        mouseDown:function(evt) {
+          return YES;
+        }
       })
-    });
+    }),
+
+    viewSelection:SC.SegmentedView.design({
+      classNames: 'banks'.w(),
+      layout: { top: 18, width:284, height: 25 },
+      items:[
+        {title:"Parts", value:"parts", action: "Parts", target: "ART.inspectorViewController" },
+        {title:"Views", value:"views", action: "Views", target: "ART.inspectorViewController" }
+      ],
+      itemTitleKey:"title",
+      itemValueKey:"value",
+      itemWidthKey:"142px",
+      itemActionKey:"action",
+      itemTargetKey:"target"
+    }),
+
+    middle: SC.ContainerView.design({
+      nowShowingBinding: 'ART.inspectorViewController.nowShowing',
+      layout: { left: 0, top: 36, bottom: 0, right: 0 }
+    })
+  })
+});
