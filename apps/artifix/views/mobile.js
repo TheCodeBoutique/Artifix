@@ -12,7 +12,7 @@ Artifix.mobilePage = SC.Page.design({
   // load.
   mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
-    childViews: ["topBar", "mobileBluePrint"],
+    childViews: ["topBar", "mobileBluePrint", "canvasView"],
     
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
@@ -31,13 +31,6 @@ Artifix.mobilePage = SC.Page.design({
         title: 'Inspector',
         action: 'troggleUIInspector',
         target: 'Artifix.statechart'
-        // action:function(){
-        //   var pane = ART.InspectorView.create({
-        //     layout:{centerX:0,centerY:0,height:405,width:285}
-        //   })
-        //   pane.append();
-        // 
-        // }
       }),
       
       tmpUIInspectorButton: SC.ButtonView.design({
@@ -63,7 +56,10 @@ Artifix.mobilePage = SC.Page.design({
       useCanvas: YES,
       value: sc_static('images/mobile_blueprint.png')
     }),
-    
-  })
 
+    canvasView:SC.View.design(ART.DropZone,{
+      layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
+      childViews:[],
+    })
+  })
 });

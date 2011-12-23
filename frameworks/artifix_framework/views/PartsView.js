@@ -22,7 +22,11 @@ ART.PartsView = SC.Page.create({
           cellTitle:"Button".loc(),
           cellDescription:"A standard sized button.".loc(),
 
-          itemImage:SC.View.design({
+          itemImage:SC.View.design(ART.Drag,{
+            view:ART.ButtonView.create({
+              layout:{centerX:0,centerY:0,height:30,width:120}
+            }),
+
             classNames:['pane-button-image'],
             layout: { right: 14, top:19, height:26, width: 76 },
             useImageQueue: NO,
