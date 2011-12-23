@@ -16,5 +16,5 @@ ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility,{
     layout: {},
     action: '',
     target: '',
-
+    title: 'button',
 });

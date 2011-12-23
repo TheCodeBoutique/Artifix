@@ -10,7 +10,7 @@ Artifix.MobileDevState = SC.State.extend({
       this._pane.remove();
     }
     this._pane = ART.InspectorView.create({
-      layout:{centerX:0,centerY:0,height:405,width:285}
+      layout:{ top: 73, right: 350, height: 405, width: 285}
     });
 
     this._pane.append();

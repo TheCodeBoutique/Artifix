@@ -7,12 +7,14 @@ ART.Drag = {
   slideBack:YES,
 
   mouseDown: function(evt) {
+    
     if (this.objectController) {
       this.objectController.set('content', this.view);
     }
+    
     if (this.view === "button") {
       var instanceView = ART.ButtonView.create({
-        layout:{centerX:0,centerY:0,height:30,width:120}
+        layout:{centerX:0,centerY:0,height:30,width:120},
       });
     }
 

@@ -22,59 +22,57 @@ ART.PartsView = SC.Page.create({
           cellTitle:"Button".loc(),
           cellDescription:"A standard sized button.".loc(),
 
-          itemImage:SC.View.design(ART.Drag,{
+          itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
 
             classNames:['pane-button-image'],
-            layout: { right: 14, top:19, height:26, width: 76 },
+            layout: { right: 14, top:19, height: 25, width: 88 },
             useImageQueue: NO,
           })
         }),
 
-        switchButton:ART.PartsCell.create({
+        switchButton: ART.PartsCell.create({
           layout:{top:56,height:71},
           cellTitle:"Switch Button".loc(),
           cellDescription:"Displays on/off button.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-switch-image'],
-            layout: { right: 14, top:19, height:28, width: 72 },
-            useImageQueue: NO,
+            layout: { right: 14, top:19, height: 33, width: 77 },
           })
         }),
 
-        toolbarButton:ART.PartsCell.create({
+        toolbarButton: ART.PartsCell.create({
           layout:{top:127,height:70},
           cellTitle:"Toolbar".loc(),
           cellDescription:"Standard toolbar.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-tool-image'],
-            layout: { right: 14, top:19, height:29, width: 122 },
-            useImageQueue: NO,
+            layout: { right: 14, top: 19, height: 36, width: 132 },
           })
         }),
 
-        labelCell:ART.PartsCell.create({
+        labelCell: ART.PartsCell.create({
           layout:{top:198,height:71},
           cellTitle:"Label".loc(),
           cellDescription:"A view to put your text in.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-label-image'],
-            layout: { right: 14, top:19, height:17, width: 45 },
-            useImageQueue: NO,
+            layout: { right: 14, top:19, height: 30, width: 58 },
           })
         }),
-        textFieldCell:ART.PartsCell.create({
+        
+        textFieldCell: ART.PartsCell.create({
           layout:{top:269,height:86},
           cellTitle:"Text Field".loc(),
           cellDescription:"Text field that accepts user input".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-text-image'],
-            layout: { right: 14, top:19, height:30, width: 110 },
+            layout: { right: 14, top:19, height: 36, width: 117 },
             useImageQueue: NO,
           })
         })
