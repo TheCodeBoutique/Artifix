@@ -21,8 +21,21 @@ ART.InspectorView = SC.PalettePane.extend({
 
         top:SC.ToolbarView.design({
           classNames: 'top_bar'.w(),
-          childViews: ["viewSelection"],
+          childViews: ["viewSelection" ,'closeButton'],
           layout: { top: 0, left: 0, right: 0, height: 25 },
+
+          closeButton:SC.ButtonView.design({
+            classNames:['gray_button_med'],
+            layout:{top:0,left:0,height:20,width:20},
+            /****this is setup if you want it to go into a state for what we are doing I dont think its nessecarry****/
+//            action:function(){
+//              ART.statechart.sendEvent('somMethod',this.getPath('parentView.parentView.parentView'))
+//            },
+            action:function(){
+              this.getPath('parentView.parentView.parentView').remove();
+            },
+            title:'C'
+          }),
 
           viewSelection:SC.SegmentedView.design({
             classNames: 'banks'.w(),
@@ -34,7 +47,7 @@ ART.InspectorView = SC.PalettePane.extend({
             itemTitleKey:"title",
             itemValueKey:"value",
             itemActionKey:"action",
-            itemTargetKey:"target",
+            itemTargetKey:"target"
           })
         }),
 
