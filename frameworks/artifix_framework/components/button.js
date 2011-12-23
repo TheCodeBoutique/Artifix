@@ -11,8 +11,7 @@
 // @extends SC.Button
 
 
-ART.ButtonView = SC.ButtonView.extend(
-  /** @scope ART.ButtonView.prototype */{
+ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility,{
     classNames: 'art_button'.w(),
     layout: {},
     action: '',

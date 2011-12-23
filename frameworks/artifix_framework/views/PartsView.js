@@ -23,9 +23,8 @@ ART.PartsView = SC.Page.create({
           cellDescription:"A standard sized button.".loc(),
 
           itemImage:SC.View.design(ART.Drag,{
-            view:ART.ButtonView.create({
-              layout:{centerX:0,centerY:0,height:30,width:120}
-            }),
+            view:'button',
+            objectController:ART.objectSelectionController,
 
             classNames:['pane-button-image'],
             layout: { right: 14, top:19, height:26, width: 76 },
