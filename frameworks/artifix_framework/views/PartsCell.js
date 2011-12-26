@@ -34,5 +34,9 @@ ART.PartsCell = SC.View.extend({
     isTextArea:YES,
     valueBinding:'.parentView.cellDescription'
   }),
-  itemImage: SC.View.design({}),
+  
+  itemImage: SC.View.design({
+    
+  }),
+  
 });

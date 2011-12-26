@@ -18,15 +18,25 @@ Artifix.mobilePage = SC.Page.design({
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
       layout: { top: 0, left: 0, right: 0, height: 70 },
+<<<<<<< HEAD
       childViews: ["artifixLogo", "tmpInspectorButton", "tmpUIInspectorButton", "tmpAnimationsButton"],
 
+=======
+      childViews: ["artifixLogo", "inspectorButton", "tmpUIInspectorButton", "tmpAnimationsButton"],
+      
+>>>>>>> 89e7451c93c5abc547fb5671a7fb36bab6862e39
       artifixLogo: SC.ImageView.design({
         layout: { top: 0, left: 0, width: 172, height: 71 },
         useCanvas: YES,
         value: sc_static('images/artifix_logo.png')
       }),
+<<<<<<< HEAD
 
       tmpInspectorButton: SC.ButtonView.design({
+=======
+      
+      inspectorButton: SC.ButtonView.design({
+>>>>>>> 89e7451c93c5abc547fb5671a7fb36bab6862e39
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
         title: 'Inspector',
