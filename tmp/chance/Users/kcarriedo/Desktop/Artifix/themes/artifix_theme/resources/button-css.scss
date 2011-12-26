@@ -1,0 +1,173 @@
+
+$theme: '.ace.artifix-theme';
+.gray_button_med.sc-button-view.sc-regular-size.square:hover {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    background: no-repeat sc_static('/images/gray_button_med_hov.png');
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.gray_button_med.sc-button-view {
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 0px #555 none;
+    background: none;
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    font-size: 12px;
+    background: no-repeat sc_static('/images/gray_button_med.png');
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square .sc-button-inner {
+    background: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: #636161;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label:hover {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.0);
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label:active {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: #636161;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+}
+
+.gray_button_med.sc-button-view.sc-regular-size.square.active {
+    background: no-repeat sc_static('/images/gray_button_med_down.png');
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    color: #636161;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+
+
+.blue_button_sml.sc-button-view.sc-regular-size.square:hover {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    background: no-repeat sc_static('/images/blue_button_sml.png');
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.blue_button_sml.sc-button-view {
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 0px #555 none;
+    background: none;
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    font-size: 12px;
+    background: no-repeat sc_static('/images/blue_button_sml.png');
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-inner {
+    background: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.0);
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label:hover {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: #636161;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.0);
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label:active {
+    height: 30px;
+    line-height: 25px;
+    margin-left: 0px;
+    background: none;
+    cursor: pointer;
+    vertical-align: left;
+    color: #636161;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+}
+
+.blue_button_sml.sc-button-view.sc-regular-size.square.active {
+    background: no-repeat sc_static('/images/blue_button_sml_down.png');
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    color: #636161;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Lucida Grande";
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}

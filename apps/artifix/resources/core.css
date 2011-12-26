@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .pane-title {
     font-size: 24px!important;
     color: white;
@@ -14,18 +13,26 @@
 }
 .pane-button-image{
   background: sc_static('/images/button_icon.png');
+  background-repeat: no-repeat;
 }
 .pane-switch-image{
   background: sc_static('/images/switch_icon.png');
+  background-repeat: no-repeat;
 }
 .pane-tool-image{
   background: sc_static('/images/toolbar_icon.png');
+  background-repeat: no-repeat;
+
 }
 .pane-label-image{
   background: sc_static('/images/text_icon.png');
+  background-repeat: no-repeat;
+
 }
 .pane-text-image{
   background: sc_static('/images/textfield_icon.png');
+  background-repeat: no-repeat;
+
 }
 .pane-cell{
     border-bottom: 1px solid rgba(111,111,111,0.2)!important;
@@ -46,5 +53,3 @@
 .selection-class {
     outline: 1px solid #CCCCCC!important;
 }
-=======
->>>>>>> 89e7451c93c5abc547fb5671a7fb36bab6862e39

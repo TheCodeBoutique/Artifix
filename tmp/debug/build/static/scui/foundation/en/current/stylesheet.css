@@ -1,0 +1,77 @@
+/* line 3, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/combo_box-css.scss */
+.scui-combobox-view .scui-combobox-dropdown-button-view {
+  background: green;
+}
+
+/* line 3, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner {
+  background-repeat: no-repeat;
+}
+
+/* line 6, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.darkTrans {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-dark-trans.png?1322719780');
+}
+
+/* line 9, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.lightTrans {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-light-trans.png?1322719780');
+}
+
+/* line 12, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.darkSolidAqua {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-dark-solid-aqua.png?1322719780');
+}
+
+/* line 15, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.darkSolidWhite {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-dark-solid-white.png?1322719780');
+}
+
+/* line 18, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.lightSolidBlack {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-light-solid-black.png?1322719780');
+}
+
+/* line 21, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/loading_spinner-css.scss */
+.loadingSpinner.lightSolidGreen {
+  background-image: url('/static/scui/foundation/en/current/source/images/spinner-light-solid-green.png?1322719780');
+}
+
+/* line 3, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.picker-resizable-handle {
+  width: 16px;
+  height: 16px;
+  background: url('/static/scui/foundation/en/current/source/images/lower-right-drag.png?1322719780') no-repeat;
+}
+
+/* line 8, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.header {
+  background: url('/static/scui/foundation/en/current/source/images/title-bar-bg.png?1322719780') repeat-x;
+}
+
+/* line 11, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.header .modal-title {
+  top: 10px !important;
+  font-size: 14px !important;
+  color: #DDD !important;
+}
+
+/* line 17, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.header .modal-close-icon,
+.header .modal-fullscreen-icon {
+  background-color: none !important;
+}
+
+/* line 20, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.header .modal-close-icon {
+  left: 10px !important;
+  background: url('/static/scui/foundation/en/current/source/images/red-ball.png?1322719780') no-repeat;
+}
+
+/* line 24, ./tmp/chance//Users/kcarriedo/Desktop/Artifix/frameworks/scui/frameworks/foundation/english-lproj/modal_pane-css.scss */
+.header .modal-fullscreen-icon {
+  left: 32px !important;
+  background: url('/static/scui/foundation/en/current/source/images/green-ball.png?1322719780') no-repeat;
+}
+

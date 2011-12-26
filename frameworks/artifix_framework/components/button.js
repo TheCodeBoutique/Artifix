@@ -17,23 +17,10 @@ ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility, {
   action: '',
   target: '',
   title:'',
-
-<<<<<<< HEAD
   resize:SC.View.design(SCUI.Resizable, {
     classNames:['handles'],
     backgroundColor:"black",
 //  isVisibleBinding:'.parentView.isHovering',
     layout:{bottom:0,right:0,height:5,width:5},
   })
-
 });
-=======
-
-ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility,{
-    classNames: 'art_button'.w(),
-    layout: {},
-    action: '',
-    target: '',
-    title: 'button',
-});
->>>>>>> 89e7451c93c5abc547fb5671a7fb36bab6862e39
