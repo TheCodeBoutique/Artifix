@@ -23,6 +23,10 @@ SCUI.Mobility = {
     i = SC.clone(v.get('layout'));
     i.pageX = evt.pageX; i.pageY = evt.pageY ;
     this._mouseDownInfo = i;
+    //need to genersize this....
+     ART.objectSelectionController.set('content', this);
+    //set the selection class
+    this.$().addClass('selection-class');
     return YES ;
   },
   

@@ -42,3 +42,6 @@
 .pane-min-button{
     background: sc_static('/images/minimize_icon.png');
 }
+.selection-class {
+    outline: 1px solid #CCCCCC!important;
+}

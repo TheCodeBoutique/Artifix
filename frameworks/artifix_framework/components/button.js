@@ -9,12 +9,20 @@
 
 // @author Chad Eubanks
 // @extends SC.Button
+sc_require('Utillities/Delete');
+ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility, {
+  classNames: 'art_button'.w(),
+  childViews:['resize'],
+  layout: {},
+  action: '',
+  target: '',
+  title:'',
 
-
-ART.ButtonView = SC.ButtonView.extend(SCUI.Mobility,{
-    classNames: 'art_button'.w(),
-    layout: {},
-    action: '',
-    target: '',
+  resize:SC.View.design(SCUI.Resizable, {
+    classNames:['handles'],
+    backgroundColor:"black",
+//  isVisibleBinding:'.parentView.isHovering',
+    layout:{bottom:0,right:0,height:5,width:5},
+  })
 
 });

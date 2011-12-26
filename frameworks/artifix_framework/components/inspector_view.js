@@ -10,8 +10,7 @@
 // @author Chad Eubanks
 // @author Kyle Carriedo
 // @extends SC.View
-
-
+sc_require('Utillities/WindowRemove');
 ART.InspectorView = SC.PalettePane.extend({
 
   classNames: 'silver_background'.w(),
