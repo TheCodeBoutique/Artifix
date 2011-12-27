@@ -54,18 +54,23 @@ ART.InspectorView = SC.PalettePane.extend({
       classNames: 'banks'.w(),
       layout: { top: 18, left: 0, right: 0, height: 25 },
       items:[
-        {title:"Parts", value:"parts", action: "Parts", target: "ART.inspectorViewController" },
-        {title:"Views", value:"views", action: "Views", target: "ART.inspectorViewController" }
+        {title:"Parts", value:"parts"},
+        {title:"Views", value:"views"}
       ],
       itemTitleKey:"title",
       itemValueKey:"value",
-      // itemWidthKey:"143px",
-      itemActionKey:"action",
-      itemTargetKey:"target"
+      value:'parts',
+      selectionDidChange:function(){
+        if(this.get('value') === "parts"){
+          ART.inspectorViewController.set('nowShowing','ART.PartsView.partsPane')
+        } else {
+          ART.inspectorViewController.set('nowShowing','ART.ViewsView.viewsPane')
+        }
+      }.observes('.value')
     }),
 
     middle: SC.ContainerView.design({
-      nowShowingBinding: 'ART.inspectorViewController.nowShowing',
+      nowShowingBinding:SC.Binding.oneWay('ART.inspectorViewController.nowShowing'),
       layout: { left: 0, top: 36, bottom: 0, right: 0 }
     })
   })

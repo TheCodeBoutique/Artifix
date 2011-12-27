@@ -37,6 +37,6 @@ ART.PartsCell = SC.View.extend({
   
   itemImage: SC.View.design({
     
-  }),
+  })
   
 });

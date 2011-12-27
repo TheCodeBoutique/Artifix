@@ -10,18 +10,6 @@
 
   @extends SC.ArrayController
 */
-ART.inspectorViewController = SC.Object.create(
-/** @scope ART.inspectorViewController.prototype */ {
-	nowShowing: 'ART.PartsView.partsPane',
-		
-		Parts: function() {
-		  console.log("parts");
-	    this.set('nowShowing', 'ART.PartsView.partsPane');    
-	  },
-	  
-	  Views: function() {
-	    console.log("views");
-	    this.set('nowShowing', 'ART.ViewsView.viewsPane');    
-    }
-    
+ART.inspectorViewController = SC.ObjectController.create({
+	nowShowing: 'ART.PartsView.partsPane'
 });
