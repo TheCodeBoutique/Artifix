@@ -44,7 +44,7 @@ ART.PartsView = SC.Page.create({
         toolbarButton: ART.PartsCell.create({
           layout:{ top: 160, height: 68, right: 0, left: 0},
           cellTitle:"Toolbar".loc(),
-          cellDescription:"Standard toolbar.".loc(),
+          cellDescription:"A standard toolbar.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-tool-image'],

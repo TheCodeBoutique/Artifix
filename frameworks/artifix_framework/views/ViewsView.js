@@ -25,8 +25,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-listview-image'],
+            layout: { right: 2, bottom: 5, height: 55, width: 46 },
           })
           
         }),
@@ -39,8 +39,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-gridview-image'],
+            layout: { right: 2, bottom: 5, height: 55, width: 46 },
           })
           
         }),
@@ -53,8 +53,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-twitter-image'],
+            layout: { right: 2, bottom: 5, height: 55, width: 46 },
           })
           
         }),
@@ -67,8 +67,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-instagram-image'],
+            layout: { right: 2, bottom: 5, height: 55, width: 46 },
           })
           
         }),
@@ -81,8 +81,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-tumblr-image'],
+            layout: { right: 2, bottom: 5, height: 55, width: 46 },
           })
           
         }),
@@ -95,8 +95,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-tabbar-image'],
+            layout: { right: 2, bottom: 5, height: 61, width: 37 },
           })
           
         }),
@@ -109,8 +109,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-verticalnav-image'],
+            layout: { right: 2, bottom: 5, height: 61, width: 37 },
           })
           
         }),
@@ -123,8 +123,8 @@ ART.ViewsView = SC.Page.create({
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-            classNames:['pane-button-image'],
-            layout: { right: 2, bottom: 5, height: 25, width: 77 },
+            classNames:['pane-horizontalswipe-image'],
+            layout: { right: 2, bottom: 5, height: 61, width: 37 },
           })
           
         })
