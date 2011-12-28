@@ -28,8 +28,24 @@
   background: sc_static('/images/text_icon.png');
 }
 
-.pane-text-image{
+.pane-textfield-image{
   background: sc_static('/images/textfield_icon.png');
+}
+
+.pane-textarea-image{
+  background: sc_static('/images/textarea_icon.png');
+}
+
+.pane-audio-image{
+  background: sc_static('/images/audio_icon.png');
+}
+
+.pane-video-image{
+  background: sc_static('/images/video_icon.png');
+}
+
+.pane-image-image{
+  background: sc_static('/images/image_icon.png');
 }
 
 .pane-cell{

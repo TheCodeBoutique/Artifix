@@ -5,77 +5,119 @@
 // ==========================================================================
 
 ART.PartsView = SC.Page.create({
-  // Start of the aboutView.  ChildView: miniLogo image, and the main_page rect. //
+  
   partsPane: SC.View.design({
     layout: { left: 0, right: 0, top: 0, bottom: 0 },
     childViews:['contentContainer'],
     contentContainer:SC.ScrollView.design({
       hasHorizontalScroller: NO,
-      layout: { top: 0, bottom: 0, left: 0, right:0},
+      layout: { top: 0, bottom: 0, left: 0, right: 0},
 
       contentView:SC.View.design({
-        layout:{top:0,height:360,left:0,right:0},
-        childViews:['buttonCell', 'switchButton' , 'toolbarButton', 'labelCell' ,'textFieldCell'],
+        layout:{ top: 0, height: 715, left: 0, right: 0},
+        childViews:['buttonCell', 'switchButton' , 'toolbarButton', 'labelCell' , 'textFieldCell', 'textAreaCell', 'audioCell', 'videoCell', 'imageCell'],
 
         buttonCell: ART.PartsCell.create({
-          layout:{top:0,height:56},
+          layout:{ top: 0, height: 75, right: 0, left: 0},
           cellTitle:"Button".loc(),
           cellDescription:"A standard sized button.".loc(),
 
           itemImage: SC.View.design(ART.Drag,{
             view:'button',
             objectController:ART.objectSelectionController,
-
             classNames:['pane-button-image'],
-            layout: { right: 14, top:19, height: 25, width: 88 },
-            useImageQueue: NO,
+            layout: { right: 2, bottom: 5, height: 25, width: 77 },
           })
         }),
 
         switchButton: ART.PartsCell.create({
-          layout:{top:56,height:71},
+          layout:{ top: 80, height: 75, right: 0, left: 0},
           cellTitle:"Switch Button".loc(),
           cellDescription:"Displays on/off button.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-switch-image'],
-            layout: { right: 14, top:19, height: 33, width: 77 },
+            layout: { right: 2, bottom: 5, height: 28, width: 74 },
           })
         }),
 
         toolbarButton: ART.PartsCell.create({
-          layout:{top:127,height:70},
+          layout:{ top: 160, height: 68, right: 0, left: 0},
           cellTitle:"Toolbar".loc(),
           cellDescription:"Standard toolbar.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-tool-image'],
-            layout: { right: 14, top: 19, height: 36, width: 132 },
+            layout: { right: 2, bottom: 5, height: 30, width: 122 },
           })
         }),
 
         labelCell: ART.PartsCell.create({
-          layout:{top:198,height:71},
+          layout:{ top: 230, height: 80, right: 0, left: 0},
           cellTitle:"Label".loc(),
           cellDescription:"A view to put your text in.".loc(),
 
           itemImage:SC.View.design({
             classNames:['pane-label-image'],
-            layout: { right: 14, top:19, height: 30, width: 58 },
+            layout: { right: 2, bottom: 5, height: 17, width: 46 },
           })
         }),
         
         textFieldCell: ART.PartsCell.create({
-          layout:{top:269,height:86},
+          layout:{ top: 315, height: 80, right: 0, left: 0},
           cellTitle:"Text Field".loc(),
-          cellDescription:"Text field that accepts user input".loc(),
+          cellDescription:"Text field that  accepts user input".loc(),
 
           itemImage:SC.View.design({
-            classNames:['pane-text-image'],
-            layout: { right: 14, top:19, height: 36, width: 117 },
-            useImageQueue: NO,
+            classNames:['pane-textfield-image'],
+            layout: { right: 2, bottom: 5, height: 26, width: 100 },
+          })
+        }),
+        
+        textAreaCell: ART.PartsCell.create({
+          layout:{ top: 400, height: 86, right: 0, left: 0},
+          cellTitle:"Text Area".loc(),
+          cellDescription:"Used for multiple lines of user input.".loc(),
+
+          itemImage:SC.View.design({
+            classNames:['pane-textarea-image'],
+            layout: { right: 5, bottom: 5, height: 59, width: 111 },
+          })
+        }),
+        
+        audioCell: ART.PartsCell.create({
+          layout:{ top: 485, height: 68, right: 0, left: 0},
+          cellTitle:"Audio".loc(),
+          cellDescription:"An html5 audio player.".loc(),
+
+          itemImage:SC.View.design({
+            classNames:['pane-audio-image'],
+            layout: { right: 2, bottom: 5, height: 41, width: 47 },
+          })
+        }),
+        
+        videoCell: ART.PartsCell.create({
+          layout:{ top: 555, height: 75, right: 0, left: 0},
+          cellTitle: "Video".loc(),
+          cellDescription:"An html5 video player.".loc(),
+
+          itemImage:SC.View.design({
+            classNames:['pane-video-image'],
+            layout: { right: 2, bottom: 5, height: 38, width: 38 },
+          })
+        }),
+        
+        imageCell: ART.PartsCell.create({
+          layout:{ top: 630, height: 86, right: 0, left: 0},
+          cellTitle: "Image".loc(),
+          cellDescription:"A view to place an image.".loc(),
+
+          itemImage:SC.View.design({
+            classNames:['pane-image-image'],
+            layout: { right: 2, bottom: 5, height: 47, width: 55 },
           })
         })
+        
       })
     })
   })

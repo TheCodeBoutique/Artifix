@@ -19,13 +19,12 @@ ART.InspectorView = SC.PalettePane.extend({
     childViews: ["top","viewSelection", "middle"],
 
     top:SC.ToolbarView.design({
-      classNames: 'top_bar'.w(),
       childViews: ['closeButton' ,'title' ,'minButton'],
       layout: { top: 0, left: 0, right: 0, height: 18 },
 
       title:SC.LabelView.design({
         classNames:['pane-bar-title'],
-        layout: { left:83, height: 14, top:0, width: 90 },
+        layout: { centerX: 0, centerY: 0, height: 14, width: 90 },
         needsEllipsis:YES,
         escapeHTML: NO,
         isTextSelectable: YES,
@@ -51,8 +50,8 @@ ART.InspectorView = SC.PalettePane.extend({
     }),
 
     viewSelection:SC.SegmentedView.design({
-      classNames: 'banks'.w(),
-      layout: { top: 18, left: 0, right: 0, height: 25 },
+      classNames: 'inspector_buttons'.w(),
+      layout: { top: 18, left: 0, right: 0, height: 35 },
       items:[
         {title:"Parts", value:"parts"},
         {title:"Views", value:"views"}
@@ -71,7 +70,7 @@ ART.InspectorView = SC.PalettePane.extend({
 
     middle: SC.ContainerView.design({
       nowShowingBinding:SC.Binding.oneWay('ART.inspectorViewController.nowShowing'),
-      layout: { left: 0, top: 36, bottom: 0, right: 0 }
+      layout: { left: 0, top: 46, bottom: 0, right: 0 }
     })
   })
 });

@@ -42,7 +42,7 @@ ART.ColdStartView = SC.View.extend(
 
       openButton: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
-        layout: { bottom: 5, left: 15, height: 26, width: 135},
+        layout: { bottom: 5, left: 15, height: 21, width: 120},
         title: "Open Existing App".loc(),
         action: '',
         target: ''
@@ -50,8 +50,8 @@ ART.ColdStartView = SC.View.extend(
 
       chooseButton: SC.ButtonView.design({
         classNames: 'blue_button_sml'.w(),
-        layout: { bottom: 5, right: 20, height: 26, width: 82},
-        title: "Choose:".loc(),
+        layout: { bottom: 5, right: 20, height: 21, width: 82},
+        title: "Choose".loc(),
         action: 'goToMobileDevState',
         target: 'Artifix.statechart'
       })

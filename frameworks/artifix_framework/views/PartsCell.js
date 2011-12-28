@@ -28,9 +28,9 @@ ART.PartsCell = SC.View.extend({
 
   description:SC.LabelView.design({
     classNames:['pane-description'],
-    layout: { left: 13, height: 40, top: 36, width: 160 },
+    layout: { left: 13, height: 40, top: 36, width: 145 },
     escapeHTML: NO,
-    isTextSelectable: YES,
+    isTextSelectable: NO,
     isTextArea:YES,
     valueBinding:'.parentView.cellDescription'
   }),

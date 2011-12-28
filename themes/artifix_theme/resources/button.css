@@ -2,8 +2,16 @@
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     color: white;
     font-size: 12px;
-    background: no-repeat sc_static('/images/gray_button_med_hov.png');
-    border-radius: 0px;
+    background: rgb(217,236,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ecf4', endColorstr='#aec9e5',GradientType=0 ); /* IE6-9 */
+    border: 1px #AAAAAA solid !important;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -19,8 +27,16 @@
 .gray_button_med.sc-button-view.sc-regular-size.square {
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     font-size: 12px;
-    background: no-repeat sc_static('/images/gray_button_med.png');
-    border-radius: 0px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+    border: 1.0px silver solid !important;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -31,8 +47,8 @@
 }
 
 .gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label {
-    height: 30px;
-    line-height: 25px;
+    height: 100%;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -45,8 +61,8 @@
 }
 
 .gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label:hover {
-    height: 30px;
-    line-height: 25px;
+    height: 100%;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -59,8 +75,8 @@
 }
 
 .gray_button_med.sc-button-view.sc-regular-size.square .sc-button-label:active {
-    height: 30px;
-    line-height: 25px;
+    height: 100%;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -73,11 +89,20 @@
 }
 
 .gray_button_med.sc-button-view.sc-regular-size.square.active {
-    background: no-repeat sc_static('/images/gray_button_med_down.png');
+    background: rgb(217,236,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ecf4', endColorstr='#aec9e5',GradientType=0 ); /* IE6-9 */
+    border: 1px #AAAAAA solid !important;
+    border-radius: 4px;
+    cursor: pointer;
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     color: #636161;
     font-size: 12px;
-    border-radius: 6px;
     cursor: pointer;
     font-family: "Lucida Grande";
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
@@ -89,8 +114,16 @@
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     color: white;
     font-size: 12px;
-    background: no-repeat sc_static('/images/blue_button_sml.png');
-    border-radius: 0px;
+    background: rgb(217,236,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ecf4', endColorstr='#aec9e5',GradientType=0 ); /* IE6-9 */
+    border: 1px #AAAAAA solid !important;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -106,8 +139,16 @@
 .blue_button_sml.sc-button-view.sc-regular-size.square {
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     font-size: 12px;
-    background: no-repeat sc_static('/images/blue_button_sml.png');
-    border-radius: 0px;
+    background: rgb(217,236,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(217,236,244,1) 0%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ecf4', endColorstr='#aec9e5',GradientType=0 ); /* IE6-9 */
+    border: 1px #AAAAAA solid !important;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -119,7 +160,7 @@
 
 .blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label {
     height: 30px;
-    line-height: 25px;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -133,7 +174,7 @@
 
 .blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label:hover {
     height: 30px;
-    line-height: 25px;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -147,7 +188,7 @@
 
 .blue_button_sml.sc-button-view.sc-regular-size.square .sc-button-label:active {
     height: 30px;
-    line-height: 25px;
+    line-height: 23px;
     margin-left: 0px;
     background: none;
     cursor: pointer;
@@ -160,11 +201,19 @@
 }
 
 .blue_button_sml.sc-button-view.sc-regular-size.square.active {
-    background: no-repeat sc_static('/images/blue_button_sml_down.png');
+    background: rgb(109,109,109); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(109,109,109,1) 1%, rgba(217,236,244,1) 7%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(109,109,109,1)), color-stop(7%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(109,109,109,1) 1%,rgba(217,236,244,1) 7%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(109,109,109,1) 1%,rgba(217,236,244,1) 7%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(109,109,109,1) 1%,rgba(217,236,244,1) 7%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(109,109,109,1) 1%,rgba(217,236,244,1) 7%,rgba(179,209,229,1) 49%,rgba(172,200,224,1) 51%,rgba(174,201,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#aec9e5',GradientType=0 ); /* IE6-9 */
     font-family: 'Lucida Grande', Helvetica, sans-serif;
     color: #636161;
+    border: 1px #AAAAAA solid !important;
     font-size: 12px;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
     font-family: "Lucida Grande";
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
