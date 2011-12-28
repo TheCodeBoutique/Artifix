@@ -42,6 +42,8 @@
   font-size: 12px;
   font-family: "Lucida Grande";
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(255,255,255,0.5), inset 0px 1px 1px rgba(0,0,0,0.5);
+ 	-webkit-box-shadow: 0px 1px 3px rgba(255,255,255,0.5), inset 0px 1px 1px rgba(0,0,0,0.5);
 }
 
 .inspector_buttons.sc-segmented-view .sc-segment-view.sc-last-segment {
@@ -89,4 +91,6 @@
   font-size: 12px;
   font-family: "Lucida Grande";
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(255,255,255,0.5), inset 0px 1px 1px rgba(0,0,0,0.5);
+ 	-webkit-box-shadow: 0px 1px 3px rgba(255,255,255,0.5), inset 0px 1px 1px rgba(0,0,0,0.5);
 }
