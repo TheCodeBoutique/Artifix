@@ -1,0 +1,4 @@
+.close_button{
+  background-image: sc_static('images/close_icon.png');
+  cursor: pointer;
+}
