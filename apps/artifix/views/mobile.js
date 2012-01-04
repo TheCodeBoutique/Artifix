@@ -25,20 +25,20 @@ Artifix.mobilePage = SC.Page.design({
         useCanvas: YES,
         value: sc_static('images/artifix_logo.png')
       }),
-      tmpInspectorButton: SC.ButtonView.design({
+      tmpUIInspectorButton: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
-        title: 'Inspector',
+        title: 'User Interface',
         action: 'troggleUIInspector',
         target: 'Artifix.statechart'
       }),
 
-      tmpUIInspectorButton: SC.ButtonView.design({
+      tmpInspectorButton: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 200, height: 26, width: 135},
-        title: 'User Interface',
-        action: 'myMethod',
-        target: 'MyApp.Controller'
+        title: 'Inspector',
+        action: 'troggleInspector',
+        target: 'Artifix.statechart'
       }),
 
       tmpAnimationsButton: SC.ButtonView.design({
@@ -47,8 +47,7 @@ Artifix.mobilePage = SC.Page.design({
         title: 'Animation & View',
         action: 'myMethod',
         target: 'MyApp.Controller'
-      }),
-
+      })
     }),
 
     mobileBluePrint: SC.ImageView.design({

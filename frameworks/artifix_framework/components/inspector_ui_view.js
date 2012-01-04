@@ -1,9 +1,9 @@
-ART.InspectorView = SC.PalettePane.extend({
+ART.InspectorUIView = SC.PalettePane.extend({
 
   classNames: 'silver_background'.w(),
 
   contentView: SC.View.extend({
-    childViews: ["top", "middle"],   //viewSelection
+    childViews: ["top","viewSelection", "middle"],
 
     top:SC.ToolbarView.design({
       childViews: ['closeButton' ,'title' ,'minButton'],
@@ -15,7 +15,7 @@ ART.InspectorView = SC.PalettePane.extend({
         needsEllipsis:YES,
         escapeHTML: NO,
         isTextSelectable: YES,
-        value:"Interface".loc()
+        value:"User Interface".loc()
       }),
 
       closeButton:SC.View.design({
@@ -41,20 +41,22 @@ ART.InspectorView = SC.PalettePane.extend({
       layout: { top: 18, left: 0, right: 0, height: 35 },
       items:[
         {title:"Parts", value:"parts"},
-        {title:"Views", value:"views"},
-        {title:"Views", value:"views"},
-        {title:"Views", value:"views"},
+        {title:"Views", value:"views"}
       ],
       itemTitleKey:"title",
       itemValueKey:"value",
       value:'parts',
       selectionDidChange:function(){
+        if(this.get('value') === "parts"){
+          ART.inspectorViewController.set('nowShowing','ART.PartsView.partsPane')
+        } else {
+          ART.inspectorViewController.set('nowShowing','ART.ViewsView.viewsPane')
+        }
       }.observes('.value')
     }),
 
     middle: SC.ContainerView.design({
-      nowShowing:'',
-//      nowShowingBinding:SC.Binding.oneWay('ART.inspectorViewController.nowShowing'),
+      nowShowingBinding:SC.Binding.oneWay('ART.inspectorViewController.nowShowing'),
       layout: { left: 0, top: 46, bottom: 0, right: 0 }
     })
   })

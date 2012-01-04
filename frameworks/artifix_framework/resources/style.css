@@ -1,0 +1,30 @@
+.device-selection-cell:hover{
+    border-color: #add8e6!important;
+}
+.device-selection-cell.sc-collection-item.sel{
+    border-color: #add8e6!important;
+}
+.device-selection-cell{
+    border: 1px solid!important;
+    border-color: transparent!important;
+}
+.device-selection-title{
+    left: 50%;
+    margin-left: -19px;
+    position: absolute;
+    color: #5f5e5e;
+}
+.device-selection-description{
+    color: #5f5e5e;
+    font-size: 13px!important;
+}
+
+.divider-selection-icon{
+    background:sc_static('/images/divider_selection_icon.png');
+    height:2px;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position: 50% 0%;
+    position: absolute;
+    bottom:0px;
+}

@@ -25,9 +25,33 @@ ART.ColdStartView = SC.View.extend(
         value: "Choose a device to develope on and where you want to deploy your app.".loc()
       }),
 
-      platformSelection: SC.View.design({
+      platformSelection: SC.ListView.design({
         classNames: 'white_base'.w(),
         layout: { left: 10, top: 40, height: 355, width: 110},
+        contentValueKey: "name",
+        contentBinding: "ART.devicesController.arrangedObjects",
+        selectionBinding: "ART.devicesController.selection",
+        rowHeight: 117,
+        actOnSelect:YES,
+        exampleView:SC.View.design(SC.Control,{
+          isSelected:NO,
+          classNames:['device-selection-cell'],
+          render:function(context){
+            var content = this.get('content');
+            if(!content) return NO;
+            var icon = content.get('icon'),
+                name = content.get('name')
+            context.push([
+                '<div class="device-selection-icon" style="background-image: url(',icon,'); height:80px; width:100%; background-repeat:no-repeat; margin-top:7px; background-position: 50% 50%;">',
+              '</div>',
+                '<div class="device-selection-title">',name,
+              '</div>',
+                '<div class="divider-selection-icon">',
+              '</div>'
+            ].join(''))
+
+          }
+        })
       }),
 
       distroSelection: SC.View.design({
@@ -38,6 +62,13 @@ ART.ColdStartView = SC.View.extend(
       detailedInformation: SC.View.design({
         classNames: 'white_base'.w(),
         layout: { right: 15, top: 195, height: 200, width: 575},
+        childViews:['description'],
+        description:SC.LabelView.design({
+          classNames:['device-selection-description'],
+          layout:{top:0,left:20,height:200,width:515},
+          escapeHTML:NO,
+          valueBinding:'ART.deviceSelectionController.description',
+          })
       }),
 
       openButton: SC.ButtonView.design({

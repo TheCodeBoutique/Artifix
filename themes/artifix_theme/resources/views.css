@@ -24,3 +24,7 @@
 .grid_base{
   background-image: sc_static('images/grid.png');
 }
+
+.selection-class {
+    outline: 1px solid #CCCCCC!important;
+}
