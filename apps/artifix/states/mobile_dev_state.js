@@ -6,27 +6,41 @@ Artifix.MobileDevState = SC.State.extend({
 
   troggleUIInspector: function(view) {
 
-    if (this._pane) {
-      this._pane.remove();
+    if (this._uipane) {
+      this._uipane.remove();
     }
-    this._pane = ART.InspectorUIView.create({
-      layout:{ top: 73, left: 250, height: 405, width: 285}
-    });
-
-    this._pane.append();
+    // this._uipane = ART.InspectorPane.create({  // new pane WIP at the moment.  We will swap this out shortly.
+      this._uipane = ART.InspectorUIView.create({
+      layout:{ top: 73, right: 350, height: 405, width: 285},
+      //value: 'User Interface',
+    }),        
+    this._uipane.append();
 
   },
 
-  troggleInspector: function(view) {
+  troggleVisualInspector: function(view) {
 
-    if (this._pane) {
-      this._pane.remove();
+    if (this._visualpane) {
+      this._visualpane.remove();
     }
-    this._pane = ART.InspectorView.create({
-      layout:{ top: 73, left: 250, height: 405, width: 285}
+    this._visualpane = ART.InspectorPane.create({
+      layout:{ top: 73, left: 250, height: 405, width: 285},
+      value: 'Visual Inspector',
     });
+    this._visualpane.append();
 
-    this._pane.append();
+  },
+  
+  troggleAnimationInspector: function(view) {
+
+    if (this._animationpane) {
+      this._animationpane.remove();
+    }
+    this._animationpane = ART.InspectorPane.create({
+      layout:{ top: 200, left: 45, height: 405, width: 285},
+      value: 'Animations and View',
+    });
+    this._animationpane.append();
 
   },
 

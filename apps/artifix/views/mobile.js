@@ -18,7 +18,7 @@ Artifix.mobilePage = SC.Page.design({
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
       layout: { top: 0, left: 0, right: 0, height: 70 },
-      childViews: ["artifixLogo", "tmpInspectorButton", "tmpUIInspectorButton", "tmpAnimationsButton"],
+      childViews: ["artifixLogo", "tmpUIInspectorButton", "tmpInspectorButton", "tmpAnimationsButton"],
 
       artifixLogo: SC.ImageView.design({
         layout: { top: 0, left: 0, width: 172, height: 71 },
@@ -37,7 +37,7 @@ Artifix.mobilePage = SC.Page.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 200, height: 26, width: 135},
         title: 'Inspector',
-        action: 'troggleInspector',
+        action: 'troggleVisualInspector',
         target: 'Artifix.statechart'
       }),
 
@@ -45,8 +45,8 @@ Artifix.mobilePage = SC.Page.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 50, height: 26, width: 135},
         title: 'Animation & View',
-        action: 'myMethod',
-        target: 'MyApp.Controller'
+        action: 'troggleAnimationInspector',
+        target: 'Artifix.statechart'
       })
     }),
 
