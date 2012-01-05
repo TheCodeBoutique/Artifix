@@ -109,6 +109,8 @@ ART.ColdStartView = SC.View.extend(
         classNames: 'blue_button_sml'.w(),
         layout: { bottom: 5, right: 20, height: 21, width: 82},
         title: "Choose".loc(),
+        // isEnabled: NO,
+        isDefault: YES,
         action: 'goToMobileDevState',
         target: 'Artifix.statechart'
       })
