@@ -40,19 +40,21 @@ ART.InspectorUIView = SC.PalettePane.extend({
       classNames: 'inspector_buttons'.w(),
       layout: { top: 18, left: 0, right: 0, height: 35 },
       items:[
-        {title:"Parts", value:"parts"},
-        {title:"Views", value:"views"}
+        {
+          title:"Parts",
+          value:"parts",
+          action:"changeToParts"
+        },
+        {
+          title:"Views",
+          value:"views",
+          action:"changeToViews"
+        }
       ],
       itemTitleKey:"title",
       itemValueKey:"value",
-      value:'parts',
-      selectionDidChange:function(){
-        if(this.get('value') === "parts"){
-          ART.inspectorViewController.set('nowShowing','ART.PartsView.partsPane')
-        } else {
-          ART.inspectorViewController.set('nowShowing','ART.ViewsView.viewsPane')
-        }
-      }.observes('.value')
+      itemActionKey:"action",
+      valueBinding:'ART.inspectorViewController.currentTab'
     }),
 
     middle: SC.ContainerView.design({

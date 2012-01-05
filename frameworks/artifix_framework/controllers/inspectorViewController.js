@@ -11,5 +11,6 @@
   @extends SC.ArrayController
 */
 ART.inspectorViewController = SC.ObjectController.create({
-	nowShowing: 'ART.PartsView.partsPane'
+	nowShowing: 'ART.PartsView.partsPane',
+  currentTab:"parts"
 });

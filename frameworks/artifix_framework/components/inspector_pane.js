@@ -37,6 +37,19 @@ ART.InspectorPane = SC.Pane.extend(
 
   value: '',
   nowShowing:'',
+  /**images**/
+  cellOne:'',
+  cellTwo:'',
+  cellThree:'',
+  cellFour:'',
+
+  /**views**/
+  containerOne:'',
+  containerTwo:'',
+  containerThree:'',
+  containerFour:'',
+
+
 
   classNames: 'inspector_pane'.w(),
   childViews: ["closeButton", "title", "minButton", "navigation", 'paneContainer'],
@@ -65,13 +78,7 @@ ART.InspectorPane = SC.Pane.extend(
         classNames:['position-view']
       }),
       mouseDown:function(evt){
-        //this will be custom views just testing
-        this.setPath('parentView.parentView.nowShowing',
-            SC.View.create({
-              layout:{top:0,bottom:0,left:0,right:0},
-              backgroundColor:'cyan'
-              })
-        );
+        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerOne'));
         return YES;
       }
     }),
@@ -87,13 +94,7 @@ ART.InspectorPane = SC.Pane.extend(
       }),
 
       mouseDown:function(evt){
-        //this will be custom views just testing
-        this.setPath('parentView.parentView.nowShowing',
-            SC.View.create({
-              layout:{top:0,bottom:0,left:0,right:0},
-              backgroundColor:'pink'
-              })
-        );
+        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerTwo'));
         return YES;
       }
     }),
@@ -106,16 +107,11 @@ ART.InspectorPane = SC.Pane.extend(
       imageView:SC.View.design({
         layout:{left:21,centerY:0,height:17,width:17},
         classNames:['text-view']
-      }) ,
+      }),
+
 
       mouseDown:function(evt){
-        //this will be custom views just testing
-        this.setPath('parentView.parentView.nowShowing',
-            SC.View.create({
-              layout:{top:0,bottom:0,left:0,right:0},
-              backgroundColor:'lightred'
-              })
-        );
+        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerThree'));
         return YES;
       }
     }),
@@ -131,13 +127,7 @@ ART.InspectorPane = SC.Pane.extend(
       }),
 
       mouseDown:function(evt){
-        //this will be custom views just testing
-        this.setPath('parentView.parentView.nowShowing',
-            SC.View.create({
-              layout:{top:0,bottom:0,left:0,right:0},
-              backgroundColor:'lightgray'
-              })
-        );
+        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerFour'));
         return YES;
       }
     })
