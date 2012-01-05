@@ -44,7 +44,6 @@ Artifix.MobileDevState = SC.State.extend({
 
   },
 
-
   exitState: function() {
     Artifix.getPath('mobilePage.mainPane').remove();
   }

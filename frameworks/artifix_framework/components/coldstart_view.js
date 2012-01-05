@@ -57,6 +57,32 @@ ART.ColdStartView = SC.View.extend(
       distroSelection: SC.View.design({
         classNames: 'white_base'.w(),
         layout: { right: 15, top: 40, height: 136, width: 575},
+        childViews: ["demo", "artifix", "custom", "cocoa"],
+        
+        demo: SC.ImageView.design({
+          layout: { centerY: 3, left: 10, height: 97, width: 122 },
+          useCanvas: YES,
+          value: sc_static('images/demo_icon.png')
+        }),
+        
+        artifix: SC.ImageView.design({
+           layout: { centerY: 0, left: 152, height: 97, width: 122 },
+           useCanvas: YES,
+           value: sc_static('images/artifix_domain.png')
+        }),
+          
+        custom: SC.ImageView.design({
+          layout: { centerY: 0, right: 152, height: 97, width: 122 },
+          useCanvas: YES,
+          value: sc_static('images/custom_domain.png')
+        }),
+            
+        cocoa: SC.ImageView.design({
+          layout: { centerY: 0, right: 10, height: 97, width: 122 },
+          useCanvas: YES,
+          value: sc_static('images/cocoa_wrapper.png')
+        }),
+        
       }),
 
       detailedInformation: SC.View.design({
@@ -75,8 +101,8 @@ ART.ColdStartView = SC.View.extend(
         classNames: 'gray_button_med'.w(),
         layout: { bottom: 5, left: 15, height: 21, width: 120},
         title: "Open Existing App".loc(),
-        action: '',
-        target: ''
+        action: 'showExistingApp',
+        target: 'Artifix.statechart'
       }),
 
       chooseButton: SC.ButtonView.design({
