@@ -50,7 +50,12 @@ ART.ColdStartView = SC.View.extend(
               '</div>'
             ].join(''))
 
-          }
+          },
+          selectionDidChange:function(){
+            if(this.isSelected){
+              ART.devicesController.set('currentDeviceSelected',this.get('value'))
+            }
+          }.observes('isSelected')
         })
       }),
 
@@ -62,7 +67,11 @@ ART.ColdStartView = SC.View.extend(
         demo: SC.ImageView.design({
           layout: { centerY: 3, left: 10, height: 97, width: 122 },
           useCanvas: YES,
-          value: sc_static('images/demo_icon.png')
+          value: sc_static('images/demo_icon.png'),
+          mouseDown:function(evt){
+              ART.devicesController.set('deploymentType',this.get('value'))
+            return YES;
+          }
         }),
         
         artifix: SC.ImageView.design({
@@ -109,9 +118,17 @@ ART.ColdStartView = SC.View.extend(
         classNames: 'blue_button_sml'.w(),
         layout: { bottom: 5, right: 20, height: 21, width: 82},
         title: "Choose".loc(),
-        // isEnabled: NO,
+        isEnabled: NO,
         isDefault: YES,
         action: 'goToMobileDevState',
-        target: 'Artifix.statechart'
+        target: 'Artifix.statechart',
+        didSelectDeploy:function(){
+          var device = ART.devicesController.get('currentDeviceSelected'),
+              deploy = ART.devicesController.get('deploymentType');
+          if(device && deploy){
+            this.set('isEnabled',YES);
+          }
+
+        }.observes('ART.devicesController.currentDeviceSelected', 'ART.devicesController.deploymentType')
       })
     });

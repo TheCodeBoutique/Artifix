@@ -2,6 +2,9 @@ ART.deviceSelectionController = SC.ObjectController.create({
   contentBinding:'ART.devicesController.selection'
 });
 ART.devicesController = SC.ArrayController.create({
+  currentDeviceSelected:"",
+  deploymentType:"",
+
   content:[
       SC.Object.create({
         name:"Mobile".loc(),
