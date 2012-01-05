@@ -3,7 +3,7 @@ ART.InspectorView = SC.PalettePane.extend({
   classNames: 'silver_background'.w(),
 
   contentView: SC.View.extend({
-    childViews: ["top", "middle"],   //viewSelection
+    childViews: ["top", "middle", "navigation"],   //viewSelection
 
     top:SC.ToolbarView.design({
       childViews: ['closeButton' ,'title' ,'minButton'],
@@ -34,22 +34,6 @@ ART.InspectorView = SC.PalettePane.extend({
           return YES;
         }
       })
-    }),
-
-    viewSelection:SC.SegmentedView.design({
-      classNames: 'inspector_buttons'.w(),
-      layout: { top: 18, left: 0, right: 0, height: 35 },
-      items:[
-        {title:"Parts", value:"parts"},
-        {title:"Views", value:"views"},
-        {title:"Views", value:"views"},
-        {title:"Views", value:"views"},
-      ],
-      itemTitleKey:"title",
-      itemValueKey:"value",
-      value:'parts',
-      selectionDidChange:function(){
-      }.observes('.value')
     }),
 
     middle: SC.ContainerView.design({

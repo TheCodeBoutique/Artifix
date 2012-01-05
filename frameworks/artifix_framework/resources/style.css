@@ -28,3 +28,91 @@
     position: absolute;
     bottom:0px;
 }
+
+
+.separator-one, .separator-two, .separator-three,
+.horizontal-one, .horizontal-two, .horizontal-three {
+    background-color: rgba(255,255,255,0.8)
+
+}
+
+.separator-one-light, .separator-two-light, .separator-three-light,
+.horizontal-one-light, .horizontal-two-light, .horizontal-three-light {
+    background-color: #cccccc;
+
+}
+.nav-bar{
+    border-top: 1px solid #CCCCCC!important;
+    border-bottom: 1px solid #CCCCCC!important;
+}
+.position-container-view{
+    border: 1px solid red;
+}
+
+.position-view{
+    background-image: sc_static('/images/fill_stroke_icon.png');
+    background-repeat: no-repeat;
+}
+.sizing-view{
+    background-image: sc_static('/images/ruler_icon.png');
+    background-repeat: no-repeat;
+}
+.text-view{
+    background-image: sc_static('/images/text_icon.png');
+    background-repeat: no-repeat;
+}
+.action-view{
+    background-image: sc_static('/images/action_icon.png');
+    background-repeat: no-repeat;
+}
+
+.separator-one {
+    position: absolute;
+    left: 71px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+
+}
+
+.separator-one-light {
+    position: absolute;
+    left: 72px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+}
+
+.separator-two {
+    position: absolute;
+    left: 141px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+
+}
+
+.separator-two-light {
+    position: absolute;
+    left: 142px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+}
+
+.separator-three {
+    position: absolute;
+    left: 213px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+
+}
+
+.separator-three-light {
+    position: absolute;
+    left: 214px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+}
