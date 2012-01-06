@@ -17,7 +17,9 @@ Artifix.ReadyState = SC.State.extend({
     Artifix.mainPage.mainPane.coldStartView.animate('top', 70, {duration: 0.7,timing:'ease-in-out'});
   },
 
-  goToMobileDevState: function(view) {
+
+  startInterfaceBuilder: function(view) {
+    debugger;
     var sel = ART.devicesController.get('currentDeviceSelected');
     if (!sel) return;
     switch (sel) {

@@ -120,7 +120,7 @@ ART.ColdStartView = SC.View.extend(
         title: "Choose".loc(),
         isEnabled: NO,
         isDefault: YES,
-        action: 'goToMobileDevState',
+        action: 'startInterfaceBuilder',
         target: 'Artifix.statechart',
         didSelectDeploy:function(){
           var device = ART.devicesController.get('currentDeviceSelected'),

@@ -1,4 +1,5 @@
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-first-segment {
+
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-first-segment {
   width: 126px;
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
@@ -22,8 +23,8 @@
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
 }
 
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-first-segment.active,
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-first-segment.sel {
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-first-segment.active,
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-first-segment.sel {
   background: rgb(217,236,244); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */
@@ -46,7 +47,7 @@
  	-webkit-box-shadow: 0px 1px 3px rgba(255,255,255,0.5), inset 0px 1px 1px rgba(0,0,0,0.5);
 }
 
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-last-segment {
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-last-segment {
   width: 125.5px;
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
@@ -71,8 +72,8 @@
 }
 
 
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-last-segment.active,
-.inspector_buttons.sc-segmented-view .sc-segment-view.sc-last-segment.sel {
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-last-segment.active,
+.inspector_buttons .sc-segmented-view .sc-segment-view.sc-last-segment.sel {
   background: rgb(217,236,244); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(217,236,244,1) 0%, rgba(179,209,229,1) 49%, rgba(172,200,224,1) 51%, rgba(174,201,229,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,236,244,1)), color-stop(49%,rgba(179,209,229,1)), color-stop(51%,rgba(172,200,224,1)), color-stop(100%,rgba(174,201,229,1))); /* Chrome,Safari4+ */

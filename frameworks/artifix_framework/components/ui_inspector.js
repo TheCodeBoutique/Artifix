@@ -15,7 +15,7 @@ ART.InspectorUIView = SC.View.extend(
   childViews: ["viewSelection"],
   
   viewSelection: SC.TabView.design({
-     classNames: 'inspector_buttons'.w(),
+     classNames: ['inspector_buttons'],
     
      items: [
        { title: "Parts",
