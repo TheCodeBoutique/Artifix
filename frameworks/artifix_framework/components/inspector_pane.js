@@ -9,7 +9,6 @@
 sc_require('components/min_button');
 sc_require('components/close_button');
 
-
 /** @class
 
     Most SproutCore applications need a pane that can be repositioned by selecting, dragging, then releasing.  Furthermore,
@@ -18,6 +17,7 @@ sc_require('components/close_button');
 
  ART.InspectorPane.create({
  layout: { width: 400, height: 200, centerX: 0, centerY: 0 },
+ childViews: ["closeButton", "title", "minButton"],
  value: 'my awesome pane',
  }).append();
 
@@ -36,107 +36,9 @@ ART.InspectorPane = SC.Pane.extend(
    */
 
   value: '',
-  nowShowing:'',
-  /**images**/
-  cellOne:'',
-  cellTwo:'',
-  cellThree:'',
-  cellFour:'',
-
-  /**views**/
-  containerOne:'',
-  containerTwo:'',
-  containerThree:'',
-  containerFour:'',
-
-
 
   classNames: 'inspector_pane'.w(),
-  childViews: ["closeButton", "title", "minButton", "navigation", 'paneContainer'],
-
-  navigation:SC.View.design({
-    classNames:['nav-bar'],
-    layout:{top:20,height:46,left:0,right:0},
-    render:function(context) {
-      context.push('<div class="separator-one"></div>');
-      context.push('<div class="separator-one-light"></div>');
-      context.push('<div class="separator-two"></div>');
-      context.push('<div class="separator-two-light"></div>');
-      context.push('<div class="separator-three"></div>');
-      context.push('<div class="separator-three-light"></div>');
-    },
-    childViews:['fillStroke','sizing', 'text', 'actions'],
-
-    fillStroke:SC.View.design(SC.Control,{
-      isSelected:NO,
-      classNames:['position-container-view'],
-      layout:{left:0,top:1,bottom:1,width:71},
-      childViews:['imageView'],
-
-      imageView:SC.View.design({
-        layout:{left:24,centerY:0,height:34,width:37},
-        classNames:['position-view']
-      }),
-      mouseDown:function(evt){
-        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerOne'));
-        return YES;
-      }
-    }),
-    sizing:SC.View.design(SC.Control,{
-      isSelected:NO,
-      classNames:['position-container-view'],
-      layout:{left:74,top:1,bottom:1,width:66},
-      childViews:['imageView'],
-
-      imageView:SC.View.design({
-        layout:{left:21,centerY:0,height:31,width:25},
-        classNames:['sizing-view']
-      }),
-
-      mouseDown:function(evt){
-        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerTwo'));
-        return YES;
-      }
-    }),
-    text:SC.View.design(SC.Control,{
-      isSelected:NO,
-      classNames:['position-container-view'],
-      layout:{left:143,top:1,bottom:1,width:69},
-      childViews:['imageView'],
-
-      imageView:SC.View.design({
-        layout:{left:21,centerY:0,height:17,width:17},
-        classNames:['text-view']
-      }),
-
-
-      mouseDown:function(evt){
-        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerThree'));
-        return YES;
-      }
-    }),
-    actions:SC.View.design(SC.Control,{
-      isSelected:NO,
-      classNames:['position-container-view'],
-      layout:{left:215,top:1,bottom:1,width:68},
-      childViews:['imageView'],
-
-      imageView:SC.View.design({
-        layout:{left:21,centerY:0,height:28,width:32},
-        classNames:['action-view']
-      }),
-
-      mouseDown:function(evt){
-        this.setPath('parentView.parentView.nowShowing',this.getPath('parentView.parentView.containerFour'));
-        return YES;
-      }
-    })
-  }),
-
-  paneContainer:SC.ContainerView.design({
-    layout:{top:66,bottom:0,left:0,right:0},
-    nowShowingBinding:'.parentView.nowShowing'
-  }),
+  childViews: ["closeButton", "title", "minButton"],
 
   closeButton: ART.CloseButtonView.design({
     layout: { top: 5, left: 10, height: 10, width: 10 },
@@ -148,8 +50,6 @@ ART.InspectorPane = SC.Pane.extend(
     valueBinding: '.parentView.value',
     textAlign: SC.ALIGN_CENTER,
   }),
-
-  // how would we make this where the value is blank and when we create the inspector pane on the fly we can pass the value then?
 
   minButton: ART.MinButtonView.design({
     layout: { top: 3, right: 10, height: 8, width: 21 },
