@@ -1,6 +1,7 @@
 ART.InspectorUIView = SC.View.extend(
 /** @scope ART.InspectorUIView.prototype */ {
 
+  nowShowing: "",
 
   /**
     The WAI-ARIA role for toolbar view.
@@ -26,7 +27,7 @@ ART.InspectorUIView = SC.View.extend(
      
      layout: { left: 12, right: 12, top: 12, bottom: 12 },
      
-     nowShowing: 'ART.PartsView'
+     nowShowingBinding: '.parentView.nowShowing'
 
   }),
   

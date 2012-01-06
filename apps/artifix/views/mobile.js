@@ -25,6 +25,7 @@ Artifix.mobilePage = SC.Page.design({
         useCanvas: YES,
         value: sc_static('images/artifix_logo.png')
       }),
+      
       tmpUIInspectorButton: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
