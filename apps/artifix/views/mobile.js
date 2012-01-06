@@ -62,7 +62,7 @@ ART.MobileBluePrint = SC.View.extend({
   childViews:['mobileBackground','canvasView'],
 
   mobileBackground:SC.ImageView.design({
-    layout: { centerX: 0, centerY: 0, height: 554, width: 302 },
+    layout: { centerX:0, centerY: 0, height: 554, width: 302 },
     useCanvas: YES,
     value: sc_static('images/mobile_blueprint.png')
   }),
