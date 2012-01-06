@@ -15,7 +15,7 @@ ART.PositionView = SC.View.extend(
   childViews: ["viewSelection"],
 
   viewSelection: SC.TabView.design({
-     classNames: ['inspector_buttons'],
+     classNames: 'inspector_buttons'.w(),
 
      items: [
        { title: "Fill",
