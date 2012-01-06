@@ -4,7 +4,7 @@ ART.deviceSelectionController = SC.ObjectController.create({
 ART.devicesController = SC.ArrayController.create({
   currentDeviceSelected:"",
   deploymentType:"",
-
+  currentCanvas:"",
   content:[
       SC.Object.create({
         name:"Mobile".loc(),

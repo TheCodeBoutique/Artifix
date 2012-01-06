@@ -10,9 +10,7 @@
 
   @extends SC.ArrayController
 */
-Artifix.existingAppsController = SC.ArrayController.create(
-/** @scope Artifix.existingAppsController.prototype */ {
+Artifix.existingAppsController = SC.ArrayController.create({
 
-  // TODO: Add your own code here.
 
-}) ;
+});

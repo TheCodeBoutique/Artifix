@@ -15,12 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" afterPath="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_ui_view.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_ui_view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/inspectorViewController.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/inspectorViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js" afterPath="$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/statechart.js" afterPath="$PROJECT_DIR$/apps/artifix/statechart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/states/ready_state.js" afterPath="$PROJECT_DIR$/apps/artifix/states/ready_state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/views/mobile.js" afterPath="$PROJECT_DIR$/apps/artifix/views/mobile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,37 +91,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inspector_pane.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+      <file leaf-file-name="ui_inspector.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/ui_inspector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="52" selection-start="3493" selection-end="3493" vertical-scroll-proportion="0.658858">
+            <state line="24" column="35" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inspector_ui_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_ui_view.js">
+      <file leaf-file-name="coldstart_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="59" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
+            <state line="122" column="28" selection-start="4521" selection-end="4521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartsCell.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/PartsCell.js">
+      <file leaf-file-name="ready_state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/ready_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="30" column="61" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js">
+      <file leaf-file-name="statechart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/statechart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1338" column="2" selection-start="43539" selection-end="43539" vertical-scroll-proportion="0.0">
+            <state line="5" column="52" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,16 +130,34 @@
       <file leaf-file-name="mobile_dev_state.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+            <state line="3" column="28" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inspectorViewController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/inspectorViewController.js">
+      <file leaf-file-name="tablet_dev_state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="333" selection-end="360" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/views/mobile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="28" selection-start="2958" selection-end="2958" vertical-scroll-proportion="2.0689654">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktop_dev_state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="58" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,22 +177,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/artifix/resources/core.css" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/button.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/views/PartsCell.js" />
-        <option value="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Delete.js" />
         <option value="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
-        <option value="$PROJECT_DIR$/apps/artifix/views/mobile.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/controllers/deviceSelectionController.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_view.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/controllers/inspectorViewController.js" />
         <option value="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_ui_view.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/statechart.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/states/ready_state.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/views/mobile.js" />
       </list>
     </option>
   </component>
@@ -207,8 +228,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -543,7 +564,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,8 +580,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -774,63 +795,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="74" selection-start="542" selection-end="542" vertical-scroll-proportion="0.105417274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/ViewsView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="1333" selection-end="1333" vertical-scroll-proportion="-1.6642959" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="170" selection-end="191" vertical-scroll-proportion="0.10241821" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/resources/main_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.7039106" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/DropZone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1174" selection-end="1198" vertical-scroll-proportion="0.8296089" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/system/responder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="743" selection-end="745" vertical-scroll-proportion="-1.8933144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="74" selection-end="74" vertical-scroll-proportion="0.075418994" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="26" selection-start="1432" selection-end="1467" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1338" column="2" selection-start="43539" selection-end="43539" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/panes/pane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="422" column="8" selection-start="13743" selection-end="13749" vertical-scroll-proportion="2.6116643">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/PartsCell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="422" column="8" selection-start="13743" selection-end="13749" vertical-scroll-proportion="2.6116643" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_view.js">
@@ -840,30 +807,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_ui_view.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="59" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
+        <state line="1338" column="2" selection-start="43539" selection-end="43539" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="52" selection-start="2894" selection-end="2894" vertical-scroll-proportion="2.3556187">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/inspectorViewController.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="333" selection-end="360" vertical-scroll-proportion="0.0">
+        <state line="60" column="26" selection-start="1432" selection-end="1467" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/ui_inspector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="35" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="28" selection-start="4521" selection-end="4521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="405" selection-end="405" vertical-scroll-proportion="0.31034482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/statechart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="52" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="236" selection-end="236" vertical-scroll-proportion="0.15812592">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+        <state line="3" column="28" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="52" selection-start="3493" selection-end="3493" vertical-scroll-proportion="0.658858">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="58" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/ready_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="61" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/views/mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="28" selection-start="2958" selection-end="2958" vertical-scroll-proportion="2.0689654">
           <folding />
         </state>
       </provider>

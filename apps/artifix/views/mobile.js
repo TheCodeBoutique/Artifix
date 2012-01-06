@@ -3,7 +3,6 @@
 // Copyright: @2011 My Company, Inc.
 // ==========================================================================
 /*globals Artifix */
-
 // This page describes the main user interface for your application.  
 Artifix.mobilePage = SC.Page.design({
 
@@ -13,7 +12,7 @@ Artifix.mobilePage = SC.Page.design({
   mainPane: SC.MainPane.design(ART.Delete, {
     classNames: 'grid_base'.w(),
     objectRemovalBinding:SC.Binding.oneWay('ART.objectSelectionController.content').notNull(),
-    childViews: ["topBar", "mobileBluePrint", "canvasView"],
+    childViews: ["topBar", "containerView"],
 
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
@@ -25,7 +24,7 @@ Artifix.mobilePage = SC.Page.design({
         useCanvas: YES,
         value: sc_static('images/artifix_logo.png')
       }),
-      
+
       tmpUIInspectorButton: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
         layout: { centerY: 0, right: 350, height: 26, width: 135},
@@ -50,26 +49,91 @@ Artifix.mobilePage = SC.Page.design({
         target: 'Artifix.statechart'
       })
     }),
-
-    mobileBluePrint: SC.ImageView.design({
-      layout: { centerX: 0, centerY: 0, height: 554, width: 302 },
-      useCanvas: YES,
-      value: sc_static('images/mobile_blueprint.png')
-    }),
-
-    canvasView:SC.View.design(ART.DropZone, {
-      layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
-      childViews:[],
-      doRemoveChild:function(view) {
-        return this.removeChild(view);
-      },
-      mouseDown:function(evt) {
-        var obj = ART.objectSelectionController.get('content');
-        if (obj === null || obj === "button") {
-          return NO;
-        }
-        obj.$().removeClass('selection-class');
-      }
+    containerView:SC.ContainerView.design({
+      layout:{top:70,bottom:0,left:0,right:0},
+      nowShowingBinding:'ART.devicesController.currentCanvas'
     })
+  })
+});
+
+
+ART.MobileBluePrint = SC.View.extend({
+  layout:{top:0,bottom:0,left:0,right:0},
+  childViews:['mobileBackground','canvasView'],
+
+  mobileBackground:SC.ImageView.design({
+    layout: { centerX: 0, centerY: 0, height: 554, width: 302 },
+    useCanvas: YES,
+    value: sc_static('images/mobile_blueprint.png')
+  }),
+
+  canvasView:SC.View.design(ART.DropZone, {
+    layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
+    childViews:[],
+    doRemoveChild:function(view) {
+      return this.removeChild(view);
+    },
+    mouseDown:function(evt) {
+      var obj = ART.objectSelectionController.get('content');
+      if (obj === null || obj === "button") {
+        return NO;
+      }
+      obj.$().removeClass('selection-class');
+    }
+  })
+});
+
+//These can be moved to separate files if we want
+ART.TabletBluePrint = SC.View.extend({
+  layout:{top:0,bottom:0,left:0,right:0},
+  childViews:['tabletBackground','canvasView'],
+
+  tabletBackground:SC.ImageView.design({
+    layout: { centerX: 0, centerY: 0, height: 554, width: 650 },
+    useCanvas: YES,
+    backgroundColor:'cyan'
+//    value: sc_static('images/mobile_blueprint.png')
+  }),
+
+  canvasView:SC.View.design(ART.DropZone, {
+    layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
+    childViews:[],
+    doRemoveChild:function(view) {
+      return this.removeChild(view);
+    },
+    mouseDown:function(evt) {
+      var obj = ART.objectSelectionController.get('content');
+      if (obj === null || obj === "button") {
+        return NO;
+      }
+      obj.$().removeClass('selection-class');
+    }
+  })
+});
+
+ART.DesktopBluePrint = SC.View.extend({
+  layout:{top:0,bottom:0,left:0,right:0},
+  childViews:['desktopBackground','canvasView'],
+
+  desktopBackground:SC.ImageView.design({
+    layout: { centerX: 0, centerY: 0, height: 554, width: 302 },
+    useCanvas: YES,
+    backgroundColor:'black'
+//    value: sc_static('images/mobile_blueprint.png')
+  }),
+
+  canvasView:SC.View.design(ART.DropZone, {
+    layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
+    childViews:[],
+    doRemoveChild:function(view) {
+      return this.removeChild(view);
+    },
+    mouseDown:function(evt) {
+      var obj = ART.objectSelectionController.get('content');
+      if (obj === null || obj === "button") {
+        return NO;
+      }
+      obj.$().removeClass('selection-class');
+    }
   })
 });
