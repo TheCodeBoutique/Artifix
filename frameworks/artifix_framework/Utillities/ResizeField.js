@@ -1,5 +1,5 @@
 ART.PositionChanger = SC.View.extend({
-
+  //layout:{height:40,width:73},
   layout: {},
   childViews:['positionField' , 'arrowView' , "titleView"],
   /**
