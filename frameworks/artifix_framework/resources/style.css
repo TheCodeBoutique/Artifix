@@ -156,3 +156,12 @@
     bottom: 0px;
     width: 13px;
 }
+
+.sc-segmented-view img.icon {
+    position: relative;
+    vertical-align: middle;
+    top: -2px;
+    margin-right: 2px;
+    height: 29px;
+    width: 39px;
+}

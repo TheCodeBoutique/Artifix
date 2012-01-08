@@ -21,19 +21,23 @@ ART.VisualInspector = SC.View.extend(
      items: [
        { // title: "Fill_Stroke",
          value: "ART.FillStrokeView",
-         itemWidth:40
+         itemWidth:50,
+         buttonIcon:sc_static('/images/fill_stroke_icon.png')
        },
        { // title: "Right",
          value: "ART.SizingView",
-         itemWidth:60
+         itemWidth:68.5,
+         buttonIcon:sc_static('/images/ruler_icon.png')
        },
-        { // title: "Text+View",
+        { // title: "Text_View",
          value: "ART.TextView",
-         itemWidth:60
+         itemWidth:68.5,
+         buttonIcon:sc_static('/images/text_icon.png')
        },
        { // title: "Links View",
          value: "ART.LinksView",
-         itemWidth:50
+         itemWidth:59,
+         buttonIcon:sc_static('/images/action_icon.png')
        }
 
      ],
@@ -41,8 +45,9 @@ ART.VisualInspector = SC.View.extend(
      // itemTitleKey: 'title',
      itemValueKey: 'value',
      itemWidthKey:"itemWidth",
-     
-     layout: { left: 0, right: 0, top: 0, bottom: 12 },
+     itemIconKey:"buttonIcon",
+
+     layout: { left: 0, right: 0, top: 0, bottom: 0 },
      
      nowShowingBinding: '.parentView.nowShowing'
 
