@@ -9,7 +9,7 @@ Artifix.mobilePage = SC.Page.design({
   // The main pane is made visible on screen as soon as your app is loaded.
   // Add childViews to this pane for views to display immediately on page 
   // load.
-  mainPane: SC.MainPane.design(ART.Delete, {
+  mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
     objectRemovalBinding:SC.Binding.oneWay('ART.objectSelectionController.content').notNull(),
     childViews: ["topBar", "containerView"],
@@ -30,7 +30,8 @@ Artifix.mobilePage = SC.Page.design({
         layout: { centerY: 0, right: 350, height: 26, width: 135},
         title: 'User Interface',
         action: 'troggleUIInspector',
-        target: 'Artifix.statechart'
+        target: 'Artifix.statechart',
+        isDefault:NO,
       }),
 
       tmpInspectorButton: SC.ButtonView.design({
@@ -133,6 +134,8 @@ ART.DesktopBluePrint = SC.View.extend({
       if (obj === null || obj === "button") {
         return NO;
       }
+      //remove object from selection
+      ART.objectSelectionController.set('content',null);
       obj.$().removeClass('selection-class');
     }
   })

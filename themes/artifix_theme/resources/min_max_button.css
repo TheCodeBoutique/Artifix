@@ -1,4 +1,4 @@
-.min_button{
+.min_max_button{
   background-image: sc_static('images/minimize_icon.png');
   cursor: pointer;
 }

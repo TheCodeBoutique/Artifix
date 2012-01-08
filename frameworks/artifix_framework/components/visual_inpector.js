@@ -1,4 +1,4 @@
-ART.InspectorUIView = SC.View.extend(
+ART.VisualInspector = SC.View.extend(
 /** @scope ART.InspectorUIView.prototype */ {
 
   nowShowing: "",
@@ -10,7 +10,7 @@ ART.InspectorUIView = SC.View.extend(
     @default 'Inspector UI View'
     @readOnly
   */
-  ariaRole: 'Inspector UI View',
+  ariaRole: 'Visual Inspector',
   
   childViews: ["viewSelection"],
   
@@ -19,17 +19,26 @@ ART.InspectorUIView = SC.View.extend(
      tabHeight: 34,
 
      items: [
-       { title: "Parts",
-         value: "ART.PartsView",
-         itemWidth:126
+       { // title: "Fill_Stroke",
+         value: "ART.FillStrokeView",
+         itemWidth:40
        },
-       { title: "View",
-         value: "ART.ViewsView",
-         itemWidth:125.5
+       { // title: "Right",
+         value: "ART.SizingView",
+         itemWidth:60
+       },
+        { // title: "Text+View",
+         value: "ART.TextView",
+         itemWidth:60
+       },
+       { // title: "Links View",
+         value: "ART.LinksView",
+         itemWidth:50
        }
+
      ],
      
-     itemTitleKey: 'title',
+     // itemTitleKey: 'title',
      itemValueKey: 'value',
      itemWidthKey:"itemWidth",
      

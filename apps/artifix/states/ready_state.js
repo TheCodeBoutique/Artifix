@@ -19,7 +19,6 @@ Artifix.ReadyState = SC.State.extend({
 
 
   startInterfaceBuilder: function(view) {
-    debugger;
     var sel = ART.devicesController.get('currentDeviceSelected');
     if (!sel) return;
     switch (sel) {

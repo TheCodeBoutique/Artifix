@@ -15,6 +15,7 @@ ART.Drag = {
     if (this.view === "button") {
       var instanceView = ART.ButtonView.create({
         layout:{centerX:0,centerY:0,height:30,width:120},
+        isEnabled:NO,
       });
     }
 

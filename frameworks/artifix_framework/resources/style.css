@@ -116,3 +116,43 @@
     bottom: 5px;
     width: 1px;
 }
+
+
+.arrow-up{
+    margin-top:1px;
+    background: sc_static('/images/arrow_up.png');
+    background-position: 0px 0px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    width: 13px;
+}
+.arrow-up:hover{
+    margin-top:1px;
+    background: sc_static('/images/arrow_up.png');
+    background-position: 0px -12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    width: 13px;
+}
+.arrow-down{
+    background: sc_static('/images/arrow_down.png');
+    background-position: 0px 0px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    width: 13px;
+}
+.arrow-down:hover{
+    background: sc_static('/images/arrow_down.png');
+    background-position: 0px -12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    width: 13px;
+}

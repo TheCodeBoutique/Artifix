@@ -17,8 +17,8 @@ Artifix.DesktopDevState = SC.State.extend({
         childViews: ["closeButton", "title", "minButton", "banks"],
 
         banks: ART.InspectorUIView.design({
-          layout:{ top: 20, right: 0, right: 0, left: 0},
-          nowShowing: "ART.PartsView",
+          layout:{ top: 20, left: 0, right: 0, left: 0},
+          nowShowing: "",
         }),
 
       });
@@ -36,8 +36,8 @@ Artifix.DesktopDevState = SC.State.extend({
          childViews: ["closeButton", "title", "minButton","position"],
 
         position: ART.PositionView.design({
-          layout:{ top: 20, right: 0, right: 0, left: 0},
-          nowShowing: "",
+          layout:{ top: 20, bottom: 0, right: 0, left: 0},
+          nowShowing: "ART.PartsView",
         }),
        });
       this._visualpane.append();
