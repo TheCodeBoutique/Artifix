@@ -1,10 +1,9 @@
-ART.InspectorPane = SC.PalettePane.extend({
+ART.InspectorPane = SC.View.extend({
 
   value:'',
   nowShowing:'',
   classNames: 'silver_background'.w(),
 
-  contentView: SC.View.extend({
     childViews: ["top", "middle"],   //viewSelection
 
     top:SC.ToolbarView.design({
@@ -18,14 +17,14 @@ ART.InspectorPane = SC.PalettePane.extend({
         needsEllipsis:YES,
         escapeHTML: NO,
         isTextSelectable: YES,
-        valueBinding:'.parentView.parentView.parentView.value'
+        valueBinding:'.parentView.parentView.value'
       }),
 
       closeButton:SC.View.design({
         classNames:['close_button'],
         layout:{top:3,left:4,height:10,width:10},
         mouseDown:function(evt) {
-          this.getPath('parentView.parentView.parentView').remove();
+          Artifix.mobilePage.mainPane.removeChild(this.parentView.parentView);
           return YES;
         }
       }),
@@ -34,10 +33,10 @@ ART.InspectorPane = SC.PalettePane.extend({
         classNames:['min_max_button'],
         layout:{top:4,right:4,height:8,width:21},
         mouseDown:function(evt) {
-          if(this.getPath('parentView.parentView.parentView.layout.height') === 20){
-            this.getPath('parentView.parentView.parentView').adjust('height',405);
+          if(this.getPath('parentView.parentView.layout.height') === 20){
+            this.getPath('parentView.parentView').adjust('height',405);
           } else {
-            this.getPath('parentView.parentView.parentView').adjust('height',20);
+            this.getPath('parentView.parentView').adjust('height',20);
           }
           return YES;
 
@@ -46,8 +45,7 @@ ART.InspectorPane = SC.PalettePane.extend({
     }),
 
     middle: SC.ContainerView.design({
-      nowShowingBinding:SC.Binding.oneWay('.parentView.parentView.nowShowing'),
+      nowShowingBinding:SC.Binding.oneWay('.parentView.nowShowing'),
       layout: { left: 0, top: 20, bottom: 0, right: 0 }
     })
-  })
 });

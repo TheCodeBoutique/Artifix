@@ -16,7 +16,7 @@ ART.Disable = {
         width = (layout.width && hint === "width".loc()) ? this.set('isEnabled', YES) : this.set('isEnabled', NO),
         top = (layout.top && hint === "top".loc()) ? this.set('isEnabled', YES) : this.set('isEnabled', NO),
         left = (layout.left && hint === "left".loc()) ? this.set('isEnabled', YES) : this.set('isEnabled', NO),
-        right = (layout.right && hint === "right".loc()) ? this.set('isEnabled', YES) : this.set('isEnabled', NO)
+        right = (layout.right && hint === "right".loc()) ? this.set('isEnabled', YES) : this.set('isEnabled', NO),
         bottom = (layout.bottom && hint === "bottom".loc()) ? layout.bottom : this.set('isEnabled', NO);
 
   }.observes('.value', '.hint')

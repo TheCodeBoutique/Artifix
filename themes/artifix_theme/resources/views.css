@@ -1,4 +1,5 @@
 .silver_background {
+  z-index: 1000!important;
   background: #e6e6e6; /* Old browsers */
   background: -moz-linear-gradient(top,  #e6e6e6 0%, #b6b6b6 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#b6b6b6)); /* Chrome,Safari4+ */
