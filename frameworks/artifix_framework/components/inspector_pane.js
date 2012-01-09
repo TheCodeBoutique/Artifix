@@ -2,7 +2,6 @@ ART.InspectorPane = SC.PalettePane.extend({
 
   value:'',
   nowShowing:'',
-
   classNames: 'silver_background'.w(),
 
   contentView: SC.View.extend({
