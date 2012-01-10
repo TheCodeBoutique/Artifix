@@ -1,0 +1,53 @@
+/* SC.CheckboxView - sc-theme */
+
+.troggle.sc-checkbox-view {
+	line-height: 19px;
+	vertical-align: middle;
+}
+
+.troggle.sc-checkbox-view .label {
+	position: absolute ;
+	left: 24px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	line-height: 16px;
+    font-size: 14px;
+    color: #818181;
+    text-shadow: 0px 1px white;
+}
+ 
+.troggle.sc-checkbox-view.icon img.icon {
+	position: relative;
+	vertical-align: middle;
+	top: -2px;
+	margin-left: 2px;
+	margin-right: 4px;
+	width: 17px;
+	height: 19px;
+}
+
+.troggle.sc-checkbox-view.disabled {
+	color: #666;
+	color: rgba(0,0,0,0.5);
+}
+
+/* @group Checkbox Image */
+
+
+.troggle.sc-checkbox-view span.button {
+	background: no-repeat sc_static('/images/checkbox_false.png');
+	width: 17px;
+	height: 19px;
+	position: absolute ;
+	line-height: 19px;
+	left: 1px; 
+	top: 0px;
+}
+
+.troggle.sc-checkbox-view.sel span.button {
+	background: no-repeat sc_static('/images/checkbox_true.png');
+}
+
+/* @end */
+

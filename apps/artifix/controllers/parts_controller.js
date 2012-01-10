@@ -10,6 +10,8 @@
 
  @extends SC.ArrayController
  */
-Artifix.partsController = SC.ArrayController.create( {
+Artifix.partsController = SC.ArrayController.create({
+
+  isMovementLocked:NO,
 
  });
