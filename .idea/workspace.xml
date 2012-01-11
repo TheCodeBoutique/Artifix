@@ -15,10 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" afterPath="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/button.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/main.js" afterPath="$PROJECT_DIR$/apps/artifix/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +83,7 @@
       <file leaf-file-name="mobile_dev_state.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="30" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
+            <state line="31" column="9" selection-start="804" selection-end="835" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,52 +119,52 @@
       <file leaf-file-name="inspector_pane.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="3" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
+            <state line="50" column="3" selection-start="0" selection-end="1529" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/views.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Draggable.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="6" selection-start="64" selection-end="880" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="button.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/button.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="719" selection-end="719" vertical-scroll-proportion="0.07703281">
+            <state line="26" column="51" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobility.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/foundation/mixins/mobility.js">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="631" selection-end="793" vertical-scroll-proportion="0.0">
+            <state line="17" column="4" selection-start="681" selection-end="681" vertical-scroll-proportion="0.34453782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Disable.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Disable.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="133" selection-end="1118" vertical-scroll-proportion="0.0">
+            <state line="192" column="32" selection-start="3901" selection-end="3901" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coldstart_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="54" selection-start="3764" selection-end="3819" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error_pane.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,9 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/view.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/visual_inpector.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Drag.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Adjustment.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/DropZone.js" />
         <option value="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
@@ -200,6 +197,9 @@
         <option value="$PROJECT_DIR$/themes/artifix_theme/resources/checkbox.css" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/button.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
+        <option value="$PROJECT_DIR$/apps/artifix/main.js" />
       </list>
     </option>
   </component>
@@ -271,28 +271,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="artifix_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifix_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -830,6 +808,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32503277" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -841,12 +820,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2538071" sideWeight="0.6744868" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2538071" sideWeight="0.6749672" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32551318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -895,38 +873,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/artifix/views/mobile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="24" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Delete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="71" selection-start="225" selection-end="238" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Drag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/views.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Disable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="133" selection-end="1118" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="6" selection-start="64" selection-end="880" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/foundation/mixins/mobility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="44" selection-start="631" selection-end="793" vertical-scroll-proportion="0.0">
@@ -934,23 +880,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="3" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="30" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -992,7 +924,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/button.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="719" selection-end="719" vertical-scroll-proportion="0.07703281">
+        <state line="26" column="51" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/experimental/apps/greenhouse/controllers/view_configs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="2" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.16806723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="9" selection-start="804" selection-end="835" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="3" selection-start="0" selection-end="1529" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/panes/panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="-1.0028012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="54" selection-start="3764" selection-end="3819" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="32" selection-start="3901" selection-end="3901" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="681" selection-end="681" vertical-scroll-proportion="0.34453782">
           <folding />
         </state>
       </provider>

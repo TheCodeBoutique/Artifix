@@ -169,3 +169,26 @@
     border-bottom: 1px solid rgba(171,173,176,0.2)!important;
 
 }
+
+.error-image {
+    background: sc_static('/images/error.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0pxpx;
+    height: 300px;
+    width: 300px;
+}
+
+.error-description{
+    color: #868787;
+    font-size: 19px!important;
+    font-weight: 300;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+
+}
+.error-title {
+    color: white;
+    font-size: 40px!important;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+    line-height: 34px!important;
+}

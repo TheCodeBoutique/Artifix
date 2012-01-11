@@ -13,17 +13,66 @@
 //
 Artifix.main = function main() {
 
+  SC.ExceptionHandler._displayErrorDialog = function(exception) {
+
+    SC.error("Error = %@".fmt(exception.message));
+
+    var restartApp = function() {
+      window.location.reload();
+    };
+
+    var pane = ART.ErrorPane.create({
+      layout:{centerX:0,centerY:0,height:325,width:750},
+      contentView:SC.View.extend({
+        childViews:['title','description','reload','image'],
+
+        image: SC.View.design({
+          layout: { centerX: 0, top:30, height:150, width: 200 },
+          render:function(context){
+            context.push('<div class="error-image"></div>');
+          }
+        }),
+
+        title:SC.LabelView.design({
+          classNames:['error-title'],
+          layout: { top: 185, height: 60, centerX: 0, left: 20, right: 20 },
+          needsEllipsis:YES,
+          isTextSelectable: YES,
+          textAlign:SC.ALIGN_CENTER,
+          value:"What did you do?"
+        }),
+
+        description:SC.LabelView.design({
+          classNames:['error-description'],
+          layout: { top: 230, height: 24, centerX: 0, left: 20, right:20 },
+          needsEllipsis:YES,
+          escapeHTML: NO,
+          isTextSelectable: YES,
+          textAlign:SC.ALIGN_CENTER,
+          value:"There has been an error"
+        }),
+
+        reload:SC.ButtonView.design({
+          classNames: 'gray_button_med'.w(),
+          layout:{bottom:15,centerX:0,width:200,height:27},
+          title:"Reload".loc(),
+          action:restartApp
+        })
+      })
+    });
+    pane.append();
+
+    this.isShowingErrorDialog = YES;
+
+  };
+
   // Step 1: Tell your app it will load via states
   var statechart = Artifix.statechart;
-  SC.RootResponder.responder.set('defaultResponder', statechart); 
+  SC.RootResponder.responder.set('defaultResponder', statechart);
   statechart.initStatechart();
 
-  // Step 2. Set the content property on your primary controller.
-  // This will make your app come alive!
+};
 
-  // TODO: Set the content property on your primary controller
-  // ex: MyApp.contactsController.set('content', MyApp.contacts);
-
-} ;
-
-function main() { Artifix.main(); }
+function main() {
+  Artifix.main();
+}
