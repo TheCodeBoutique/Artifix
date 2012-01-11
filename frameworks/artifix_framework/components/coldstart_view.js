@@ -15,7 +15,7 @@
 ART.ColdStartView = SC.View.extend(
     /** @scope ART.ColdStartView.prototype */{
 
-      classNames: 'silver_background'.w(),
+      classNames: 'cold_start'.w(),
 
       childViews: ["chooseDeviceText", "platformSelection","distroSelection", "detailedInformation", "openButton", "chooseButton"],
 
