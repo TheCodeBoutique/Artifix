@@ -6,22 +6,19 @@ Artifix.ReadyState = SC.State.extend({
     Artifix.getPath('mainPage.mainPane').append();
     Artifix.mainPage.mainPane.topBar.artifixLogo.animate('opacity', 0.0, {duration: 0.0,timing:'linear'});
     Artifix.mainPage.mainPane.coldStartView.animate('opacity', 0.0, {duration: 0.0,timing:'linear'});
+    Artifix.mainPage.mainPane.coldStartView.animate('top', -450, {duration: 0.7,timing:'ease-in-out'});
 
     var existingApps = Artifix.store.find(Artifix.ExistingApp);
     Artifix.existingAppsController.set('content', existingApps);
 
-    this.invokeLater(this.showComponents, 500);
+    this.invokeLater(this.showColdStart, 500);
   },
 
-  showComponents: function() {
+  showColdStart: function() {
     Artifix.mainPage.mainPane.topBar.artifixLogo.animate('opacity', 1.0, {duration: 0.7,timing:'ease-in-out'});
     Artifix.mainPage.mainPane.coldStartView.animate('opacity', 1.0, {duration: 0.7,timing:'ease-in-out'});
     Artifix.mainPage.mainPane.coldStartView.animate('top', 70, {duration: 0.7,timing:'ease-in-out'});
   },
-  hideComponents:function(){
-    Artifix.mainPage.mainPane.coldStartView.animate('top', -450, {duration: 0.7,timing:'ease-in-out'});
-  },
-
 
   startInterfaceBuilder: function(view) {
     var sel = ART.devicesController.get('currentDeviceSelected');
@@ -29,22 +26,21 @@ Artifix.ReadyState = SC.State.extend({
     switch (sel) {
       case "Mobile":
         SC.routes.set('location', 'mobile');
-        ART.devicesController.set('currentCanvas','ART.MobileBluePrint');
+        ART.devicesController.set('currentCanvas','ART.MobileCanvas');
         break;
       case "Tablet":
         SC.routes.set('location', 'tablet');
-        ART.devicesController.set('currentCanvas','ART.TabletBluePrint');
+        ART.devicesController.set('currentCanvas','ART.TabletCanvas');
         break;
       case "Desktop":
         SC.routes.set('location', 'desktop');
-        ART.devicesController.set('currentCanvas','ART.DesktopBluePrint');
+        ART.devicesController.set('currentCanvas','ART.DesktopCanvas');
         break;
     }
 
   },
 
   showExistingApp: function() {
-    console.log("Message");
     Artifix.getPath('existingAppPage.mainPane').append();
     Artifix.existingAppPage.mainPane.alert.animate('scale', 0.0, {duration: 0.0,timing:'linear'});
     this.invokeLater(this.scaleAlertHigh, 100);
@@ -70,7 +66,6 @@ Artifix.ReadyState = SC.State.extend({
 
   exitState: function() {
     Artifix.getPath('mainPage.mainPane').remove();
-    this.hideComponents();
   }
 
 });

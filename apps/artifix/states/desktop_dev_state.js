@@ -1,11 +1,10 @@
 Artifix.DesktopDevState = SC.State.extend({
 
   enterState: function() {
-    Artifix.getPath('mobilePage.mainPane').append();
+    Artifix.getPath('interfaceBuilder.mainPane').append();
   },
 
   troggleUIInspector: function(view) {
-    console.log("Message");
 
       if (this._interfacepane) {
         this._interfacepane.remove();
@@ -28,7 +27,6 @@ Artifix.DesktopDevState = SC.State.extend({
    },
 
   troggleVisualInspector: function(view)  {
-     console.log("Message");
 
       this._visualpane = ART.InspectorPane.create({
          layout:{ top: 73, right: 350, height: 405, width: 285},
@@ -45,7 +43,6 @@ Artifix.DesktopDevState = SC.State.extend({
     },
 
   troggleAnimationInspector: function(view)   {
-      console.log("Message");
 
        this._animationpane = ART.InspectorPane.create({
           layout:{ top: 73, right: 350, height: 405, width: 285},
@@ -58,7 +55,7 @@ Artifix.DesktopDevState = SC.State.extend({
      },
 
   exitState: function() {
-    Artifix.getPath('mobilePage.mainPane').remove();
+    Artifix.getPath('interfaceBuilder.mainPane').remove();
   }
 
 });

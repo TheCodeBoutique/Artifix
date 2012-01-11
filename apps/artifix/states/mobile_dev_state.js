@@ -1,12 +1,11 @@
 Artifix.MobileDevState = SC.State.extend({
 
     enterState: function() {
-    Artifix.getPath('mobilePage.mainPane').append();
+    Artifix.getPath('interfaceBuilder.mainPane').append();
   },
 
   troggleUIInspector: function(view) {
-    console.log("Message");
-    var pane = Artifix.getPath('mobilePage.mainPane');
+    var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
     this._interfacepane = ART.InspectorPane.create(ART.Draggable,{
       layout:{ top: 73, right: 350, height: 405, width: 285},
@@ -25,8 +24,7 @@ Artifix.MobileDevState = SC.State.extend({
   },
 
   troggleVisualInspector: function(view) {
-    console.log("Message");
-    var pane = Artifix.getPath('mobilePage.mainPane');
+    var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
 
     this._visualpane = ART.InspectorPane.create(ART.Draggable,{
@@ -46,7 +44,6 @@ Artifix.MobileDevState = SC.State.extend({
   },
 
   troggleAnimationInspector: function(view) {
-    console.log("Message");
 
     this._animationpane = ART.InspectorPane.create({
       isModal: NO,
@@ -60,7 +57,7 @@ Artifix.MobileDevState = SC.State.extend({
   },
 
   exitState: function() {
-    Artifix.getPath('mobilePage.mainPane').remove();
+    Artifix.getPath('interfaceBuilder.mainPane').remove();
   }
 
 });

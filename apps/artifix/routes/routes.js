@@ -8,7 +8,7 @@ Artifix.routes = SC.Object.create({
     } else if (state === "mobile") {
 
       Artifix.statechart.gotoState('mobileDevState');
-      ART.devicesController.set('currentCanvas', 'ART.MobileBluePrint');
+      ART.devicesController.set('currentCanvas', 'ART.MobileCanvas');
 
     } else if (state === "coldstart") {
 
@@ -19,13 +19,13 @@ Artifix.routes = SC.Object.create({
 
       SC.routes.set('location', 'tablet');
       Artifix.statechart.gotoState('tabletDevState');
-      ART.devicesController.set('currentCanvas', 'ART.TabletBluePrint');
+      ART.devicesController.set('currentCanvas', 'ART.TabletCanvas');
 
     } else if (state === "desktop") {
 
       SC.routes.set('location', 'desktop');
       Artifix.statechart.gotoState('desktopDevState');
-      ART.devicesController.set('currentCanvas', 'ART.DesktopBluePrint');
+      ART.devicesController.set('currentCanvas', 'ART.DesktopCanvas');
 
     }
   }

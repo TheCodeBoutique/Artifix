@@ -24,7 +24,7 @@ ART.InspectorPane = SC.View.extend({
         classNames:['close_button'],
         layout:{top:3,left:4,height:10,width:10},
         mouseDown:function(evt) {
-          Artifix.mobilePage.mainPane.removeChild(this.parentView.parentView);
+          Artifix.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
           return YES;
         }
       }),
