@@ -15,8 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/routes/routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/AnchorView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/main.js" afterPath="$PROJECT_DIR$/apps/artifix/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/states/ready_state.js" afterPath="$PROJECT_DIR$/apps/artifix/states/ready_state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/views/mobile.js" afterPath="$PROJECT_DIR$/apps/artifix/views/mobile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,28 +84,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mobile_dev_state.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
+      <file leaf-file-name="coldstart_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="9" selection-start="804" selection-end="835" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="460" selection-end="477" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sizing_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js">
+      <file leaf-file-name="ready_state.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/ready_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="36" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkbox.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/views/checkbox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
+            <state line="72" column="28" selection-start="2657" selection-end="2657" vertical-scroll-proportion="1.3252497">
               <folding />
             </state>
           </provider>
@@ -108,25 +105,25 @@
       <file leaf-file-name="parts_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="392" selection-end="408" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inspector_pane.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+      <file leaf-file-name="devicesController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="3" selection-start="0" selection-end="1529" vertical-scroll-proportion="0.0">
+            <state line="7" column="23" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="button.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/button.js">
+      <file leaf-file-name="mobile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/views/mobile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="51" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,34 +132,43 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="25" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+            <state line="74" column="29" selection-start="2495" selection-end="2495" vertical-scroll-proportion="-24.218182">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
+      <file leaf-file-name="statechart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/statechart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="32" selection-start="3901" selection-end="3901" vertical-scroll-proportion="0.0">
+            <state line="4" column="45" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coldstart_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/routes/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="54" selection-start="3764" selection-end="3819" vertical-scroll-proportion="0.0">
+            <state line="4" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error_pane.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+      <file leaf-file-name="tablet_dev_state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="37" selection-start="75" selection-end="75" vertical-scroll-proportion="0.025210084">
+            <state line="0" column="22" selection-start="8" selection-end="22" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desktop_dev_state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="8" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,22 +188,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Adjustment.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/DropZone.js" />
-        <option value="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Disable.js" />
-        <option value="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/WindowRemove.js" />
-        <option value="$PROJECT_DIR$/frameworks/scui/frameworks/foundation/mixins/mobility.js" />
-        <option value="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
-        <option value="$PROJECT_DIR$/themes/artifix_theme/resources/checkbox.css" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/button.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
-        <option value="$PROJECT_DIR$/apps/artifix/main.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/resources/main_page.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Delete.js" />
+        <option value="$PROJECT_DIR$/frameworks/sproutcore/lib/index.rhtml" />
+        <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/routing/system/routes.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/AnchorView.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/main.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/views/mobile.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/statechart.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/states/ready_state.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js" />
+        <option value="$PROJECT_DIR$/apps/artifix/routes/routes.js" />
       </list>
     </option>
   </component>
@@ -308,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,36 +329,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sproutcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,98 +347,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="artifix_framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifix_framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifix_framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utillities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifix_framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artifix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifix_framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,6 +453,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="states" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -871,114 +777,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/foundation/mixins/mobility.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/routing/system/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="631" selection-end="793" vertical-scroll-proportion="0.0">
+        <state line="374" column="2" selection-start="11721" selection-end="11721" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/AnchorView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="4" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/mixins/template_helpers/checkbox_support.js">
+    <entry file="file://$PROJECT_DIR$/apps/artifix/resources/main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.15126051">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/checkbox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="176" selection-end="176" vertical-scroll-proportion="0.22689076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="392" selection-end="408" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/views/checkbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
+        <state line="27" column="33" selection-start="1031" selection-end="1035" vertical-scroll-proportion="0.60504204">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/experimental/apps/greenhouse/controllers/view_configs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="2" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.16806723">
+        <state line="36" column="84" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="804" selection-end="835" vertical-scroll-proportion="0.0">
+        <state line="3" column="26" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+    <entry file="file://$PROJECT_DIR$/apps/artifix/views/mobile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="3" selection-start="0" selection-end="1529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/panes/panel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="-1.0028012">
+        <state line="6" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/coldstart_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="54" selection-start="3764" selection-end="3819" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="460" selection-end="477" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css">
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/desktop_dev_state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="32" selection-start="3901" selection-end="3901" vertical-scroll-proportion="0.0">
+        <state line="0" column="23" selection-start="8" selection-end="23" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/tablet_dev_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="8" selection-end="22" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifix/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+        <state line="74" column="29" selection-start="2495" selection-end="2495" vertical-scroll-proportion="-24.218182">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/statechart/system/statechart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="37" selection-start="75" selection-end="75" vertical-scroll-proportion="0.025210084">
+        <state line="197" column="6" selection-start="7118" selection-end="7118" vertical-scroll-proportion="0.46219686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/statechart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="45" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/ready_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="28" selection-start="2657" selection-end="2657" vertical-scroll-proportion="1.3252497">
           <folding />
         </state>
       </provider>

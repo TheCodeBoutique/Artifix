@@ -6,6 +6,7 @@ ART.SizingView = SC.View.extend({
     layout:{top:15,height:82,left:0,right:0},
     childViews:['width', 'height','title'],
 
+
     title:SC.LabelView.design({
       layout: { centerY: 0, height: 24, left: 10, width: 200 },
       needsEllipsis:YES,
@@ -33,7 +34,7 @@ ART.SizingView = SC.View.extend({
 
   positionCell:SC.View.design({
     layout:{top:83,bottom:0,left:0,right:0},
-    childViews:['top', 'bottom','title','left','right','lockMovement'],
+    childViews:['top', 'bottom','title','left','right','lockMovement'], //anchorView
 
     title:SC.LabelView.design({
       layout: { top: 20, height: 24, left: 10, width: 200 },
@@ -85,7 +86,9 @@ ART.SizingView = SC.View.extend({
         if (!val || val === 'button') return;
         return val.getPath('layout.bottom');
       })
-    })
-
+    }),
+    anchorView:ART.AnchorView.create({
+      layout:{bottom:10,right:20,height:125,width:150}
+    }),
   })
 });

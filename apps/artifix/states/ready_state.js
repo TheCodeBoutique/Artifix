@@ -1,5 +1,7 @@
 Artifix.ReadyState = SC.State.extend({
 
+  firstTimeThrough:NO,
+
   enterState: function() {
     Artifix.getPath('mainPage.mainPane').append();
     Artifix.mainPage.mainPane.topBar.artifixLogo.animate('opacity', 0.0, {duration: 0.0,timing:'linear'});
@@ -16,6 +18,9 @@ Artifix.ReadyState = SC.State.extend({
     Artifix.mainPage.mainPane.coldStartView.animate('opacity', 1.0, {duration: 0.7,timing:'ease-in-out'});
     Artifix.mainPage.mainPane.coldStartView.animate('top', 70, {duration: 0.7,timing:'ease-in-out'});
   },
+  hideComponents:function(){
+    Artifix.mainPage.mainPane.coldStartView.animate('top', -450, {duration: 0.7,timing:'ease-in-out'});
+  },
 
 
   startInterfaceBuilder: function(view) {
@@ -23,15 +28,15 @@ Artifix.ReadyState = SC.State.extend({
     if (!sel) return;
     switch (sel) {
       case "Mobile":
-        this.gotoState('mobileDevState');
+        SC.routes.set('location', 'mobile');
         ART.devicesController.set('currentCanvas','ART.MobileBluePrint');
         break;
       case "Tablet":
-        this.gotoState('tabletDevState');
+        SC.routes.set('location', 'tablet');
         ART.devicesController.set('currentCanvas','ART.TabletBluePrint');
         break;
       case "Desktop":
-        this.gotoState('desktopDevState');
+        SC.routes.set('location', 'desktop');
         ART.devicesController.set('currentCanvas','ART.DesktopBluePrint');
         break;
     }
@@ -65,6 +70,7 @@ Artifix.ReadyState = SC.State.extend({
 
   exitState: function() {
     Artifix.getPath('mainPage.mainPane').remove();
+    this.hideComponents();
   }
 
 });

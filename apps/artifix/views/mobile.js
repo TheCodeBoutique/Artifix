@@ -135,7 +135,7 @@ ART.DesktopBluePrint = SC.View.extend({
         return NO;
       }
       //remove object from selection
-      ART.objectSelectionController.set('content',null);
+      ART.objectSelectionController.set('content', null);
       obj.$().removeClass('selection-class');
     }
   })
