@@ -12,7 +12,7 @@ function isSupportedBrowser() {
 }
 
 function redirectToUnsupported() {
-  var unsupported = window.location.href.replace(window.location, "http://www.apple.com/safari/download/");
+  var unsupported = window.location.href.replace(Artifix.APP_WEB_URL, Artifix.UNSUPPORTED_WEB_URL);
   window.location.href = unsupported;
 }
 

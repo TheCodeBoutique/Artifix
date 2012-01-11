@@ -1,0 +1,82 @@
+<html>
+<title>Browser not supported</title>
+<style type="text/css">
+body {
+		background-image:url(<%= sc_static('images/error_page_bgtile.png')%>);
+	}
+div.content-container {
+	position: relative;
+	top: 110px;
+	width: 100%;
+	height: auto;
+	min-height:120px;
+
+}
+div.error-image {
+	text-align: center;
+	opacity: 0.45;
+}
+div.error-description {
+	text-align: center
+}
+div.error-headline{
+	font-size:28px;
+	font-family:Helvetica;
+	font-weight:bold;
+	color: #999;
+	line-height:1.1em;
+	text-shadow:0px 2px #fff;
+}
+div.sub-text {
+	font-size:18px;
+	font-family:Helvetica;
+	color: #999;
+	line-height:1.5em;
+	text-shadow:0px 2px #fff;
+	margin-top: -12px;
+}
+.safari-button {
+
+	   font-size:18px;
+	   font-weight:bold;
+	   font-family:Helvetica;
+	   height:38px;
+	   width:185;
+	   background-image:url(<%= sc_static('images/bluebutton.png')%>);
+	   color:#fff;
+	   border:1px solid;
+	   border-radius:6px;
+	   border-color:#4190dc;
+	   box-shadow:0px 2px 5px #ccc;
+
+}
+.safari-text {
+	font-size:18px;
+	font-family:Helvetica;
+	color: #999;
+	line-height:1.5em;
+	text-shadow:0px 2px #fff;
+	margin-top: 38;
+	margin-bottom: 4px;
+}
+</style>
+<body>
+<div class="content-container">
+	<div class= "error-image">
+	<img src="<%= sc_static('images/error.png')%>">
+
+	</div>
+	<div class= "error-description">
+	<p style="margin-top: 18px">
+		<div class="error-headline">Your browser is not supported.</div></br>
+		<div class="sub-text">To use Artifix, we recommend using the latest
+			version of Safari</div>
+	</p>
+		<div class="safari-text">Safari for Mac + PC</div>
+	<button class="safari-button" type="button"onclick="window.open('http://www.apple.com/safari/download')">
+		Free Download
+		</button>
+	</div>
+</div>
+</body>
+</html>
