@@ -8,5 +8,6 @@
 # Buildfile, which contains default settings for all apps in your project.
 
 # It is better to add :required targets here than in the global Buildfile.
-config :artifix, :required => :sproutcore
+config :artifix, :required => :sproutcore, :favicon => 'cloud_favicon.ico',
+:bootstrap_inline => ['artifix/bootstrap', 'sproutcore/bootstrap:javascript']
 

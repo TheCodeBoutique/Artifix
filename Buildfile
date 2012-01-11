@@ -6,7 +6,7 @@
 # This is your Buildfile, which sets build settings for your project.
 # For example, this tells SproutCore's build tools that your requires
 # the SproutCore framework.
-# config :all, :required => :sproutcore
+# config :all, :required => :sproutcore :minify => false, :html5_history => true, :overwrite_current => true
 
 config :all, :required => [:sproutcore, :artifix_framework, :scui]
 
