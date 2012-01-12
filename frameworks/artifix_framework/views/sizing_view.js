@@ -34,7 +34,7 @@ ART.SizingView = SC.View.extend({
 
   positionCell:SC.View.design({
     layout:{top:83,bottom:0,left:0,right:0},
-    childViews:['top', 'bottom','title','left','right','lockMovement'], //anchorView
+    childViews:['top', 'bottom','title','left','right','lockMovement','anchorView'], //anchorView
 
     title:SC.LabelView.design({
       layout: { top: 20, height: 24, left: 10, width: 200 },
@@ -59,10 +59,9 @@ ART.SizingView = SC.View.extend({
       })
     }),
 
-    bottom:SC.TextFieldView.design(ART.Adjustment, ART.Disable, {
+    bottom:SC.TextFieldView.design(ART.Adjustment, {
       layout:{top:30,right:20,height:20,width:73},
       hint:'bottom',
-
       valueBinding:SC.Binding.oneWay('ART.objectSelectionController.content').transform(function(val) {
         if (!val || val === 'button') return;
         return val.getPath('layout.bottom');
@@ -74,21 +73,21 @@ ART.SizingView = SC.View.extend({
       hint:'left',
       valueBinding:SC.Binding.oneWay('ART.objectSelectionController.content').transform(function(val) {
         if (!val || val === 'button') return;
-        return val.getPath('layout.top');
+        return val.getPath('layout.left');
       })
     }),
 
-    right:SC.TextFieldView.design(ART.Adjustment, ART.Disable, {
+    right:SC.TextFieldView.design(ART.Adjustment,{
       layout:{top:80,right:20,height:20,width:73},
       hint:'right',
       isEnabled:YES,
       valueBinding:SC.Binding.oneWay('ART.objectSelectionController.content').transform(function(val) {
         if (!val || val === 'button') return;
-        return val.getPath('layout.bottom');
+        return val.getPath('layout.right');
       })
     }),
     anchorView:ART.AnchorView.create({
-      layout:{bottom:10,right:20,height:125,width:150}
+      layout:{bottom:10,right:20,height:128,width:240}
     }),
   })
 });

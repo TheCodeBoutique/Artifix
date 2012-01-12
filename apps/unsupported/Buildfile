@@ -15,4 +15,4 @@ config :unsupported,
 	   :title => 'Unsupported',
 	   :layout => 'unsupported.rhtml',
 	   :required => [],
-	   :favicon => 'cloud_favicon.ico'
+	   :favicon => 'artifix_favicon.ico'

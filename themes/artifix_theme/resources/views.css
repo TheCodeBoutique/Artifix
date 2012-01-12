@@ -43,7 +43,8 @@
 }
 
 .selection-class {
-    outline: 1px solid #CCCCCC!important;
+    outline: 2px solid #97cbe3 !important;
+    outline-offset: 3px;
 }
 
 .light_black {

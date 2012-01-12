@@ -192,16 +192,20 @@
     text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
     line-height: 34px!important;
 }
+.anchor-center {
+    border: 1px solid rgba(0,0,0,0.5)!important;
+}
 .anchor-view {
     border: 1px solid rgba(0,0,0,0.5)!important;
 }
 
 .anchor-selected {
-    background-color: red!important;
+    background-color: #9dcfed!important;
+
 }
 .anchor-selection:hover{
-    background-color: red;
+    background-color: #c4ddec;
 }
 .anchor-selection {
-    background-color: gray;
+    background-color: #e4e4e4;
 }

@@ -13,7 +13,7 @@ ART.Drag = {
     }
     
     if (this.view === "button") {
-      var instanceView = ART.ButtonView.create({
+      var instanceView = ART.ButtonView.create(ART.PartsDrag,{
         layout:{top:175,left:72,height:30,width:120},
         isEnabled:NO,
       });

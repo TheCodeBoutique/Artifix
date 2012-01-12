@@ -1,3 +1,4 @@
+//Mixin is used to drag about any object that its mixin with
 ART.Draggable = {
   /**
    @type Boolean
