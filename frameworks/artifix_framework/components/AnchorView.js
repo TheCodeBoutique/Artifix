@@ -7,43 +7,43 @@ ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
 
   mouseDown:function(evt) {
      var content = this.get('content');
-      //bottom
+
+    if(!content) return;
+
        var parentHeight = content.getPath('parentView.frame.height'),
+       parentWidth = content.getPath('parentView.frame.width'),
             childYCord = content.getPath('frame.y'),
-            childXCord = content.getPath('frame.x'),            
+            childXCord = content.getPath('frame.x'),
             childHeight = content.getPath('frame.height'),
-            bottom = (parentHeight - childYCord) - childHeight;
-     //right       
-       var parentWidth = content.getPath('parentView.frame.width'),
-             childXCord = content.getPath('frame.x'),
-             childWidth = content.getPath('frame.width'),
-             right = (parentWidth - childXCord) - childWidth;
+            childWidth = content.getPath('frame.width'),
+
+            bottom = (parentHeight - childYCord) - childHeight,
+            right = (parentWidth - childXCord) - childWidth;
 
     if (SC.$(evt.target).hasClass('anchor-selected')) {
+              SC.$(evt.target).removeClass('anchor-selected').addClass('anchor-selection');
 
-      SC.$(evt.target).removeClass('anchor-selected').addClass('anchor-selection');
-      
        ART.doRestObjectSelection(content);
        Artifix.partsController.set('isMovementLocked',NO);
-       this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width }); 
+       this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width });
 
       return YES;
 
     } else if (SC.$(evt.target).hasClass('anchor-selection')) {
-      var selectionHemispheare = SC.$(evt.target); 
-      
-             
-      if(selectionHemispheare.hasClass('anchor-top-left')){  
-        ART.doRestObjectSelection(content);     
+      var selectionHemispheare = SC.$(evt.target);
+
+
+      if(selectionHemispheare.hasClass('anchor-top-left')){
+        ART.doRestObjectSelection(content);
          //Top Left
          Artifix.partsController.set('isMovementLocked',YES);
-        this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width }); 
+        this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width });
       } else if (selectionHemispheare.hasClass('anchor-top-right')){
         //Top right
          Artifix.partsController.set('isMovementLocked',YES);
         this.convertLayoutToCustomLayout(content, {bottom:bottom, right:right, height:content.layout.height, width:content.layout.width });
       }
-      
+
       else if (selectionHemispheare.hasClass('anchor-bottom-left')){
         ART.doRestObjectSelection(content);
         //bottom left
@@ -55,6 +55,11 @@ ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
         //bottom right
          Artifix.partsController.set('isMovementLocked',YES);
         this.convertLayoutToCustomLayout(content, {bottom:bottom, right:right, height:content.layout.height, width:content.layout.width });
+      } else if (selectionHemispheare.hasClass('anchor-center')){
+        ART.doRestObjectSelection(content);
+        //CenterX CenterY
+        Artifix.partsController.set('isMovementLocked', YES);
+        this.convertLayoutToCustomLayout(content, {centerX:0, centerY:0, height:content.layout.height, width:content.layout.width });
       }
 
       SC.$(evt.target).addClass('anchor-selected');
@@ -66,7 +71,7 @@ ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
   convertLayoutToCustomLayout: function(object, layoutParams){
     SC.info("OLD layout = top:%@,left:%@,height:%@,width:%@,".fmt(object.layout.top,object.layout.left,object.layout.height,object.layout.width));
     SC.info("New layout = bottom:%@,right:%@,height:%@,width:%@,".fmt(layoutParams.bottom,layoutParams.right,layoutParams.height,layoutParams.width));
-    
+
     //replace the old layout with the anchor layout but keep the height and width;
     var content =  object.set('layout',layoutParams);
     ART.objectSelectionController.set('content',content);
