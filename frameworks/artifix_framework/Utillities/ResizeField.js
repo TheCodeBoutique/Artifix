@@ -44,7 +44,7 @@ ART.PositionChanger = SC.View.extend({
       return YES;
     },
     objectDidChange:function() {
-      if(!this.getPath('parentView.object') || this.getPath('parentView.object') === "button") {
+      if(!this.getPath('parentView.object') || SC.typeOf(this.getPath('parentView.object')) === SC.T_STRING) {
         return NO;
       }
       //TODO more error checking and handling

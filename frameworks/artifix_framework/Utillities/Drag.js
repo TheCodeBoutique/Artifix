@@ -12,7 +12,7 @@ ART.Drag = {
       this.objectController.set('content', this.view);
     }
     
-    if (this.view === "button") {
+    if (SC.typeOf(this.view) === SC.T_STRING) {
       var instanceView = ART.ButtonView.create(ART.PartsDrag,{
         layout:{top:175,left:72,height:30,width:120},
         isEnabled:NO,

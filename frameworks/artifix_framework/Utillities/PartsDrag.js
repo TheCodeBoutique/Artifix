@@ -5,6 +5,7 @@ ART.PartsDrag = {
    * binding prop to to lock the positioning
    */
   isAnchoredBinding: SC.Binding.oneWay("Artifix.partsController.isMovementLocked"),
+  isAnchoredSetBinding: SC.Binding.oneWay("Artifix.partsController.isAnchoredSet"),
 
   /** @private */
   _mouseOffsetX: null,
@@ -38,39 +39,11 @@ ART.PartsDrag = {
     ART.objectSelectionController.set('content', this);
 
     if (!this.isAnchored) {
-      if(this.getPath('layout.top')){
       this.set('layout', { width: this.layout.width, height: this.layout.height, left: this._mouseOffsetX + evt.pageX, top: this._mouseOffsetY + evt.pageY });
-      } else if (this.getPath('layout.bottom')){
-        this.set('layout',
-            {
-              width: this.layout.width,
-              height: this.layout.height,
-              right: this._mouseOffsetX - evt.pageX,
-              bottom: this._mouseOffsetY - evt.pageY
-            });
-      }
       this.updateLayout();
     }
     return YES;
   },
-  
-  mouseUp: function(evt) {
-     var f = this.get('frame');
-     SC.info("Frame-X position = %@".fmt('f.x'));
-     SC.info("Frame-Y position = %@".fmt('f.y'));
-
-     SC.info("Mouse-X position = %@".fmt('evt.pageY'));
-     SC.info("Mouse-Y position = %@".fmt('evt.pageX'));
-
-
-     SC.info("Test-X position = %@".fmt('evt.x'));
-     SC.info("Test-Y position = %@".fmt('evt.y'));
-
-     return YES;
-
-   },
-   
-   
 
   /** @private */
   touchStart: function(evt) {

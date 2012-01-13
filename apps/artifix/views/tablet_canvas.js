@@ -18,7 +18,7 @@ ART.TabletCanvas = SC.View.extend({
     },
     mouseDown:function(evt) {
       var obj = ART.objectSelectionController.get('content');
-      if (obj === null || obj === "button") {
+      if (obj === null || SC.typeOf(obj) === SC.T_STRING) {
         return NO;
       }
       obj.$().removeClass('selection-class');

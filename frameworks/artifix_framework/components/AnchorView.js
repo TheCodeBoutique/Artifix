@@ -1,31 +1,34 @@
-ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
+ART.AnchorView = SC.View.extend(SC.ContentDisplay, {
   classNames:['anchor-view'],
   childViews:['anchorTopLeft','anchorTopRight', 'anchorBottomLeft','anchorBottomRight','anchorCenter'],
   backgroundColor:"white",
-  displayProperties: ['content'],
+  contentDisplayProperties: ['anchorTopLeft','anchorTopRight', 'anchorBottomLeft','anchorBottomRight','anchorCenter'],
+  displayProperties: ['content','anchorTopLeft','anchorTopRight', 'anchorBottomLeft','anchorBottomRight','anchorCenter'],
   contentBinding:'ART.objectSelectionController.content',
 
+
   mouseDown:function(evt) {
-     var content = this.get('content');
+    var content = this.get('content');
+    if (!content || SC.typeOf(content) === SC.T_STRING) return;
 
-    if(!content) return;
 
-       var parentHeight = content.getPath('parentView.frame.height'),
-       parentWidth = content.getPath('parentView.frame.width'),
-            childYCord = content.getPath('frame.y'),
-            childXCord = content.getPath('frame.x'),
-            childHeight = content.getPath('frame.height'),
-            childWidth = content.getPath('frame.width'),
+    var parentHeight = content.getPath('parentView.frame.height'),
+        parentWidth = content.getPath('parentView.frame.width'),
+        childYCord = content.getPath('frame.y'),
+        childXCord = content.getPath('frame.x'),
+        childHeight = content.getPath('frame.height'),
+        childWidth = content.getPath('frame.width'),
 
-            bottom = (parentHeight - childYCord) - childHeight,
-            right = (parentWidth - childXCord) - childWidth;
+       bottom = (parentHeight - childYCord) - childHeight,
+       right = (parentWidth - childXCord) - childWidth;
+
 
     if (SC.$(evt.target).hasClass('anchor-selected')) {
-              SC.$(evt.target).removeClass('anchor-selected').addClass('anchor-selection');
+      SC.$(evt.target).removeClass('anchor-selected').addClass('anchor-selection');
 
-       ART.doRestObjectSelection(content);
-       Artifix.partsController.set('isMovementLocked',NO);
-       this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width });
+      ART.doRestObjectSelection(content);
+      Artifix.partsController.set('isMovementLocked', NO);
+      this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width });
 
       return YES;
 
@@ -33,29 +36,29 @@ ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
       var selectionHemispheare = SC.$(evt.target);
 
 
-      if(selectionHemispheare.hasClass('anchor-top-left')){
+      if (selectionHemispheare.hasClass('anchor-top-left')) {
         ART.doRestObjectSelection(content);
-         //Top Left
-         Artifix.partsController.set('isMovementLocked',YES);
+        //Top Left
+        Artifix.partsController.set('isMovementLocked', YES);
         this.convertLayoutToCustomLayout(content, {top:childYCord, left:childXCord,height:content.layout.height, width:content.layout.width });
-      } else if (selectionHemispheare.hasClass('anchor-top-right')){
+      } else if (selectionHemispheare.hasClass('anchor-top-right')) {
         //Top right
-         Artifix.partsController.set('isMovementLocked',YES);
+        Artifix.partsController.set('isMovementLocked', YES);
         this.convertLayoutToCustomLayout(content, {bottom:bottom, right:right, height:content.layout.height, width:content.layout.width });
       }
 
-      else if (selectionHemispheare.hasClass('anchor-bottom-left')){
+      else if (selectionHemispheare.hasClass('anchor-bottom-left')) {
         ART.doRestObjectSelection(content);
         //bottom left
-         Artifix.partsController.set('isMovementLocked',YES);
+        Artifix.partsController.set('isMovementLocked', YES);
         this.convertLayoutToCustomLayout(content, {bottom:bottom, left:childXCord, height:content.layout.height, width:content.layout.width });
       }
-      else if (selectionHemispheare.hasClass('anchor-bottom-right')){
+      else if (selectionHemispheare.hasClass('anchor-bottom-right')) {
         ART.doRestObjectSelection(content);
         //bottom right
-         Artifix.partsController.set('isMovementLocked',YES);
+        Artifix.partsController.set('isMovementLocked', YES);
         this.convertLayoutToCustomLayout(content, {bottom:bottom, right:right, height:content.layout.height, width:content.layout.width });
-      } else if (selectionHemispheare.hasClass('anchor-center')){
+      } else if (selectionHemispheare.hasClass('anchor-center')) {
         ART.doRestObjectSelection(content);
         //CenterX CenterY
         Artifix.partsController.set('isMovementLocked', YES);
@@ -68,13 +71,13 @@ ART.AnchorView = SC.View.extend(SC.ContentDisplay,{
     }
     return NO;
   },
-  convertLayoutToCustomLayout: function(object, layoutParams){
-    SC.info("OLD layout = top:%@,left:%@,height:%@,width:%@,".fmt(object.layout.top,object.layout.left,object.layout.height,object.layout.width));
-    SC.info("New layout = bottom:%@,right:%@,height:%@,width:%@,".fmt(layoutParams.bottom,layoutParams.right,layoutParams.height,layoutParams.width));
+  convertLayoutToCustomLayout: function(object, layoutParams) {
+    SC.info("OLD layout = top:%@,left:%@,height:%@,width:%@,".fmt(object.layout.top, object.layout.left, object.layout.height, object.layout.width));
+    SC.info("New layout = bottom:%@,right:%@,height:%@,width:%@,".fmt(layoutParams.bottom, layoutParams.right, layoutParams.height, layoutParams.width));
 
     //replace the old layout with the anchor layout but keep the height and width;
-    var content =  object.set('layout',layoutParams);
-    ART.objectSelectionController.set('content',content);
+    var content = object.set('layout', layoutParams);
+    ART.objectSelectionController.set('content', content);
   },
 
 
