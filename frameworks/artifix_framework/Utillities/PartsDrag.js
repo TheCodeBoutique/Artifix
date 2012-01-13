@@ -53,6 +53,24 @@ ART.PartsDrag = {
     }
     return YES;
   },
+  
+  mouseUp: function(evt) {
+     var f = this.get('frame');
+     SC.info("Frame-X position = %@".fmt('f.x'));
+     SC.info("Frame-Y position = %@".fmt('f.y'));
+
+     SC.info("Mouse-X position = %@".fmt('evt.pageY'));
+     SC.info("Mouse-Y position = %@".fmt('evt.pageX'));
+
+
+     SC.info("Test-X position = %@".fmt('evt.x'));
+     SC.info("Test-Y position = %@".fmt('evt.y'));
+
+     return YES;
+
+   },
+   
+   
 
   /** @private */
   touchStart: function(evt) {

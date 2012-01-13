@@ -29,5 +29,7 @@ ART.Drag = {
       dataSource:this.dataSource,
       slideBack:this.slideBack ? this.slideBack : YES
     });
+    
   }
+  
 };

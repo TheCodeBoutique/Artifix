@@ -1,6 +1,6 @@
 Artifix.ReadyState = SC.State.extend({
 
-  firstTimeThrough:NO,
+  firstTimeThrough: NO,
 
   enterState: function() {
     Artifix.getPath('mainPage.mainPane').append();
@@ -11,7 +11,7 @@ Artifix.ReadyState = SC.State.extend({
     var existingApps = Artifix.store.find(Artifix.ExistingApp);
     Artifix.existingAppsController.set('content', existingApps);
 
-    this.invokeLater(this.showColdStart, 500);
+   this.invokeLater(this.showColdStart, 500);
   },
 
   showColdStart: function() {
@@ -25,14 +25,17 @@ Artifix.ReadyState = SC.State.extend({
     if (!sel) return;
     switch (sel) {
       case "Mobile":
+        // this.gotoState('mobileDevState');
         SC.routes.set('location', 'mobile');
         ART.devicesController.set('currentCanvas','ART.MobileCanvas');
         break;
       case "Tablet":
+        // this.gotoState('tabletDevState');
         SC.routes.set('location', 'tablet');
         ART.devicesController.set('currentCanvas','ART.TabletCanvas');
         break;
       case "Desktop":
+       // this.gotoState('desktopDevState');
         SC.routes.set('location', 'desktop');
         ART.devicesController.set('currentCanvas','ART.DesktopCanvas');
         break;
