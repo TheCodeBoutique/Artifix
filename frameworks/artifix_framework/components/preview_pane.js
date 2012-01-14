@@ -5,7 +5,7 @@ ART.PreviewPane = SC.View.extend({
     context.push('<div class="exit-icon">,</div>');
   },
   mouseDown:function(evt){
-    debugger;
+    //Need more testing for this..after mocks are done revisit
     var children = this.childViews.firstObject().childViews;
     var IBChildren = Artifix.getPath('interfaceBuilder.mainPane.containerView.contentView.canvasView');
     IBChildren.replaceAllChildren(children);

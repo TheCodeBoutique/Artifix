@@ -15,20 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/views/divider_view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/artifix_theme/resources/divider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/bootstrap.js" afterPath="$PROJECT_DIR$/apps/artifix/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/main.js" afterPath="$PROJECT_DIR$/apps/artifix/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/views/interface_builder.js" afterPath="$PROJECT_DIR$/apps/artifix/views/interface_builder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/AnchorView.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/AnchorView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/objectSelectionController.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/controllers/objectSelectionController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/resources/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/views/sizing_view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/manipulation.js" afterPath="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/artifix_theme/resources/art_button.css" afterPath="$PROJECT_DIR$/themes/artifix_theme/resources/art_button.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" afterPath="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interface_builder.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="interface_builder.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/views/interface_builder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1577" selection-end="1577" vertical-scroll-proportion="1.1">
+            <state line="8" column="76" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview_pane.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="preview_pane.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="7" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26304802">
               <folding />
             </state>
           </provider>
@@ -197,11 +184,11 @@
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/testPane.js" />
         <option value="$PROJECT_DIR$/apps/artifix/bootstrap.js" />
         <option value="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
-        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
         <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js" />
         <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/manipulation.js" />
         <option value="$PROJECT_DIR$/apps/artifix/views/interface_builder.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
       </list>
     </option>
   </component>
@@ -955,7 +942,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32503277" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32480818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -967,7 +954,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25161755" sideWeight="0.9991135" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25161755" sideWeight="0.6751918" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1091,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/tests/views/view/updateLayerLocation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="178" column="5" selection-start="6243" selection-end="6243" vertical-scroll-proportion="1.2054209">
@@ -1128,7 +1108,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifix/views/interface_builder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1577" selection-end="1577" vertical-scroll-proportion="1.1">
+        <state line="8" column="76" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26304802">
           <folding />
         </state>
       </provider>
