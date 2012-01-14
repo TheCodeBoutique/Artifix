@@ -3,7 +3,7 @@
 // Copyright: @2011 My Company, Inc.
 // ==========================================================================
 /*globals Artifix */
-// This page describes the main user interface for your application.  
+// This page describes the main user interface for your application.
 Artifix.interfaceBuilder = SC.Page.design({
 
   // The main pane is made visible on screen as soon as your app is loaded.
@@ -17,7 +17,38 @@ Artifix.interfaceBuilder = SC.Page.design({
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
       layout: { top: 0, left: 0, right: 0, height: 70 },
-      childViews: ["artifixLogo", "tmpUIInspectorButton", "tmpInspectorButton", "tmpAnimationsButton"],
+      childViews: ["artifixLogo", "tmpUIInspectorButton", "tmpInspectorButton", "tmpAnimationsButton","preview"],
+
+      preview:SC.ButtonView.design({
+        classNames: 'gray_button_med'.w(),
+        layout: {centerY: 0, right: 450, height: 26, width: 135},
+        title: 'Preview',
+        action: function() {
+          var previewiPhone = ART.PreviewPane.create({
+            childViews: ['iPhone_preview'],//, 'tablet_preview', 'desktop_preview'],
+
+
+            iPhone_preview: SC.View.design(ART.Draggable,{
+              classNames: ['iPhone_preview_icon', 'front_object'],
+              layout: { left: 0, centerY: 0, height: 597, width: 308},
+              childView: [],
+            })
+          });
+
+          var children = Artifix.getPath('interfaceBuilder.mainPane.containerView.contentView.canvasView.childViews');
+          var tmp = previewiPhone.get('iPhone_preview');
+          for(var idx= 0; idx < children.length;idx++){
+            SC.info('Children length %@'.fmt(children.length));
+              previewiPhone.getPath('iPhone_preview.childViews').push(children[idx]);
+            SC.info('Children length %@'.fmt(children.length));
+          }
+//          previewiPhone.get('iPhone_preview').replaceAllChildren(children);
+
+          Artifix.interfaceBuilder.mainPane.appendChild(previewiPhone);
+
+        },
+      }),
+
 
       artifixLogo: SC.ImageView.design({
         layout: { top: 0, left: 0, width: 172, height: 71 },

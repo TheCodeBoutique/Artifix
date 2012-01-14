@@ -222,6 +222,7 @@ SC.View.reopen(
     @returns {SC.View} the receiver
   */
   appendChild: function(view) {
+    if(!view) return;
     return this.insertBefore(view, null);
   },
 

@@ -71,38 +71,11 @@ Artifix.main = function main() {
   SC.RootResponder.responder.set('defaultResponder', statechart);
   statechart.initStatechart();
   
-    // Register our routes
-  // Our URL will look like 'http://localhost:4020/route_sample#twoMain/twoPane'
-  // This means that 'twoMain' will get passed into RouteSample.routes.gotoRoute()
-  // as the pageName property of the input parameter object, while 'twoPane'
-  // will get passed as the paneName property.
   SC.routes.add(':currentView', Artifix.routes, 'gotoRoute');
 
-  // This is the 'catch-all' route just in case nothing else fits.
-  // This is used when the URL is specified upon start up without
-  // any parameters: 'http://localhost:4020/route_sample'.
   SC.routes.add(':', Artifix.routes, 'gotoRoute');
 
 };
-//function isSupportedBrowser() {
-//  SC.info("Are you using Safari = %@".fmt(SC.browser.isSafari));
-//  SC.info("Current browser is = %@".fmt(SC.browser.current));
-//  SC.info("Current browser version is = %@".fmt(SC.browser.version));
-//  SC.info("Current browser language = %@".fmt(SC.browser.language));
-//
-//  if (SC.browser.isSafari && SC.browser.version >= "534.51.22") {
-//    Artifix.main();
-//    return true;
-//    }
-//  return false;
-//}
-//function init() {
-//    if (!isSupportedBrowser()) {
-//      var unsupported = window.location.href.replace(window.location, "http://www.apple.com/safari/download/");
-//      window.location.href = unsupported;
-//    }
-//}
-
 
 function main() {
   Artifix.main();

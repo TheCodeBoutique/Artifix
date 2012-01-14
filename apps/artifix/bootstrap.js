@@ -5,7 +5,7 @@ function isSupportedBrowser() {
   SC.info("Current browser language = %@".fmt(SC.browser.language));
 
 
-  if (SC.browser.isSafari && SC.browser.version >= "534.51.22") {
+  if (SC.browser.isSafari && SC.browser.version >= "534.51.22" || SC.browser.isChrome) {
     return true;
   }
   return false;

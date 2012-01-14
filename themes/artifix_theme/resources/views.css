@@ -61,3 +61,25 @@
 .alert {
   background-image: sc_static('images/alert.png');
 }
+
+.front_object{
+    z-index: 10;
+}
+
+.iPhone_preview_icon{
+   background-image: sc_static('images/iPhone_preview_icon.png');
+}
+
+.gray_out{
+    background-color: #4c4c4c;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.exit-icon{
+    height: 40px;
+    width:40px;
+    background-color: red;
+}
+

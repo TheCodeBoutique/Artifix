@@ -194,9 +194,11 @@
 }
 .anchor-center {
     border: 1px solid rgba(0,0,0,0.5)!important;
+    z-index: 10;
 }
 .anchor-view {
     border: 1px solid rgba(0,0,0,0.5)!important;
+    background-color: black !important;
 }
 
 .anchor-selected {
