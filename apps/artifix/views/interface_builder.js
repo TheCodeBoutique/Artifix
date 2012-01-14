@@ -25,21 +25,27 @@ Artifix.interfaceBuilder = SC.Page.design({
         title: 'Preview',
         action: function() {
           var previewiPhone = ART.PreviewPane.create({
-            childViews: ['iPhone_preview'],//, 'tablet_preview', 'desktop_preview'],
+            childViews: ['deviceContainer'],//, 'tablet_preview', 'desktop_preview'],
 
-
-            iPhone_preview: SC.View.design(ART.Draggable,{
+						deviceContainer:SC.View.design(ART.Draggable,{
               classNames: ['iPhone_preview_icon', 'front_object'],
-              layout: { left: 0, centerY: 0, height: 597, width: 308},
-              childView: [],
-            })
+              layout: { left: 0, centerY: 0, height: 597, width: 308 },
+							childViews:['iPhone_preview'],				
+
+            	iPhone_preview: SC.View.design({
+              	layout: { left: 27, centerY: 0, height: 380, width: 256 },
+              	childView: [],
+            	})
+
+						}),
+						
           });
 
           var children = Artifix.getPath('interfaceBuilder.mainPane.containerView.contentView.canvasView.childViews');
-          var tmp = previewiPhone.get('iPhone_preview');
+          var tmp = previewiPhone.getPath('deviceContainer.iPhone_preview');
           for(var idx= 0; idx < children.length;idx++){
             SC.info('Children length %@'.fmt(children.length));
-              previewiPhone.getPath('iPhone_preview.childViews').push(children[idx]);
+              previewiPhone.getPath('deviceContainer.iPhone_preview.childViews').push(children[idx]);
             SC.info('Children length %@'.fmt(children.length));
           }
 //          previewiPhone.get('iPhone_preview').replaceAllChildren(children);
