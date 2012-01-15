@@ -8,7 +8,7 @@ ART.PreviewPane = SC.View.extend({
     //Need more testing for this..after mocks are done revisit
     if (SC.$(evt.target).hasClass('exit-icon')) {
 
-      var children = this.childViews.firstObject().childViews;
+      var children = this.getPath('deviceContainer.iPhone_preview.childViews');
       var IBChildren = Artifix.getPath('interfaceBuilder.mainPane.containerView.contentView.canvasView');
       IBChildren.replaceAllChildren(children);
       Artifix.interfaceBuilder.mainPane.buildOutChild(this);
