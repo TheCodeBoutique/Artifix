@@ -15,7 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" afterPath="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +128,7 @@
       <file leaf-file-name="preview_pane.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26304802">
+            <state line="8" column="44" selection-start="334" selection-end="334" vertical-scroll-proportion="0.2">
               <folding />
             </state>
           </provider>
@@ -135,7 +137,7 @@
       <file leaf-file-name="views.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/views.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="26" selection-start="3583" selection-end="3583" vertical-scroll-proportion="0.0">
+            <state line="82" column="14" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,11 +185,11 @@
         <option value="$PROJECT_DIR$/themes/artifix_theme/resources/art_button.css" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/testPane.js" />
         <option value="$PROJECT_DIR$/apps/artifix/bootstrap.js" />
-        <option value="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
         <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js" />
         <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/manipulation.js" />
         <option value="$PROJECT_DIR$/apps/artifix/views/interface_builder.js" />
+        <option value="$PROJECT_DIR$/themes/artifix_theme/resources/views.css" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js" />
       </list>
     </option>
@@ -224,7 +226,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -773,8 +775,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -790,8 +792,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -942,7 +944,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32480818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -959,6 +960,7 @@
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32480818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1016,9 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/DropZone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="786" selection-end="838" vertical-scroll-proportion="0.6554622">
-          <folding />
-        </state>
+        <state line="29" column="4" selection-start="786" selection-end="838" vertical-scroll-proportion="0.6554622" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/art_button.css">
@@ -1050,23 +1050,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/bootstrap/system/browser.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/tests/views/view/updateLayerLocation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="2" selection-start="3141" selection-end="3157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/views.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="26" selection-start="3583" selection-end="3583" vertical-scroll-proportion="0.0">
+        <state line="178" column="5" selection-start="6243" selection-end="6243" vertical-scroll-proportion="1.2054209">
           <folding />
         </state>
       </provider>
@@ -1078,23 +1064,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/tests/views/view/updateLayerLocation.js">
+    <entry file="file://$PROJECT_DIR$/apps/artifix/views/interface_builder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="5" selection-start="6243" selection-end="6243" vertical-scroll-proportion="1.2054209">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1209" column="38" selection-start="39492" selection-end="39492" vertical-scroll-proportion="0.0">
+        <state line="8" column="76" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1106,16 +1078,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/views/interface_builder.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="76" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+        <state line="1209" column="38" selection-start="39492" selection-end="39492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/Utillities/Draggable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/bootstrap/system/browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="2" selection-start="3141" selection-end="3157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/views.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="14" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/preview_pane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="0.26304802">
+        <state line="8" column="44" selection-start="334" selection-end="334" vertical-scroll-proportion="0.2">
           <folding />
         </state>
       </provider>
