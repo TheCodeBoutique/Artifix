@@ -1,6 +1,7 @@
 Artifix.MobileDevState = SC.State.extend({
 
     enterState: function() {
+
     Artifix.getPath('interfaceBuilder.mainPane').append();
   },
 
@@ -55,6 +56,32 @@ Artifix.MobileDevState = SC.State.extend({
     this._animationpane.append();
 
   },
+
+
+	showStyleView: function(view) {
+		var style =  view.getPath('parentView.styleView');
+		var colorFill = style.get('colorFillIcon');
+		var imageFill = style.get('imageFillIcon');
+		var noFill = style.get('noFillIcon');
+		var colorFrame =  view.getPath('parentView.backgroundColorIdentifierFrame');
+		var colorText =  view.getPath('parentView.backgroundColorText');
+		if(style.layout.height === 75){			
+			style.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // styleView
+			colorFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+			imageFill.animate('opacity',0,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+			noFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
+			colorFrame.animate('opacity',1,{duration:0.7,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+			colorText.animate('opacity',1,{duration:0.7,timing:'ease-in-out'}); // backgroundColorText
+		}else{
+			style.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleView
+			colorFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+			imageFill.animate('opacity',1,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+			noFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
+			colorFrame.animate('opacity',0,{duration:0.4,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+			colorText.animate('opacity',0,{duration:0.4,timing:'ease-in-out'}); // backgroundColorText
+	}
+		
+	},
 
   exitState: function() {
     Artifix.getPath('interfaceBuilder.mainPane').remove();

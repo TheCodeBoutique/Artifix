@@ -1,0 +1,45 @@
+/*  NEED TO UPDATE THE .sc-pane.sc-panel TO HAVE A LEFT,MIDDLE,RIGHT .png */
+/* CURRENTLY THE VIEW DOES NOT SCALE PROPERLY FOR A BUTTON LARGER THAN 100px */
+
+.sc-pane.sc-panel {
+  overflow: visible;
+  z-index: 1000;
+	top: 265px !important;
+	border: 1px #555 solid;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+/* KEEP THESE CSS PROPERTIES FOR A EXPLICIT CLASSNAME */
+.select_button.sc-button-view label {
+  color: white;
+  position: relative;
+  display: block;
+  line-height: 21px;
+  text-align: left;
+  text-indent: 5px;
+}
+
+.select_button.sc-button-view {
+  color: white;
+  /*background-image: sc_static('images/device_selection_small.png');*/
+  background-color: yellow !important;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px #555 none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.select_button.sc-button-view {
+  z-index: 100;
+  /*background-image: sc_static('images/device_selection_small.png');*/
+ background-color: yellow !important; 
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px #555 none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+}
