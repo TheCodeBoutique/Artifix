@@ -6,6 +6,7 @@ ART.devicesController = SC.ArrayController.create({
   currentDeviceSelected:"",
   deploymentType:"",
   currentCanvas:"",
+  isAnchored:NO,
   content:[
   
       SC.Object.create({
