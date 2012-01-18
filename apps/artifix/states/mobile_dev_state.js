@@ -70,15 +70,15 @@ Artifix.MobileDevState = SC.State.extend({
 			colorFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
 			imageFill.animate('opacity',0,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
 			noFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
-			colorFrame.animate('opacity',1,{duration:0.7,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-			colorText.animate('opacity',1,{duration:0.7,timing:'ease-in-out'}); // backgroundColorText
+			colorFrame.animate('top',90,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+			colorText.animate('top',97,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
 		}else{
 			style.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleView
 			colorFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
 			imageFill.animate('opacity',1,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
 			noFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
-			colorFrame.animate('opacity',0,{duration:0.4,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-			colorText.animate('opacity',0,{duration:0.4,timing:'ease-in-out'}); // backgroundColorText
+			colorFrame.animate('top',155,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+			colorText.animate('top',160,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
 	}
 		
 	},
