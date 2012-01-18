@@ -14,5 +14,6 @@ Artifix.partsController = SC.ArrayController.create({
 
   isMovementLocked:NO,
   isAnchoredSet:YES,
+  backgroundColor:"#FFF"
 
  });

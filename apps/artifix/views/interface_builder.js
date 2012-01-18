@@ -14,6 +14,11 @@ Artifix.interfaceBuilder = SC.Page.design({
     objectRemovalBinding:SC.Binding.oneWay('ART.objectSelectionController.content').notNull(),
     childViews: ["topBar", "containerView"],
 
+    code:SC.View.design({
+      layerId:"editor"
+
+    }),
+
     topBar: SC.ToolbarView.design({
       classNames: 'top_bar'.w(),
       layout: { top: 0, left: 0, right: 0, height: 70 },

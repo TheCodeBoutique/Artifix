@@ -74,6 +74,7 @@ Artifix.main = function main() {
   SC.routes.add(':currentView', Artifix.routes, 'gotoRoute');
 
   SC.routes.add(':', Artifix.routes, 'gotoRoute');
+    $('body').append('<div id="editor" style="height: 500px; width: 500px">some text</div>');
 
 };
 

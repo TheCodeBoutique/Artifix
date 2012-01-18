@@ -18,7 +18,6 @@ ART.PreviewPane = SC.View.extend({
 
 
   },
-
   childViews:[],
 
 });

@@ -1,14 +1,18 @@
 Artifix.MobileDevState = SC.State.extend({
+  _currentPane:null,
 
-    enterState: function() {
+  enterState: function() {
 
     Artifix.getPath('interfaceBuilder.mainPane').append();
+    //this sets a currentPane to current pane appended...this
+    // prop can only be accessed within this state
+    this.set('_currentPane', Artifix.getPath('interfaceBuilder.mainPane'));
   },
 
   troggleUIInspector: function(view) {
     var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
-    this._interfacepane = ART.InspectorPane.create(ART.Draggable,{
+    this._interfacepane = ART.InspectorPane.create(ART.Draggable, {
       layout:{ top: 73, right: 350, height: 405, width: 285},
       value: "User Interface",
 
@@ -24,11 +28,20 @@ Artifix.MobileDevState = SC.State.extend({
 
   },
 
+  doShowColorPicker:function(context) {
+
+    this._colorpickerpane = ART.ColorPickerView.create({
+      layout: {left: 0, top: 70, width: 201, height: 324},
+    });
+    this._currentPane.appendChild(this._colorpickerpane);
+    this._currentPane.buildInChild(this._colorpickerpane);
+  },
+
   troggleVisualInspector: function(view) {
     var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
 
-    this._visualpane = ART.InspectorPane.create(ART.Draggable,{
+    this._visualpane = ART.InspectorPane.create(ART.Draggable, {
       layout:{ top: 73, right: 350, height: 405, width: 285},
       value: "Visual Inspector",
 
@@ -58,30 +71,30 @@ Artifix.MobileDevState = SC.State.extend({
   },
 
 
-	showStyleView: function(view) {
-		var style =  view.getPath('parentView.styleView');
-		var colorFill = style.get('colorFillIcon');
-		var imageFill = style.get('imageFillIcon');
-		var noFill = style.get('noFillIcon');
-		var colorFrame =  view.getPath('parentView.backgroundColorIdentifierFrame');
-		var colorText =  view.getPath('parentView.backgroundColorText');
-		if(style.layout.height === 75){			
-			style.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // styleView
-			colorFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
-			imageFill.animate('opacity',0,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
-			noFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
-			colorFrame.animate('top',90,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-			colorText.animate('top',97,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
-		}else{
-			style.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleView
-			colorFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
-			imageFill.animate('opacity',1,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
-			noFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
-			colorFrame.animate('top',155,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-			colorText.animate('top',160,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
-	}
-		
-	},
+  showStyleView: function(view) {
+    var style = view.getPath('parentView.styleView');
+    var colorFill = style.get('colorFillIcon');
+    var imageFill = style.get('imageFillIcon');
+    var noFill = style.get('noFillIcon');
+    var colorFrame = view.getPath('parentView.backgroundColorIdentifierFrame');
+    var colorText = view.getPath('parentView.backgroundColorText');
+    if (style.layout.height === 75) {
+      style.animate('height', 0, {duration:0.3,timing:'ease-in-out'}); // styleView
+      colorFill.animate('opacity', 0, {duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+      imageFill.animate('opacity', 0, {duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+      noFill.animate('opacity', 0, {duration:0.5,timing:'ease-in-out'}); // noFillIcon
+      colorFrame.animate('top', 90, {duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+      colorText.animate('top', 97, {duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+    } else {
+      style.animate('height', 75, {duration:0.3,timing:'ease-in-out'}); // styleView
+      colorFill.animate('opacity', 1, {duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+      imageFill.animate('opacity', 1, {duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+      noFill.animate('opacity', 1, {duration:0.5,timing:'ease-in-out'}); // noFillIcon
+      colorFrame.animate('top', 155, {duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+      colorText.animate('top', 160, {duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+    }
+
+  },
 
   exitState: function() {
     Artifix.getPath('interfaceBuilder.mainPane').remove();
