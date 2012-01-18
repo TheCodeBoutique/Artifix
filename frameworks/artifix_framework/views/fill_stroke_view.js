@@ -1,7 +1,8 @@
 ART.FillStrokeView = SC.View.extend({
   layout: { top: 0, left: 0, right: 0, bottom: 0 },
-  childViews: ["fillStyleText", "fillStyleButton", "styleView", "backgroundColorIdentifierFrame", "backgroundColorText"],
 
+  childViews: ["fillStyleText", "fillStyleButton", "styleView", "backgroundColorIdentifierFrame", "backgroundColorText", "cornerRoundness"],
+  
   fillStyleText: SC.LabelView.design({
 		classNames: 'text_small'.w(),
     layout: { top: 40, left: 20, height: 20, width: 100 },
@@ -69,6 +70,14 @@ ART.FillStrokeView = SC.View.extend({
 	  value: 'Background Color'
 	}),
 
-
+	cornerRoundness: SC.SliderView.design({
+	  classNames: 'slide'.w(),
+    layout: { bottom: 15, centerX: 0, height: 12, width: 173},
+    step: 1.0,
+    value: 0.0,
+    minimum: 0,
+    maximum: 10.0,
+	}),
+  
 });
 

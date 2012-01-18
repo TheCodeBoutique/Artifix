@@ -1,0 +1,21 @@
+.slide.sc-slider-view .sc-handle {
+  height: 11px !important;
+  width: 11px;
+  margin-left: 0px;
+  margin-right: 100px !important;
+  top: 0px;
+  position: absolute;
+  background-image: sc_static('images/slide_knob.png'); 
+  background-color: transparent;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: left 0.01s ease-in-out;
+}
+
+.slide { 
+  position: absolute;
+  top: 50%; height: 14px; left: 5px; right: 5px;
+  margin-top: -10px;
+  background-image: sc_static('images/slide_track.png');
+}

@@ -70,29 +70,60 @@ Artifix.MobileDevState = SC.State.extend({
 
   },
 
+	showStyleView: function(view) {
+		var style =  view.getPath('parentView.styleView');
+		var colorFill = style.get('colorFillIcon');
+		var imageFill = style.get('imageFillIcon');
+		var noFill = style.get('noFillIcon');
+		var colorFrame =  view.getPath('parentView.backgroundColorIdentifierFrame');
+		var colorText =  view.getPath('parentView.backgroundColorText');
+		
+	    if(style.layout.height === 75){			
+	    	style.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // styleView
+	    	colorFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+	    	imageFill.animate('opacity',0,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+	    	noFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
+	    	colorFrame.animate('top',90,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+	    	colorText.animate('top',97,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    }else{
+	    	style.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleView
+	    	colorFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
+	    	imageFill.animate('opacity',1,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
+	    	noFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
+	    	colorFrame.animate('top',155,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+	    	colorText.animate('top',160,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    }
+		
+	},
+	
+	previewIphone: function() {
+    var previewiPhone = ART.PreviewPane.create({
+      childViews: ['deviceContainer'],//, 'tablet_preview', 'desktop_preview'],
 
-  showStyleView: function(view) {
-    var style = view.getPath('parentView.styleView');
-    var colorFill = style.get('colorFillIcon');
-    var imageFill = style.get('imageFillIcon');
-    var noFill = style.get('noFillIcon');
-    var colorFrame = view.getPath('parentView.backgroundColorIdentifierFrame');
-    var colorText = view.getPath('parentView.backgroundColorText');
-    if (style.layout.height === 75) {
-      style.animate('height', 0, {duration:0.3,timing:'ease-in-out'}); // styleView
-      colorFill.animate('opacity', 0, {duration:0.5,timing:'ease-in-out'}); // colorFillIcon
-      imageFill.animate('opacity', 0, {duration:0.3,timing:'ease-in-out'}); // imageFillIcon
-      noFill.animate('opacity', 0, {duration:0.5,timing:'ease-in-out'}); // noFillIcon
-      colorFrame.animate('top', 90, {duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-      colorText.animate('top', 97, {duration:0.3,timing:'ease-in-out'}); // backgroundColorText
-    } else {
-      style.animate('height', 75, {duration:0.3,timing:'ease-in-out'}); // styleView
-      colorFill.animate('opacity', 1, {duration:0.5,timing:'ease-in-out'}); // colorFillIcon
-      imageFill.animate('opacity', 1, {duration:0.3,timing:'ease-in-out'}); // imageFillIcon
-      noFill.animate('opacity', 1, {duration:0.5,timing:'ease-in-out'}); // noFillIcon
-      colorFrame.animate('top', 155, {duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-      colorText.animate('top', 160, {duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+			deviceContainer: SC.View.design(ART.Draggable,{
+        classNames: ['iPhone_preview_icon', 'front_object'],
+        layout: { centerX: 0, centerY: 0, height: 597, width: 308 },
+				childViews:['iPhone_preview'],				
+
+      	iPhone_preview: SC.View.design({
+        	layout: { left: 27, centerY: 0, height: 380, width: 256 },
+        	childView: [],
+      	})
+
+			}),
+
+    });
+
+    var children = Artifix.getPath('interfaceBuilder.mainPane.containerView.contentView.canvasView.childViews');
+    var tmp = previewiPhone.getPath('deviceContainer.iPhone_preview');
+    for(var idx= 0; idx < children.length;idx++){
+      SC.info('Children length %@'.fmt(children.length));
+        previewiPhone.getPath('deviceContainer.iPhone_preview.childViews').push(children[idx]);
+      SC.info('Children length %@'.fmt(children.length));
     }
+      // previewiPhone.get('iPhone_preview').replaceAllChildren(children);
+
+    Artifix.interfaceBuilder.mainPane.appendChild(previewiPhone);
 
   },
 

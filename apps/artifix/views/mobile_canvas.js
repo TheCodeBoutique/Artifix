@@ -7,7 +7,7 @@ ART.MobileCanvas = SC.View.extend({
     useCanvas: YES,
     value: sc_static('images/mobile_blueprint.png')
   }),
-
+  
   canvasView:SC.View.design(ART.DropZone, {
     layout: { centerX: 0, centerY: 0, height: 380, width: 256 },
     childViews:[],
