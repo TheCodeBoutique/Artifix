@@ -4,7 +4,7 @@ ART.Draggable = {
    @type Boolean
    @default NO
    */
-  isAnchoredBinding:'ART.devicesController.isAnchored',
+  isAnchored: NO,
 
   /** @private */
   _mouseOffsetX: null,
