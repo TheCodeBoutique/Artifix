@@ -8,13 +8,13 @@ require('color_picker/colorwheel');
 
   this view makes the awesome raphael.js colorpicker work in sproutcore
 
-  
+
   @extends SC.View
 */
 
 SCUI.ColorPicker = SC.View.extend(
 /** @scope SCUI.ColorPicker.prototype */ {
-  
+
   /*
     the current color value in hex
   */
@@ -24,28 +24,29 @@ SCUI.ColorPicker = SC.View.extend(
     for the text box
   */
   size: 160,
-  
+
   _valueChanged: function(){
     var value = this.get('value');
     if( this._cp){
       if(this._cp.color() !== value) this._cp.color(value);
     }
   }.observes('value'),
-  
-  didAppendToDocument: function(){    
-    
+
+  didAppendToDocument: function(){
+
     var pv = this.get('parentView'), frame = this.get('frame');
     var newFrame = pv ? pv.convertFrameToView(frame, null) : frame;
+   debugger;
     // this is where colorpickers created
-    
+
     // HACK: [MB] - Hack to get the color picker working at all times in IE by creating a fresh version everytime
     if(!this._cp || SC.browser.msie){
-      
+
       // do some cleanup first if it's IE, then create the color picker
       if (this._cp && SC.browser.msie) {
         this._cp.remove();
       }
-      
+
       var layer = this.$().get(0), that = this, cp;
       //compute the parent frame
 
@@ -62,10 +63,10 @@ SCUI.ColorPicker = SC.View.extend(
     }
 
   },
-  
+
   willDestroyLayer: function(){
     if(this._cp) this._cp.remove();
   }
-  
+
 });
 

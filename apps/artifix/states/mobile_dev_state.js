@@ -12,7 +12,7 @@ Artifix.MobileDevState = SC.State.extend({
   troggleUIInspector: function(view) {
     var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
-    this._interfacepane = ART.InspectorPane.create(ART.Draggable, {
+    this._interfacepane = ART.InspectorPane.create({
       layout:{ top: 73, right: 350, height: 405, width: 285},
       value: "User Interface",
 
@@ -31,17 +31,22 @@ Artifix.MobileDevState = SC.State.extend({
   doShowColorPicker:function(context) {
 
     this._colorpickerpane = ART.ColorPickerView.create({
-      layout: {left: 0, top: 70, width: 201, height: 324},
-    });
+		layout:{top:80,left:120,width:500,height:300}
+	}),
     this._currentPane.appendChild(this._colorpickerpane);
     this._currentPane.buildInChild(this._colorpickerpane);
+
+    this.invokeLast(function(){
+      var colourPicker1 = new ColourPicker( document.getElementById('colourPicker'),'/static/artifix/en/current/source/resources/images/');
+      Artifix.partsController.set('colorObject',colourPicker1);
+    })
   },
 
   troggleVisualInspector: function(view) {
     var pane = Artifix.getPath('interfaceBuilder.mainPane');
 
 
-    this._visualpane = ART.InspectorPane.create(ART.Draggable, {
+    this._visualpane = ART.InspectorPane.create({
       layout:{ top: 73, right: 350, height: 405, width: 285},
       value: "Visual Inspector",
 
