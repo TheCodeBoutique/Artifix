@@ -14,8 +14,5 @@
 }
 
 .slide { 
-  position: absolute;
-  top: 50%; height: 14px; left: 5px; right: 5px;
-  margin-top: -10px;
   background-image: sc_static('images/slide_track.png');
 }

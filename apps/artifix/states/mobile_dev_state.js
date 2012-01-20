@@ -80,23 +80,51 @@ Artifix.MobileDevState = SC.State.extend({
 		var colorFill = style.get('colorFillIcon');
 		var imageFill = style.get('imageFillIcon');
 		var noFill = style.get('noFillIcon');
+		var divider =  view.getPath('parentView.divider');
 		var colorFrame =  view.getPath('parentView.backgroundColorIdentifierFrame');
 		var colorText =  view.getPath('parentView.backgroundColorText');
+		var cornerRoundnessText =  view.getPath('parentView.cornerRoundnessText');
+		var cornerRoundness =  view.getPath('parentView.cornerRoundness');
+		var roundnessValue =  view.getPath('parentView.roundnessValue');
+		var opacityText =  view.getPath('parentView.opacityText');
+		var opacity =  view.getPath('parentView.opacity');
+		var opacityValue =  view.getPath('parentView.opacityValue');
+		var strokeColorIdentifierFrame =  view.getPath('parentView.strokeColorIdentifierFrame');
+		var strokeColorText =  view.getPath('parentView.strokeColorText');
 		
 	    if(style.layout.height === 75){			
 	    	style.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // styleView
 	    	colorFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
 	    	imageFill.animate('opacity',0,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
 	    	noFill.animate('opacity',0,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
-	    	colorFrame.animate('top',90,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-	    	colorText.animate('top',97,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    	divider.animate('top',128,{duration:0.3,timing:'ease-in-out'}); // divider
+	    	colorFrame.animate('top',80,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
+	    	colorText.animate('top',83,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    	cornerRoundnessText.animate('top',140,{duration:0.3,timing:'ease-in-out'}); // cornerRoundnessText
+	    	cornerRoundness.animate('top',160,{duration:0.3,timing:'ease-in-out'}); // cornerRoundness
+	    	roundnessValue.animate('top',155,{duration:0.3,timing:'ease-in-out'}); // roundnessValue
+	    	opacityText.animate('top',180,{duration:0.3,timing:'ease-in-out'}); // opacityText
+	    	opacity.animate('top',200,{duration:0.3,timing:'ease-in-out'}); // opacity
+	    	opacityValue.animate('top',195,{duration:0.3,timing:'ease-in-out'}); // opacityValue
+	    	strokeColorIdentifierFrame.animate('top',235,{duration:0.3,timing:'ease-in-out'}); // strokeColorIdentifierFrame
+	    	strokeColorText.animate('top',239,{duration:0.3,timing:'ease-in-out'}); // strokeColorText
+	    	
 	    }else{
 	    	style.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleView
 	    	colorFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // colorFillIcon
 	    	imageFill.animate('opacity',1,{duration:0.3,timing:'ease-in-out'}); // imageFillIcon
 	    	noFill.animate('opacity',1,{duration:0.5,timing:'ease-in-out'}); // noFillIcon
+	    	divider.animate('top',203,{duration:0.3,timing:'ease-in-out'}); // divider
 	    	colorFrame.animate('top',155,{duration:0.3,timing:'ease-in-out'}); // backgroundColorIdentifierFrame
-	    	colorText.animate('top',160,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    	colorText.animate('top',158,{duration:0.3,timing:'ease-in-out'}); // backgroundColorText
+	    	cornerRoundnessText.animate('top',215,{duration:0.3,timing:'ease-in-out'}); // cornerRoundnessText
+	    	cornerRoundness.animate('top',235,{duration:0.3,timing:'ease-in-out'}); // cornerRoundness
+	    	roundnessValue.animate('top',230,{duration:0.3,timing:'ease-in-out'}); // roundnessValue
+	    	opacityText.animate('top',255,{duration:0.3,timing:'ease-in-out'}); // opacityText
+	    	opacity.animate('top',275,{duration:0.3,timing:'ease-in-out'}); // opacity
+	    	opacityValue.animate('top',270,{duration:0.3,timing:'ease-in-out'}); // opacityValue
+	    	strokeColorIdentifierFrame.animate('top',310,{duration:0.3,timing:'ease-in-out'}); // strokeColorIdentifierFrame
+	    	strokeColorText.animate('top',313,{duration:0.3,timing:'ease-in-out'}); // strokeColorText
 	    }
 		
 	},

@@ -114,6 +114,7 @@
 	-moz-opacity: 0.0;
 	filter:alpha(opacity=00);
 }
+
 #editor{
     position: absolute;
     margin: 0;
