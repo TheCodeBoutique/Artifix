@@ -89,7 +89,7 @@ ART.TextView = SC.View.extend({
      childViews: 'fontColorIdentifier'.w(),
 
      fontColorIdentifier: SC.View.design(ART.CSSGenerator,{
-       backgroundColorBinding: "Artifix.partsController.font",
+       backgroundColorBinding: "Artifix.partsController.fontColor",
        layout: { top: 3, right: 3, bottom: 3, left: 3},
        cssStyle:"font",
        mouseDown:function(evt) {

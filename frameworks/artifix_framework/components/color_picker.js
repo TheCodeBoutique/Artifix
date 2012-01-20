@@ -72,9 +72,17 @@ ART.ColorPickerView = SC.View.extend({
         var b = color.getColour().getRGB().b;
         var hex = this.rgbToHex(r,g,b);
         this._request = Artifix.partsController.get('currentEvent');
-        (this._request === "stroke") ? Artifix.partsController.set('strokeColor',"#"+hex) : Artifix.partsController.set('backgroundColor',"#"+hex),
 
-        Artifix.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
+        if(this._request === "stroke") {
+          Artifix.partsController.set('strokeColor',"#"+hex)
+        } else if(this._request === "stroke") {
+          Artifix.partsController.set('backgroundColor',"#"+hex)
+        } else if(this._request === "font") {
+          Artifix.partsController.set('fontColor',"#"+hex)
+        }
+
+              Artifix.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
+
         return YES;
       },
       rgbToHex:function(R, G, B) {
