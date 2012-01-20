@@ -129,6 +129,32 @@ Artifix.MobileDevState = SC.State.extend({
 		
 	},
 	
+	showTextOptions: function(view) {	
+	  var textOptions =  view.getPath('parentView.textOptions');
+	  
+	    if(textOptions.layout.height === 75){	
+	      textOptions.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // textOptions
+	    
+	  }else{
+	    
+	    textOptions.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // textOptions
+	  }
+	  
+	},
+	
+	showStyleOptions: function(view) {	
+	  var styleOptions =  view.getPath('parentView.styleOptions');
+	  
+	    if(styleOptions.layout.height === 75){	
+	      styleOptions.animate('height',0,{duration:0.3,timing:'ease-in-out'}); // styleOptions
+	    
+	  }else{
+	    
+	    styleOptions.animate('height',75,{duration:0.3,timing:'ease-in-out'}); // styleOptions
+	  }
+	  
+	},
+	
 	previewIphone: function() {
     var previewiPhone = ART.PreviewPane.create({
       childViews: ['deviceContainer'],//, 'tablet_preview', 'desktop_preview'],

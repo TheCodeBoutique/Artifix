@@ -5,7 +5,7 @@ ART.CSSGenerator = {
   doApplyCSS:function() {
     var style = this.get('cssStyle');
     var obj = ART.objectSelectionController.get('content');
-    var color = Artifix.partsController.get('backgroundColor');
+    var backgroundColor = Artifix.partsController.get('backgroundColor');
 
     if (!obj) return;
 
@@ -14,7 +14,7 @@ ART.CSSGenerator = {
         obj.$().css('opacity', this.get('value') + '!important');
         break;
       case "background":
-        obj.$().css('background', color);
+        obj.$().css('background', backgroundColor);
         break;
       case "border":
         obj.$().css('border-radius', this.get('value'));
@@ -23,6 +23,6 @@ ART.CSSGenerator = {
         ""
     }
 
-  }.observes('value', 'Artifix.partsController.backgroundColor')
+  }.observes('value', 'Artifix.partsController.backgroundColor'),
 
 };

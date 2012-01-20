@@ -16,6 +16,7 @@ Artifix.partsController = SC.ArrayController.create({
   isAnchoredSet:YES,
   backgroundColor:"#FFF",
   strokeColor:"#CCC",
+  font:"#000000",
   colorObject:null,
   currentEvent:"",
 

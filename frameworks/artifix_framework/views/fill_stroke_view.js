@@ -13,9 +13,7 @@ ART.FillStrokeView = SC.View.extend({
     classNames: 'gray_button_no_gloss_med'.w(),
     layout: { top: 40, right: 20, height: 18, width: 175 },
     title: "None",
-    action: function() {
-      Artifix.statechart.sendEvent('showStyleView', this);
-    },
+    action: 'showStyleView',
     target: 'Artifix.statechart'
   }),
 
