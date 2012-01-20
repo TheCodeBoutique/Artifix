@@ -56,7 +56,7 @@ ART.FillStrokeView = SC.View.extend({
 			backgroundColorBinding: "Artifix.partsController.backgroundColor",
 		  layout: { top: 3, right: 3, bottom: 3, left: 3},
       mouseDown:function(evt){
-        Artifix.statechart.sendEvent('doShowColorPicker');
+        Artifix.statechart.sendEvent('doShowColorPicker',{event:"background"});
       }
 		}),
 
@@ -120,11 +120,11 @@ ART.FillStrokeView = SC.View.extend({
    	childViews: 'strokeColorIdentifier'.w(),
 
 		strokeColorIdentifier: SC.View.design({
-			backgroundColorBinding: "Artifix.partsController.backgroundColor",
+			backgroundColorBinding: "Artifix.partsController.strokeColor",
 		  layout: { top: 3, right: 3, bottom: 3, left: 3},
       mouseDown:function(evt){
-        Artifix.statechart.sendEvent('doShowColorPickerStroke');
-      }
+        Artifix.statechart.sendEvent('doShowColorPicker',{event:"stroke"});
+      },
 		}),
 		
   }),

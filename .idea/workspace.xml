@@ -15,20 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/black-fade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/hue-bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/pointers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/images/white-fade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/Colour.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifix/resources/ColourPicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" afterPath="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" afterPath="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/color_picker.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/color_picker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/scui/frameworks/sai/views/color_picker.js" afterPath="$PROJECT_DIR$/frameworks/scui/frameworks/sai/views/color_picker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js" afterPath="$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/artifix_theme/resources/select_button.css" afterPath="$PROJECT_DIR$/themes/artifix_theme/resources/select_button.css" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,37 +83,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inspector_pane.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visual_inpector.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/visual_inpector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fill_stroke_view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="73" selection-start="1780" selection-end="1850" vertical-scroll-proportion="0.0">
+            <state line="58" column="45" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile_dev_state.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mobile_dev_state.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="6" selection-start="1293" selection-end="1350" vertical-scroll-proportion="0.0">
+            <state line="30" column="2" selection-start="848" selection-end="848" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -130,23 +104,41 @@
       <file leaf-file-name="parts_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="335" selection-end="358" vertical-scroll-proportion="0.0">
+            <state line="19" column="18" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_picker.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="devicesController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="objectSelectionController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/objectSelectionController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color_picker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/color_picker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="31" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.125">
+            <state line="52" column="39" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error_pane.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+      <file leaf-file-name="existing_apps_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -186,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/artifix/views/interface_builder.js" />
         <option value="$PROJECT_DIR$/apps/artifix/resources/ace-0.2.0/src/ace-uncompressed.js" />
         <option value="$PROJECT_DIR$/apps/artifix/resources/ace-0.2.0/demo/kitchen-sink-uncompressed.js" />
         <option value="$PROJECT_DIR$/apps/artifix/main.js" />
@@ -202,6 +193,7 @@
         <option value="$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js" />
         <option value="$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js" />
         <option value="$PROJECT_DIR$/frameworks/artifix_framework/components/color_picker.js" />
+        <option value="$PROJECT_DIR$/themes/artifix_theme/resources/select_button.css" />
       </list>
     </option>
   </component>
@@ -237,6 +229,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -572,7 +565,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -806,114 +798,98 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/sai/color_picker/colorpicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="64" selection-start="912" selection-end="912" vertical-scroll-proportion="0.1">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/sai/views/color_picker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="4" selection-start="1764" selection-end="1764" vertical-scroll-proportion="1.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/foundation/mixins/mobility.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="283" selection-end="296" vertical-scroll-proportion="0.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/resources/Colour.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/debug/invoke_once_last_debugging.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="22" selection-start="6962" selection-end="6962" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="157" column="22" selection-start="6962" selection-end="6962" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/runtime/system/object.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="775" column="17" selection-start="24249" selection-end="24249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="775" column="17" selection-start="24249" selection-end="24249" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/resources/ColourPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="32" selection-start="12668" selection-end="12689" vertical-scroll-proportion="0.56011313" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/visual_inpector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="26" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/error_pane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/anchor_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/dashboard/mixins/dashboard_delegate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="11" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/existing_apps_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/scui/frameworks/dashboard/mixins/dashboard_delegate.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/objectSelectionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="11" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/anchor_view.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/controllers/devicesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/visual_inpector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/inspector_pane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifix/controllers/parts_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="335" selection-end="358" vertical-scroll-proportion="0.0">
+        <state line="19" column="18" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
+    <entry file="file://$PROJECT_DIR$/themes/artifix_theme/resources/select_button.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="6" selection-start="1293" selection-end="1350" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="73" selection-start="1780" selection-end="1850" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifix/resources/ColourPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="32" selection-start="12668" selection-end="12689" vertical-scroll-proportion="0.56011313">
+        <state line="35" column="2" selection-start="822" selection-end="822" vertical-scroll-proportion="0.8594816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/components/color_picker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="31" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.125">
+        <state line="52" column="39" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifix_framework/views/fill_stroke_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="45" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifix/states/mobile_dev_state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="2" selection-start="848" selection-end="848" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>

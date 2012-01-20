@@ -28,8 +28,8 @@ Artifix.MobileDevState = SC.State.extend({
 
   },
 
-  doShowColorPicker:function(context) {
-
+  doShowColorPicker:function(type) {
+     Artifix.partsController.set('currentEvent',type.event);
     this._colorpickerpane = ART.ColorPickerView.create({
 		layout:{top:80,left:120,width:500,height:300}
 	}),

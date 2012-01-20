@@ -22,7 +22,6 @@
 
 .select_button.sc-button-view {
   color: white;
-  /*background-image: sc_static('images/device_selection_small.png');*/
   background-color: yellow !important;
   display: inline-block;
   vertical-align: middle;
@@ -34,8 +33,7 @@
 
 .select_button.sc-button-view {
   z-index: 100;
-  /*background-image: sc_static('images/device_selection_small.png');*/
- background-color: yellow !important; 
+  background-color: yellow !important;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;

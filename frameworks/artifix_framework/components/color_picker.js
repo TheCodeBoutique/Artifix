@@ -71,7 +71,9 @@ ART.ColorPickerView = SC.View.extend({
         var g = color.getColour().getRGB().g;
         var b = color.getColour().getRGB().b;
         var hex = this.rgbToHex(r,g,b);
-			  Artifix.partsController.set('backgroundColor',"#"+hex),
+        this._request = Artifix.partsController.get('currentEvent');
+        (this._request === "stroke") ? Artifix.partsController.set('strokeColor',"#"+hex) : Artifix.partsController.set('backgroundColor',"#"+hex),
+
         Artifix.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
         return YES;
       },
