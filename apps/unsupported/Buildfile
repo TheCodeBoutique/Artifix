@@ -1,5 +1,5 @@
 # ===========================================================================
-# Project:   Artifix
+# Project:   Artifex
 # Copyright: ©2011 The Code Boutique, Inc.
 # ===========================================================================
 
@@ -15,4 +15,4 @@ config :unsupported,
 	   :title => 'Unsupported',
 	   :layout => 'unsupported.rhtml',
 	   :required => [],
-	   :favicon => 'artifix_favicon.ico'
+	   :favicon => 'artifex_favicon.ico'

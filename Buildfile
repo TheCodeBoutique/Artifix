@@ -1,5 +1,5 @@
 # ==========================================================================
-# Project:   Artifix
+# Project:   Artifex
 # Copyright: @2011 My Company, Inc.
 # ==========================================================================
 
@@ -8,7 +8,7 @@
 # the SproutCore framework.
 # config :all, :required => :sproutcore :minify => false, :html5_history => true, :overwrite_current => true
 
-config :all, :required => [:sproutcore, :artifix_framework, :scui]
+config :all, :required => [:sproutcore, :artifex_framework, :scui]
 
 # In addition to this Buildfile, which gives settings for your entire project,
 # each of your apps has its own Buildfile with settings specific to that app.
@@ -16,5 +16,5 @@ config :all, :required => [:sproutcore, :artifix_framework, :scui]
 
 
 # CONFIGURE THEMES
- config :artifix, :theme => 'artifix_theme'
- config :artifix_theme,  :theme_name => 'artifix_theme'
+ config :artifex, :theme => 'artifex_theme'
+ config :artifex_theme,  :theme_name => 'artifex_theme'

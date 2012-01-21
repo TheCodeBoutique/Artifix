@@ -1,3 +1,0 @@
-config :artifix_theme, :css_theme => 'ace.artifix-theme'
-
-
