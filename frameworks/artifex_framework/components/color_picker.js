@@ -66,22 +66,22 @@ ART.ColorPickerView = SC.View.extend({
       classNames:['close_button'],
       layout:{top:3,left:4,height:10,width:10},
       mouseDown:function(evt) {
-        var color = Artifix.partsController.get('colorObject');
+        var color = Artifex.partsController.get('colorObject');
         var r = color.getColour().getRGB().r;
         var g = color.getColour().getRGB().g;
         var b = color.getColour().getRGB().b;
         var hex = this.rgbToHex(r,g,b);
-        this._request = Artifix.partsController.get('currentEvent');
+        this._request = Artifex.partsController.get('currentEvent');
 
         if(this._request === "stroke") {
-          Artifix.partsController.set('strokeColor',"#"+hex)
-        } else if(this._request === "stroke") {
-          Artifix.partsController.set('backgroundColor',"#"+hex)
+          Artifex.partsController.set('strokeColor',"#"+hex)
+        } else if(this._request === "background") {
+          Artifex.partsController.set('backgroundColor',"#"+hex)
         } else if(this._request === "font") {
-          Artifix.partsController.set('fontColor',"#"+hex)
+          Artifex.partsController.set('fontColor',"#"+hex)
         }
 
-              Artifix.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
+              Artifex.interfaceBuilder.mainPane.removeChild(this.parentView.parentView);
 
         return YES;
       },

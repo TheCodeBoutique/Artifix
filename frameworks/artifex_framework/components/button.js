@@ -9,7 +9,7 @@
 
 // @author Chad Eubanks
 // @extends SC.Button
-  ART.ButtonView = SC.ButtonView.extend({             //SCUI.Mobility,    //ART.Draggable,
+  ART.ButtonView = SC.ButtonView.extend({
   classNames: 'art_button'.w(),
   childViews:['resize'],
   layout: {},

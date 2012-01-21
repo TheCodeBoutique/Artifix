@@ -15,7 +15,7 @@ ART.TextView = SC.View.extend({
      layout: { top: 40, right: 20, height: 18, width: 175 },
      title: "None",
      action: 'showTextOptions',
-     target: 'Artifix.statechart'
+     target: 'Artifex.statechart'
    }),
 
    textOptions: SC.View.design({
@@ -30,8 +30,8 @@ ART.TextView = SC.View.extend({
      
        contentView: SC.ListView.design({
          classNames: 'app_list'.w(),
-         contentBinding: 'Artifix.existingAppsController.arrangedObjects',
-         selectionBinding: 'Artifix.existingAppsController.selection',
+         contentBinding: 'Artifex.existingAppsController.arrangedObjects',
+         selectionBinding: 'Artifex.existingAppsController.selection',
          contentValueKey: "appName",     
          contentIconKey: "appIcon",
          hasContentIcon:  YES,
@@ -55,7 +55,7 @@ ART.TextView = SC.View.extend({
      layout: { top: 80, right: 20, height: 18, width: 175 },
      title: "Regular",
      action: 'showStyleOptions',
-     target: 'Artifix.statechart'
+     target: 'Artifex.statechart'
    }),
 
    styleOptions: SC.View.design({
@@ -70,8 +70,8 @@ ART.TextView = SC.View.extend({
      
        contentView: SC.ListView.design({
          classNames: 'app_list'.w(),
-         contentBinding: 'Artifix.existingAppsController.arrangedObjects',
-         selectionBinding: 'Artifix.existingAppsController.selection',
+         contentBinding: 'Artifex.existingAppsController.arrangedObjects',
+         selectionBinding: 'Artifex.existingAppsController.selection',
          contentValueKey: "appName",     
          contentIconKey: "appIcon",
          hasContentIcon:  YES,
@@ -89,11 +89,11 @@ ART.TextView = SC.View.extend({
      childViews: 'fontColorIdentifier'.w(),
 
      fontColorIdentifier: SC.View.design(ART.CSSGenerator,{
-       backgroundColorBinding: "Artifix.partsController.fontColor",
+       backgroundColorBinding: "Artifex.partsController.fontColor",
        layout: { top: 3, right: 3, bottom: 3, left: 3},
        cssStyle:"font",
        mouseDown:function(evt) {
-         Artifix.statechart.sendEvent('doShowColorPicker', {event:"font"});
+         Artifex.statechart.sendEvent('doShowColorPicker', {event:"font"});
        }
      }),
 

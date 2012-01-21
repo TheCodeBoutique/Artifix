@@ -7,7 +7,7 @@
 ART.PartsView = SC.View.create({
   layout: {top: 20, bottom: 0, left: 0, right: 0},
   childViews:['contentContainer'],
-  
+
   contentContainer: SC.ScrollView.design({
     hasHorizontalScroller: NO,
     layout: { top: 0, bottom: 0, left: 0, right: 0},
@@ -56,12 +56,13 @@ ART.PartsView = SC.View.create({
         cellTitle:"Label".loc(),
         cellDescription:"A view to put your text in.".loc(),
 
-        itemImage:SC.View.design({
+        itemImage:SC.View.design(ART.Drag,{
+          view:'label',
           classNames:['pane-label-image'],
-          layout: { right: 2, bottom: 5, height: 17, width: 46 },
+          layout: { right: 2, bottom: 5, height: 17, width: 46 }
         })
       }),
-      
+
       textFieldCell: ART.PartsCell.create({
         layout:{ top: 315, height: 80, right: 0, left: 0},
         cellTitle:"Text Field".loc(),
@@ -72,7 +73,7 @@ ART.PartsView = SC.View.create({
           layout: { right: 2, bottom: 5, height: 26, width: 100 },
         })
       }),
-      
+
       textAreaCell: ART.PartsCell.create({
         layout:{ top: 400, height: 86, right: 0, left: 0},
         cellTitle:"Text Area".loc(),
@@ -83,7 +84,7 @@ ART.PartsView = SC.View.create({
           layout: { right: 5, bottom: 5, height: 59, width: 111 },
         })
       }),
-      
+
       audioCell: ART.PartsCell.create({
         layout:{ top: 485, height: 68, right: 0, left: 0},
         cellTitle:"Audio".loc(),
@@ -94,7 +95,7 @@ ART.PartsView = SC.View.create({
           layout: { right: 2, bottom: 5, height: 41, width: 47 },
         })
       }),
-      
+
       videoCell: ART.PartsCell.create({
         layout:{ top: 555, height: 75, right: 0, left: 0},
         cellTitle: "Video".loc(),
@@ -105,7 +106,7 @@ ART.PartsView = SC.View.create({
           layout: { right: 2, bottom: 5, height: 38, width: 38 },
         })
       }),
-      
+
       imageCell: ART.PartsCell.create({
         layout:{ top: 630, height: 86, right: 0, left: 0},
         cellTitle: "Image".loc(),
@@ -116,7 +117,7 @@ ART.PartsView = SC.View.create({
           layout: { right: 2, bottom: 5, height: 47, width: 55 },
         })
       })
-      
+
     })
   })
 });
