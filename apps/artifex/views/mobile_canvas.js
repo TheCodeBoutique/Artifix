@@ -20,6 +20,7 @@ ART.MobileCanvas = SC.View.extend({
         return NO;
       }
       obj.$().removeClass('selection-class');
+      ART.objectSelectionController.set('content',null);
     }
   })
 });
