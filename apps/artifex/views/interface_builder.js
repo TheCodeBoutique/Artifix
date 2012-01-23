@@ -12,10 +12,46 @@ Artifex.interfaceBuilder = SC.Page.design({
   mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
     objectRemovalBinding:SC.Binding.oneWay('ART.objectSelectionController.content').notNull(),
-    childViews: ["topBar", "containerView"],
+    childViews: ["topBar", "containerView", "bottomBar"],
 
-    code:SC.View.design({
-      layerId:"editor"
+
+    bottomBar:SC.View.design({
+      layout: { bottom: 0, left: 0, right: 0, height: 28   },
+      isGrabShowing:NO,
+      childViews:["code","codeBar","grabBar"],
+
+      code:SC.View.design({
+        layout: { top: 28, left: 0, right: 0, bottom:0 },
+        layerId:"code",
+      }),
+
+      grabBar:SC.ToolbarView.design({
+        isVisibleBinding:'.parentView.isGrabShowing',
+        layout: { top: 0, left: 0, right: 0, height: 8 },
+        classNames: 'top_bar'.w(),
+        childViews:["grabButton"],
+
+        grabButton:SC.View.design(ART.DragHeight,{
+          layout: { top:0, height: 15, centerX: 0, width: 15 },
+          backgroundColor:"black",
+          isAnchored: NO
+        })
+
+      }),
+
+      codeBar:SC.ToolbarView.design({
+        layout: { top: 8, left: 0, right: 0, height: 20 },
+        classNames: 'top_bar'.w(),
+        childViews:["codeButton"],
+
+        codeButton:SC.View.design({
+          layout: { top:0, height: 15, left: 12, width: 15 },
+          backgroundColor:"black",
+          mouseDown: function(evt) {
+            Artifex.statechart.sendEvent("doShowCode", this);
+          }
+        })
+      })
 
     }),
 
@@ -54,7 +90,7 @@ Artifex.interfaceBuilder = SC.Page.design({
         action: 'troggleAnimationInspector',
         target: 'Artifex.statechart'
       }),
-      
+
       tmpPreview: SC.ButtonView.design({
         classNames: 'gray_button_med'.w(),
         layout: {centerY: 0, right: 500, height: 26, width: 135},
@@ -62,14 +98,14 @@ Artifex.interfaceBuilder = SC.Page.design({
         action: 'previewIphone',
         target: 'Artifex.statechart'
       }),
-      
-    }),  
-    
+
+    }),
+
     containerView:SC.ContainerView.design({
       layout:{top:70,bottom:0,left:0,right:0},
       nowShowingBinding:'ART.devicesController.currentCanvas'
     })
-    
+
   })
-  
+
 });
