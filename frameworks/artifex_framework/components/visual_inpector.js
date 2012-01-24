@@ -34,8 +34,8 @@ ART.VisualInspector = SC.View.extend(
          itemWidth:68.5,
          buttonIcon:sc_static('/images/text_icon.png')
        },
-       { // title: "Links View",
-         value: "ART.LinksView",
+       { // title: "Actions View",
+         value: "ART.ActionsView",
          itemWidth:59,
          buttonIcon:sc_static('/images/action_icon.png')
        }
