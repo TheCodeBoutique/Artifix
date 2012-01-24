@@ -6,31 +6,19 @@
 }
 
 .troggle.sc-checkbox-view .label {
-	position: absolute ;
+	color: #636161;
+  font-weight: normal;
+  font-size: 14px !important;
+  font-family: "Helvetica Neue";
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.50);
+  position: absolute ;
 	left: 24px;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	line-height: 16px;
-    font-size: 14px;
-    color: #818181;
-    text-shadow: 0px 1px white;
-}
- 
-.troggle.sc-checkbox-view.icon img.icon {
-	position: relative;
-	vertical-align: middle;
-	top: -2px;
-	margin-left: 2px;
-	margin-right: 4px;
-	width: 17px;
-	height: 19px;
 }
 
-.troggle.sc-checkbox-view.disabled {
-	color: #666;
-	color: rgba(0,0,0,0.5);
-}
 
 /* @group Checkbox Image */
 

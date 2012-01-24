@@ -1,7 +1,7 @@
 ART.TextView = SC.View.extend({
   layout: { top: 0, left: 0, right: 0, bottom: 0 },
   
-   childViews: ["fillStyleText", "fillStyleButton", "textOptions", "styleText", "styleButton", "styleOptions", "fontColorIdentifierFrame", "fontColorText"],
+   childViews: ["fillStyleText", "fillStyleButton", "textOptions", "styleText", "styleButton", "styleOptions", "fontColorIdentifierFrame", "fontColorText", 'fontSizeText', 'fontSizeValue', 'selectionText', 'divider', 'selectionTroggleButton'],
    
    
    fillStyleText: SC.LabelView.design({
@@ -85,7 +85,7 @@ ART.TextView = SC.View.extend({
   
   fontColorIdentifierFrame: SC.View.design({
      classNames: 'color_identifier_frame'.w(),
-     layout: { top: 120, left: 20, height: 25, width: 80 },
+     layout: { top: 120, left: 130, height: 25, width: 80 },
      childViews: 'fontColorIdentifier'.w(),
 
      fontColorIdentifier: SC.View.design(ART.CSSGenerator,{
@@ -101,9 +101,38 @@ ART.TextView = SC.View.extend({
 
    fontColorText: SC.LabelView.design({
      classNames: 'text_small'.w(),
-     layout: { top: 123, right: 45, height: 25, width: 120 },
-     value: 'Font Color'
+     layout: { top: 123, left: 20, height: 25, width: 100 },
+     value: 'Font Color:'
    }),
+   
+   fontSizeText: SC.LabelView.design({
+      classNames: 'text_small'.w(),
+      layout: { top: 165, left: 20, height: 25, width: 100 },
+      value: 'Font Size:'
+    }),
+   
+   fontSizeValue: SC.TextFieldView.design({
+     layout: { top: 165, left: 130, height: 20, width: 50},
+     value: '14 px'
+   }),
+   
+   selectionText: SC.LabelView.design({
+     classNames: 'text_small'.w(),
+     layout: { top: 210, left: 20, height: 25, width: 100 },
+     value: 'Selection:'
+   }),
+   
+   selectionTroggleButton: SC.CheckboxView.design({
+     classNames: 'troggle'.w(),
+     layout: { top: 210, left: 100, height:25, width: 200},
+     value: NO,
+     displayTitle: 'Allow text selection?'
+   }),
+   
+   divider: ART.DividerView.design({
+     layout: { top: 240, right: 0, height: 1, left: 0 },
+   }),
+   
   
    
    
