@@ -13,7 +13,7 @@
   classNames: 'art_button'.w(),
   childViews:['resize'],
   layout: {},
-  action: '',
+  action: ' ',
   target: '',
   title:'',
   isEnabled:NO,

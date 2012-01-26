@@ -31,18 +31,33 @@ Artifex.interfaceBuilder = SC.Page.design({
         classNames: 'top_bar'.w(),
         childViews:["grabButton"],
 
-        grabButton:SC.View.design(ART.DragHeight,{
+        grabButton:SC.View.design(ART.DragHeight, {
           layout: { top:0, height: 15, centerX: 0, width: 15 },
           backgroundColor:"black",
           isAnchored: NO
-        })
+        }),
 
       }),
 
       codeBar:SC.ToolbarView.design({
         layout: { top: 8, left: 0, right: 0, height: 20 },
         classNames: 'top_bar'.w(),
-        childViews:["codeButton"],
+        childViews:["codeButton","saveButton"],
+
+        saveButton:SC.ButtonView.design({
+          classNames:['gray_button_med'],
+          layout: { top:0, height: 20, left: 50, width: 80 },
+          title:"save",
+          action:function() {
+            //apply added code
+            var editor = Artifex.codeEditorController.get('content');
+            var button = ART.objectSelectionController.get('content');
+            var codeValue = editor.getValue();
+            codeValue = Artifex.doRemoveQuotes(codeValue);
+            button.set('action',codeValue);
+
+          }
+        }),
 
         codeButton:SC.View.design({
           layout: { top:0, height: 15, left: 12, width: 15 },

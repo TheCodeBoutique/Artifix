@@ -4,6 +4,15 @@ Artifex.MobileDevState = SC.State.extend({
   enterState: function() {
 
     Artifex.getPath('interfaceBuilder.mainPane').append();
+    //load the editor in and passed the editor object to the controller
+    //so we can use it through out the app.
+    var editor = CodeMirror(document.getElementById("code"), {
+      value: "",
+      lineNumbers: true,
+      matchBrackets: true,
+      mode:"javascript"
+    });
+    Artifex.codeEditorController.set('content',editor);
     //this sets a currentPane to current pane appended...this
     // prop can only be accessed within this state
     this.set('_currentPane', Artifex.getPath('interfaceBuilder.mainPane'));
@@ -192,19 +201,14 @@ Artifex.MobileDevState = SC.State.extend({
   },
 
   doShowCode:function(view) {
-   var obj = view.getPath('parentView.parentView');
+    var obj = view.getPath('parentView.parentView');
 
-    if(obj.layout.height === 28) {
-    obj.animate('height', 130, {duration:0.3,timing:'ease-in-out'});
-    obj.set('isGrabShowing',YES);
-    var editor = CodeMirror(document.getElementById("code"), {
-      value: "function myScript() {\n\treturn 100;\n}\n",
-      lineNumbers: true,
-      matchBrackets: true
-    });
+    if (obj.layout.height === 28) {
+      obj.animate('height', 130, {duration:0.3,timing:'ease-in-out'});
+      obj.set('isGrabShowing', YES);
     } else {
-    obj.animate('height', 28, {duration:0.3,timing:'ease-in-out'});
-    obj.set('isGrabShowing',NO);
+      obj.animate('height', 28, {duration:0.3,timing:'ease-in-out'});
+      obj.set('isGrabShowing', NO);
     }
   },
 
