@@ -28,7 +28,7 @@ Artifex.main = function main() {
 
         image: SC.View.design({
           layout: { centerX: 0, top:30, height:150, width: 200 },
-          render:function(context){
+          render:function(context) {
             context.push('<div class="error-image"></div>');
           }
         }),
@@ -66,15 +66,25 @@ Artifex.main = function main() {
 
   };
 
+  var sourceGroups = Artifex.store.find(Artifex.ParentView).toArray() ;
+
+  var sourceList =  SC.Object.create(SC.TreeItemContent, {
+    treeItemIsGrouped: YES,
+    treeItemChildren: sourceGroups,
+    count: sourceGroups.get('length')
+  });
+
+  Artifex.viewController.set('content', sourceList);
+
   // Step 1: Tell your app it will load via states
   var statechart = Artifex.statechart;
   SC.RootResponder.responder.set('defaultResponder', statechart);
   statechart.initStatechart();
-  
+
   SC.routes.add(':currentView', Artifex.routes, 'gotoRoute');
 
   SC.routes.add(':', Artifex.routes, 'gotoRoute');
-    $('body').append('<div id="editor" style="height: 500px; width: 500px">some text</div>');
+  $('body').append('<div id="editor" style="height: 500px; width: 500px">some text</div>');
 
 };
 

@@ -12,8 +12,42 @@ Artifex.interfaceBuilder = SC.Page.design({
   mainPane: SC.MainPane.design({
     classNames: 'grid_base'.w(),
     objectRemovalBinding:SC.Binding.oneWay('ART.objectSelectionController.content').notNull(),
-    childViews: ["topBar", "containerView", "bottomBar"],
+    childViews: ["topBar", "containerView", "bottomBar", "viewHierarchy"],
 
+    viewHierarchy:SC.View.design({
+      classNames:['view-hierarchy'],
+      layout:{top:70,left:0,bottom:0,width:131},
+      childViews:['views'],
+      views:SC.SourceListView.design({
+        layout: {left:17,top: 44},
+        contentBinding: 'Artifex.viewController.arrangedObjects',
+        selectionBinding: 'Artifex.viewController.selection',
+        contentValueKey: 'name',
+        rowSpacing: 3,
+        rowHeight: 49,
+        exampleView:SC.View.design({
+          layout:{left:40,right:40,bottom:0,top:0},
+          render:function(context) {
+            var array     =   Artifex.viewController.get('arrangedObjects').toArray();
+            var content   =   this.get('content');
+            var position  =   array.indexOf(content);
+
+            if (!content) return;
+            content = content.toJSON();
+
+            if (content.parent === YES) {
+              context.push(['<div class="parent-view">',content.name,'</div>'].join(''));
+            } else {
+              context.push([
+                '<div class="child-views-position">',position,'</div>',
+                '<div class="child-views">',content.name,'</div>'
+              ].join(''));
+            }
+
+          }
+        })
+      })
+    }),
 
     bottomBar:SC.View.design({
       layout: { bottom: 0, left: 0, right: 0, height: 28   },
@@ -54,7 +88,7 @@ Artifex.interfaceBuilder = SC.Page.design({
             var button = ART.objectSelectionController.get('content');
             var codeValue = editor.getValue();
             codeValue = Artifex.doRemoveQuotes(codeValue);
-            button.set('action',codeValue);
+            button.set('action', codeValue);
 
           }
         }),
@@ -67,7 +101,6 @@ Artifex.interfaceBuilder = SC.Page.design({
           }
         })
       })
-
     }),
 
     topBar: SC.ToolbarView.design({
