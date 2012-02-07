@@ -27,6 +27,7 @@ ART.DropZone = {
 //    if (view && (view instanceof Zone.TodosList)) {
 //      Zone.doBuildRecords(view);
 //    }
+
     this.appendChild(view);
     this.buildInChild(view);
     return dragOp;

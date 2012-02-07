@@ -16,8 +16,18 @@ Artifex.interfaceBuilder = SC.Page.design({
 
     viewHierarchy:SC.View.design({
       classNames:['view-hierarchy'],
-      layout:{top:70,left:0,bottom:0,width:131},
+      layout:{top:70,left:0,bottom:0,width:0},
       childViews:['views'],
+
+      widthDidChange:function() {
+        var dragging = Artifex.viewController.get('isDraggingHrView');
+        if (dragging) {
+          this.animate('width', 131, {duration:.2, timing:'ease-in-out'});
+        } else {
+          this.animate('width', 0, {duration:.2, timing:'ease-in-out'});
+        }
+      }.observes('Artifex.viewController.isDraggingHrView'),
+
       views:SC.SourceListView.design({
         layout: {left:17,top: 44},
         contentBinding: 'Artifex.viewController.arrangedObjects',
@@ -25,12 +35,37 @@ Artifex.interfaceBuilder = SC.Page.design({
         contentValueKey: 'name',
         rowSpacing: 3,
         rowHeight: 49,
+        actOnSelect:YES,
+        action:function(evt) {
+          var content = ART.objectSelectionController.get('content');
+          var selection = SC.SelectionSet.create();
+          var currentSelection = this.get('selection').firstObject().toJSON().guid;
+
+
+          switch (currentSelection) {
+            case 1:
+                content.adjust('left',0);
+              break;
+            case 2:
+                content.adjust('left',-252);
+              break;
+            case 3:
+                content.adjust('left',-503);
+              break;
+            case 4:
+                content.adjust('left',-754);
+              break;
+            default:
+          }
+
+
+        },
         exampleView:SC.View.design({
           layout:{left:40,right:40,bottom:0,top:0},
           render:function(context) {
-            var array     =   Artifex.viewController.get('arrangedObjects').toArray();
-            var content   =   this.get('content');
-            var position  =   array.indexOf(content);
+            var array = Artifex.viewController.get('arrangedObjects').toArray();
+            var content = this.get('content');
+            var position = array.indexOf(content);
 
             if (!content) return;
             content = content.toJSON();

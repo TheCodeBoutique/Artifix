@@ -119,8 +119,8 @@ ART.ViewsView = SC.View.create({
         cellTitle:"Horizontal Swipe".loc(),
         cellDescription:"A multi page view with horizontal swipe capabilities.".loc(),
 
-        itemImage: SC.View.design({
-          view:'button',
+        itemImage: SC.View.design(ART.Drag,{
+          view:'hrView',
           objectController:ART.objectSelectionController,
           classNames:['pane-horizontalswipe-image'],
           layout: { right: 2, bottom: 5, height: 61, width: 37 },

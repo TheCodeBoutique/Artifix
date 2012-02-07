@@ -8,6 +8,8 @@ Artifex.viewController = SC.TreeController.create({
   allowsEmptySelection: NO,
   allowsMultipleSelection: NO,
 
+  isDraggingHrView:NO,
+
   selectionObserver: function() {
 
   }.observes('selection')

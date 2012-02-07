@@ -15,14 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9481db-3696-4214-bfd1-d85cdfab3117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifex/controllers/view_controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifex/models/child_view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/artifex/models/parent_view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/artifex_framework/components/horizontal_view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifex/fixtures/existing_app_fixtures.js" afterPath="$PROJECT_DIR$/apps/artifex/fixtures/existing_app_fixtures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifex/main.js" afterPath="$PROJECT_DIR$/apps/artifex/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifex/controllers/view_controller.js" afterPath="$PROJECT_DIR$/apps/artifex/controllers/view_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/artifex/views/interface_builder.js" afterPath="$PROJECT_DIR$/apps/artifex/views/interface_builder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/artifex_theme/resources/views.css" afterPath="$PROJECT_DIR$/themes/artifex_theme/resources/views.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js" afterPath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/DropZone.js" afterPath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/DropZone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/PartsDrag.js" afterPath="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/PartsDrag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/artifex_framework/views/views_view.js" afterPath="$PROJECT_DIR$/frameworks/artifex_framework/views/views_view.js" />
     </list>
     <ignored path="Artifix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,82 +83,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="interface_builder.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="parts_cell.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/views/parts_cell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Drag.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="49" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interface_builder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/artifex/views/interface_builder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
+            <state line="55" column="40" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.7567568">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/artifex_theme/resources/views.css">
+      <file leaf-file-name="DropZone.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/Utillities/DropZone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="11" selection-start="7199" selection-end="7199" vertical-scroll-proportion="0.0">
+            <state line="28" column="7" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/view_controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="58" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parent_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/models/parent_view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="existing_app_fixtures.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/fixtures/existing_app_fixtures.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="21" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.92633015">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="child_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/models/child_view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="2" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="existing_app_model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/models/existing_app_model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_page.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/artifex/resources/main_page.js">
+      <file leaf-file-name="parts_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/parts_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="existing_apps_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/existing_apps_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="horizontal_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/components/horizontal_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="19" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,22 +160,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/PartsDrag.js" />
-        <option value="$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/views/button.js" />
-        <option value="$PROJECT_DIR$/apps/artifex/actions/actions.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifex_framework/views/actions_view.js" />
         <option value="$PROJECT_DIR$/apps/artifex/states/mobile_dev_state.js" />
         <option value="$PROJECT_DIR$/apps/artifex/Utilities.js" />
-        <option value="$PROJECT_DIR$/frameworks/artifex_framework/components/button.js" />
         <option value="$PROJECT_DIR$/apps/artifex/models/view_child.js" />
         <option value="$PROJECT_DIR$/apps/artifex/main.js" />
         <option value="$PROJECT_DIR$/apps/artifex/models/child_view.js" />
-        <option value="$PROJECT_DIR$/apps/artifex/controllers/view_controller.js" />
         <option value="$PROJECT_DIR$/themes/artifex_theme/resources/views.css" />
-        <option value="$PROJECT_DIR$/apps/artifex/views/interface_builder.js" />
         <option value="$PROJECT_DIR$/apps/artifex/models/parent_view.js" />
         <option value="$PROJECT_DIR$/apps/artifex/fixtures/existing_app_fixtures.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/components/button.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/views/views_view.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/PartsDrag.js" />
+        <option value="$PROJECT_DIR$/apps/artifex/controllers/view_controller.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/components/horizontal_view.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js" />
+        <option value="$PROJECT_DIR$/frameworks/artifex_framework/Utillities/DropZone.js" />
+        <option value="$PROJECT_DIR$/apps/artifex/views/interface_builder.js" />
       </list>
     </option>
   </component>
@@ -229,7 +211,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -339,7 +320,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifex_framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utillities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifex_framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifex_framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frameworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifex_framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,6 +463,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Artifix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,6 +579,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,8 +595,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -649,13 +741,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1436" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32352942" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -667,7 +759,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6764706" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294881" sideWeight="0.6764706" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -720,96 +812,94 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/views/parts_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="27" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/view_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="199" selection-end="215" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/artifex_theme/resources/text.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="175" selection-end="186" vertical-scroll-proportion="0.20600858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/controllers/objectSelectionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/foundation/views/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="2" selection-start="7382" selection-end="7382" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/animation/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="28" selection-start="5166" selection-end="5192" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/core_foundation/views/view/manipulation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="14" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-13.837838" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/parts_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/foundation/mixins/flowed_layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="792" column="9" selection-start="26640" selection-end="26647" vertical-scroll-proportion="0.26530612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/artifex/views/mobile_canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="34" selection-start="347" selection-end="347" vertical-scroll-proportion="0.25751072">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/existing_apps_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/controllers/devicesController.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/Utillities/DropZone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/code_editor_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/views/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="2432" selection-end="2432" vertical-scroll-proportion="1.275" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/desktop/views/source_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="753" selection-end="753" vertical-scroll-proportion="0.23874488" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/artifex_theme/resources/text.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/models/existing_app_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/sproutcore/frameworks/foundation/controllers/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="925" selection-end="925" vertical-scroll-proportion="-0.575">
+        <state line="28" column="7" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/resources/main_page.js">
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/components/horizontal_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="33" column="19" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/views/parts_cell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/artifex_framework/Utillities/Drag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="49" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/artifex/views/interface_builder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/artifex_theme/resources/views.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="11" selection-start="7199" selection-end="7199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/controllers/view_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="58" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/models/parent_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/models/child_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/artifex/fixtures/existing_app_fixtures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="21" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.92633015">
+        <state line="55" column="40" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.7567568">
           <folding />
         </state>
       </provider>

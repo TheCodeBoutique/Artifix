@@ -19,8 +19,8 @@ ART.PartsDrag = {
   mouseDown: function(evt) {
     //need to genersize this....
     ART.objectSelectionController.set('content', this);
-    this.triggerAction();
-    this._action(evt);
+//    this.triggerAction();
+//    this._action(evt);
     //set the selection class
     this.$().addClass('selection-class');
     var f = this.get('frame');

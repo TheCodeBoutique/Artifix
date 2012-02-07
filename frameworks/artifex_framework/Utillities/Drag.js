@@ -26,6 +26,13 @@ ART.Drag = {
             layout:{top:175,left:72,height:30,width:120}
           });
           break;
+        case "hrView":
+          Artifex.viewController.set('isDraggingHrView', YES);
+          instanceView = ART.HorzontalView.create({
+            layout:{top:16,left:4,bottom:0,right:0}
+          });
+          this.objectController.set('content', instanceView);
+          break;
         case 0:
           break;
         default:
