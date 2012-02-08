@@ -45,7 +45,8 @@ ART.PartsView = SC.View.create({
         cellTitle:"Toolbar".loc(),
         cellDescription:"A standard toolbar.".loc(),
 
-        itemImage:SC.View.design({
+        itemImage:SC.View.design(ART.Drag,{
+          view:'toolbar',
           classNames:['pane-tool-image'],
           layout: { right: 2, bottom: 5, height: 30, width: 122 },
         })

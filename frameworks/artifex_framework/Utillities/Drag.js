@@ -16,14 +16,19 @@ ART.Drag = {
       var instanceView;
       switch (this.view) {
         case "button":
-          instanceView = ART.ButtonView.create(ART.PartsDrag, {
-            layout:{top:175,left:72,height:30,width:120},
+          instanceView = ART.ButtonView.create(SCUI.Mobility, {
+            layout:{top:0,left:0,height:30,width:120},
             isEnabled:NO
           });
           break;
         case "label":
-          instanceView = ART.LabelView.create(ART.PartsDrag, {
-            layout:{top:175,left:72,height:30,width:120}
+          instanceView = ART.LabelView.create(SCUI.Mobility, {
+            layout:{top:0,left:0,height:30,width:120}
+          });
+          break;
+        case "toolbar":
+          instanceView = ART.ToolbarView.create(SCUI.Mobility, {
+            layout:{top:15,left:3,height:30,width:253},
           });
           break;
         case "hrView":
