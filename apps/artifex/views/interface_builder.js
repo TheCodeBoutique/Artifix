@@ -36,30 +36,8 @@ Artifex.interfaceBuilder = SC.Page.design({
         rowSpacing: 3,
         rowHeight: 49,
         actOnSelect:YES,
-        action:function(evt) {
-          var content = ART.objectSelectionController.get('content');
-          var selection = SC.SelectionSet.create();
-          var currentSelection = this.get('selection').firstObject().toJSON().guid;
-
-
-          switch (currentSelection) {
-            case 1:
-                content.adjust('left',0);
-              break;
-            case 2:
-                content.adjust('left',-252);
-              break;
-            case 3:
-                content.adjust('left',-503);
-              break;
-            case 4:
-                content.adjust('left',-754);
-              break;
-            default:
-          }
-
-
-        },
+        target:Artifex.statechart,
+        action:'doScrollToView' ,
         exampleView:SC.View.design({
           layout:{left:40,right:40,bottom:0,top:0},
           render:function(context) {

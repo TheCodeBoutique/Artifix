@@ -1,49 +1,71 @@
-ART.HorzontalView = SC.View.extend({
-  classNames:['horizontal-view'],
+sc_require('Utillities/DropZone');
+ART.HorzontalView = SC.ScrollView.design({
+  hasHorizontalScroller: YES,
+  hasVerticalScroller: NO,
+  layout: { top: 0, bottom: 0, left: 0, right:0},
 
-  childViews: ['ViewOne','ViewTwo','ViewThree','ViewFour'],
+  contentView:SC.View.extend(SC.FlowedLayout, {
+    classNames:['horizontal-view'],
+    defaultFlowSpacing: {right:0},
+    layoutDirection: SC.LAYOUT_HORIZONTAL,
+    autoResize:YES,
+    canWrap: NO,
 
-  ViewOne:SC.View.extend({
-    layout:{left:0,width:251,height:362},
-    childViews:['emptyMessage'],
-    emptyMessage:SC.LabelView.design({
-      classNames:['text_medium'],
-      layout:{left:30, centerY:0,height:20,width:0.99},
-      value:"View 1 drop elements"
-    })
-  }),
+    childViews: ['ViewOne','ViewTwo','ViewThree','ViewFour'],
 
-  ViewTwo:SC.View.extend({
-    layout:{left:251,width:251,height:362},
-    backgroundColor:'lightgray',
-    childViews:['emptyMessage'],
-    emptyMessage:SC.LabelView.design({
-      classNames:['text_medium'],
-      layout:{left:30, centerY:0,height:20,width:0.99},
-      value:"View 2 drop elements"
-    })
-  }),
+    ViewOne:SC.View.extend(ART.DropZone,{
+      classNames:['hr-view-container'],
+      layout:{width:251,height:362},
+      isDropTarget: YES,
+      childViews:['emptyMessage'],
 
-  ViewThree:SC.View.extend({
-    layout:{left:502,width:251,height:362},
-    backgroundColor:'yellow',
-    childViews:['emptyMessage'],
-    emptyMessage:SC.LabelView.design({
-      classNames:['text_medium'],
-      layout:{left:30, centerY:0,height:20,width:0.99},
-      value:"View 3 drop elements"
-    })
-  }),
+      emptyMessage:SC.LabelView.design({
+        classNames:['text_medium'],
+        textAlign:SC.ALIGN_CENTER,
+        layout:{left:0, centerY:0,height:20,right:0},
+        value:"View 1 drop elements"
+      })
+    }),
+
+    ViewTwo:SC.View.extend(ART.DropZone,{
+      classNames:['hr-view-container'],
+      layout:{width:251,height:362},
+      childViews:['emptyMessage'],
+
+      emptyMessage:SC.LabelView.design({
+        classNames:['text_medium'],
+        textAlign:SC.ALIGN_CENTER,
+        layout:{left:30, centerY:0,height:20,right:0},
+        value:"View 2 drop elements"
+      })
+    }),
+
+    ViewThree:SC.View.extend(ART.DropZone,{
+      classNames:['hr-view-container'],
+      layout:{width:251,height:362},
+      childViews:['emptyMessage'],
+
+      emptyMessage:SC.LabelView.design({
+        classNames:['text_medium'],
+        textAlign:SC.ALIGN_CENTER,
+        layout:{left:0, centerY:0,height:20,right:0},
+        value:"View 3 drop elements"
+      })
+    }),
 
 
-  ViewFour:SC.View.extend({
-    layout:{left:753,width:251,height:362},
-    backgroundColor:'lightblue',
-    childViews:['emptyMessage'],
-    emptyMessage:SC.LabelView.design({
-      classNames:['text_medium'],
-      layout:{left:30, centerY:0,height:20,width:0.99},
-      value:"View 4 drop elements"
+    ViewFour:SC.View.extend(ART.DropZone,{
+      classNames:['hr-view-container'],
+      layout:{left:753,width:251,height:362},
+      childViews:['emptyMessage'],
+
+      emptyMessage:SC.LabelView.design({
+        classNames:['text_medium'],
+        textAlign:SC.ALIGN_CENTER,
+        layout:{left:0, centerY:0,height:20,right:0},
+        value:"View 4 drop elements"
+      })
     })
   })
+
 });

@@ -121,7 +121,7 @@ ART.ViewsView = SC.View.create({
 
         itemImage: SC.View.design(ART.Drag,{
           view:'hrView',
-          objectController:ART.objectSelectionController,
+          objectController:ART.HorizontalViewController,
           classNames:['pane-horizontalswipe-image'],
           layout: { right: 2, bottom: 5, height: 61, width: 37 },
         })

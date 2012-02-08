@@ -12,10 +12,31 @@ Artifex.MobileDevState = SC.State.extend({
       matchBrackets: true,
       mode:"javascript"
     });
-    Artifex.codeEditorController.set('content',editor);
+    Artifex.codeEditorController.set('content', editor);
     //this sets a currentPane to current pane appended...this
     // prop can only be accessed within this state
     this.set('_currentPane', Artifex.getPath('interfaceBuilder.mainPane'));
+  },
+
+  doScrollToView:function(view) {
+    var content = ART.HorizontalViewController.get('content');
+    var currentSelection = view.get('selection').firstObject().toJSON().guid;
+
+    switch (currentSelection) {
+      case 1:
+        content.scrollTo(0, null);
+        break;
+      case 2:
+        content.scrollTo(250, null);
+        break;
+      case 3:
+        content.scrollTo(501, null);
+        break;
+      case 4:
+        content.scrollTo(752, null);
+        break;
+      default:
+    }
   },
 
   troggleUIInspector: function(view) {
